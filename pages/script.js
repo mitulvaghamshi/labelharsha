@@ -9,7 +9,7 @@ function initTheme() {
     // Check local storage or system preference
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
+
     if (savedTheme === "theme-light" || (!savedTheme && !prefersDark)) {
         setLightTheme();
     } else {
@@ -42,16 +42,14 @@ themeBtn.addEventListener("click", () => {
     }
 });
 
-// Menu dynamic category filter
+// Menu dynamic category filter, direct reference in html code.
 function filterMenu(category, btnElement) {
     // Remove active classes from all filter buttons
     const buttons = document.querySelectorAll(".filter-btn");
     buttons.forEach(btn => btn.classList.remove("active"));
 
     // Add active class to clicked button
-    if (btnElement) {
-        btnElement.classList.add("active");
-    }
+    if (btnElement) btnElement.classList.add("active");
 
     // Toggle element card visibility based on data attributes
     const cards = document.querySelectorAll(".menu-card");
