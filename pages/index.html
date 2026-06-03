@@ -16,15 +16,15 @@
     <meta property="og:site_name" content="Label Harsha">
     <meta property="og:description" content="Discover premium, vibrant readymade ethnic wear, elegant silk sarees, designer gowns, and custom-fit tunics at Label Harsha boutique.">
     <meta property="og:url" content="https://mitulvaghamshi.github.io/labelharsha/">
-    <meta property="og:image" content="items/item8.webp">
+    <meta property="og:image" content="icons/icon-512.webp">
 
     <link href="https://mitulvaghamshi.github.io/labelharsha" rel="canonical">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Label Harsha">
 
-    <link rel="icon" type="image/webp" href="icons/icon.webp">
-    <link rel="shortcut icon" type="image/webp" href="icons/icon.webp">
+    <link rel="icon" type="image/webp" href="icons/icon-512.webp">
+    <link rel="shortcut icon" type="image/webp" href="icons/icon-512.webp">
 
     <title>Label Harsha - Premium Readymade Ethnic & Fusion Wear</title>
 
@@ -42,7 +42,7 @@
       "@context": "https://schema.org",
       "@type": "ClothingStore",
       "name": "Label Harsha",
-      "image": "https://mitulvaghamshi.github.io/labelharsha/icons/icon.webp",
+      "image": "https://mitulvaghamshi.github.io/labelharsha/icons/icon-512.webp",
       "url": "https://mitulvaghamshi.github.io/labelharsha/",
       "priceRange": "₹1000 - ₹3000",
       "description": "Premium readymade ethnic and fusion wear store offering custom-fit designer kurtis, sarees, gowns, and tunics.",
@@ -141,23 +141,23 @@
                 </div>
             </div>
             <div class="about-image">
-                <img src="icons/icon.webp" alt="Stunning Ethnic Ensemble from Label Harsha">
+                <img src="icons/icon-512.webp" alt="Label Harsha Business Logo">
             </div>
         </div>
     </section>
 
     <!-- Showcase Banner -->
-    <section class="thali-showcase-section" id="showcase">
+    <section class="showcase-section" id="showcase">
         <div class="container">
-            <div class="thali-container">
-                <span class="thali-badge" id="thali-badge-text">Boutique Special Offer</span>
-                <h2 class="thali-title" id="thali-title-text">Tailored Elegance & Exquisite Styling</h2>
-                <div class="thali-price">
-                    <span id="thali-currency">Flat 10% Off</span><span class="small" id="thali-per-person"> on First Order</span>
+            <div class="showcase-container">
+                <span class="showcase-badge" id="showcase-badge-text">Boutique Special Offer</span>
+                <h2 class="showcase-title" id="showcase-title-text">Tailored Elegance & Exquisite Styling</h2>
+                <div class="showcase-discount">
+                    <span id="showcase-discount-text">Flat 10% Off</span><span class="small" id="showcase-discount-eligibility"> on First Order</span>
                 </div>
-                <p class="thali-desc" id="thali-desc-text">Bring your dream wardrobe to life! Our boutique specializes in premium custom alterations for all catalog items. Walk in or consult with our style designers on WhatsApp to secure a customized tailored drape for your next big celebration.</p>
+                <p class="showcase-desc" id="showcase-desc-text">Bring your dream wardrobe to life! Our boutique specializes in premium custom alterations for all catalog items. Walk in or consult with our style designers on WhatsApp to secure a customized tailored drape for your next big celebration.</p>
 
-                <div class="thali-promo-grid">
+                <div class="showcase-promo-grid">
                     <div class="promo-item">
                         <span class="promo-icon">🎉</span>
                         <div class="promo-text">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
 
-                <div class="wait-notice">
+                <div class="showcase-notice">
                     ⏰ <span id="thali-wait-text">Custom styling and fit alterations typically take 3 to 5 business days for perfect precision.</span>
                 </div>
             </div>
@@ -184,318 +184,294 @@
     <!-- Product Catalog Section -->
     <section class="container" id="catalog">
         <div class="section-header">
-            <h2 class="section-title" id="menu-section-title">The Vibrant Collections</h2>
-            <p class="section-desc" id="menu-section-desc">Explore our handpicked designer catalog of premium readymade wear, categorized for easy selection.</p>
+            <h2 class="section-title" id="catalog-section-title">The Vibrant Collections</h2>
+            <p class="section-desc" id="catalog-section-desc">Explore our handpicked designer catalog of premium readymade wear, categorized for easy selection.</p>
         </div>
 
         <!-- Dynamic Filters -->
-        <div class="menu-filters">
-            <button class="filter-btn active" onclick="filterMenu('all', this)" id="filter-all">All Styles</button>
-            <button class="filter-btn" onclick="filterMenu('kurtas', this)" id="filter-kurtas">Kurtas & Sets</button>
-            <button class="filter-btn" onclick="filterMenu('sarees', this)" id="filter-sarees">Elegant Sarees</button>
-            <button class="filter-btn" onclick="filterMenu('tunics', this)" id="filter-tunics">Chic Tunics</button>
-            <button class="filter-btn" onclick="filterMenu('gowns', this)" id="filter-gowns">Designer Gowns</button>
+        <div class="catalog-filters">
+            <button class="filter-btn active" onclick="filterCatalog('all', this)" id="filter-all">All Styles</button>
+            <button class="filter-btn" onclick="filterCatalog('kurtas', this)" id="filter-kurtas">Kurtas & Sets</button>
+            <button class="filter-btn" onclick="filterCatalog('sarees', this)" id="filter-sarees">Elegant Sarees</button>
+            <button class="filter-btn" onclick="filterCatalog('tunics', this)" id="filter-tunics">Chic Tunics</button>
+            <button class="filter-btn" onclick="filterCatalog('gowns', this)" id="filter-gowns">Designer Gowns</button>
         </div>
 
         <!-- Product Cards Grid -->
-        <div class="menu-grid" id="menu-cards-container">
+        <div class="product-grid" id="product-card-container">
 
             <!-- Item 1 -->
-            <div class="menu-card fade-in-card" id="menu-card-1" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-1" src="items/item1.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-1">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-1" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-1" src="items/item1.webp" alt="Terracotta Slit Tassel Kurta">
+                    <span class="product-card-badge" id="badge-item-1">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-1">#LH-101</span>
-                    <h3 class="menu-card-title" id="title-item-1">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-1">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-1">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-1">#LH-1</span>
+                    <h3 class="product-card-title" id="card-title-item-1">Terracotta Slit Tassel Kurta</h3>
+                    <span class="product-card-material" id="card-material-item-1">Premium Slub Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-1">Elegant sleeveless rust-red kurta featuring a high center slit with patterned blue accents and front tassels.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-1">₹2,499</span>
+                        <span class="price-original" id="price-original-1">₹3,499</span>
+                        <span class="price-discount" id="price-discount-1">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-101)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Terracotta Slit Tassel Kurta (LH-1)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 2 -->
-            <div class="menu-card fade-in-card" id="menu-card-2" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-2" src="items/item2.webp" alt="Sunset Blossom Georgette Kurta">
-                    <span class="menu-card-badge" id="badge-item-2">New Arrival</span>
+            <div class="product-card fade-in-card" id="product-card-2" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-2" src="items/item2.webp" alt="Indigo Leaf Printed Kurta">
+                    <span class="product-card-badge" id="badge-item-2">New Arrival</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-2">#LH-102</span>
-                    <h3 class="menu-card-title" id="title-item-2">Sunset Blossom Georgette Kurta</h3>
-                    <span class="menu-card-eng" id="eng-item-2">Premium Georgette</span>
-                    <p class="menu-card-desc" id="desc-item-2">Features a radiant yellow and peach base with delicate white floral accents and comfortable tailored trousers.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-2">#LH-2</span>
+                    <h3 class="product-card-title" id="card-title-item-2">Indigo Leaf Printed Kurta</h3>
+                    <span class="product-card-material" id="card-material-item-2">Soft Crepe Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-2">A striking royal blue long-sleeved kurta adorned with a contrast leaf-and-flower motif on the front.</p>
                     <div class="price-container">
-                        <span class="price-current">₹1,899</span>
-                        <span class="price-original">₹2,799</span>
-                        <span class="price-discount">32% OFF</span>
+                        <span class="price-current" id="price-current-2">₹1,899</span>
+                        <span class="price-original" id="price-original-2">₹2,799</span>
+                        <span class="price-discount" id="price-discount-2">32% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Sunset%20Blossom%20Georgette%20Kurta%20(LH-102)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Indigo Leaf Printed Kurta (LH-2)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 3 -->
-            <div class="menu-card fade-in-card" id="menu-card-3" data-category="sarees">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-3" src="items/item3.webp" alt="Golden Aura Banarasi Saree">
-                    <span class="menu-card-badge" id="badge-item-3">Signature</span>
+            <div class="product-card fade-in-card" id="product-card-3" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-3" src="items/item3.webp" alt="Charcoal Floral Contrast Kurta">
+                    <span class="product-card-badge" id="badge-item-3">Signature</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-3">#LH-103</span>
-                    <h3 class="menu-card-title" id="title-item-3">Golden Aura Banarasi Saree</h3>
-                    <span class="menu-card-eng" id="eng-item-3">Katan Silk</span>
-                    <p class="menu-card-desc" id="desc-item-3">A vibrant royal pink and golden zari embroidered Banarasi silk saree, perfect for festivals and weddings.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-3">#LH-3</span>
+                    <h3 class="product-card-title" id="card-title-item-3">Charcoal Floral Contrast Kurta</h3>
+                    <span class="product-card-material" id="card-material-item-3">Chanderi Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-3">Modern greyish-brown straight kurta featuring contrast black panels and bold printed floral outlines.</p>
                     <div class="price-container">
-                        <span class="price-current">₹6,499</span>
-                        <span class="price-original">₹9,999</span>
-                        <span class="price-discount">35% OFF</span>
+                        <span class="price-current" id="price-current-3">₹6,499</span>
+                        <span class="price-original" id="price-original-3">₹9,999</span>
+                        <span class="price-discount" id="price-discount-3">35% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Golden%20Aura%20Banarasi%20Saree%20(LH-103)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Charcoal Floral Contrast Kurta (LH-3)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 4 -->
-            <div class="menu-card fade-in-card" id="menu-card-4" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-4" src="items/item4.webp" alt="Magenta Glow Anarkali Set">
-                    <span class="menu-card-badge" id="badge-item-4">Trending</span>
+            <div class="product-card fade-in-card" id="product-card-4" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-4" src="items/item4.webp" alt="Magenta Kaftan Dress">
+                    <span class="product-card-badge" id="badge-item-4">Trending</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-4">#LH-104</span>
-                    <h3 class="menu-card-title" id="title-item-4">Magenta Glow Anarkali Set</h3>
-                    <span class="menu-card-eng" id="eng-item-4">Rayon Gold Print</span>
-                    <p class="menu-card-desc" id="desc-item-4">An elegant floor-length deep magenta Anarkali suit with sparkling gold block prints and a matching sheer dupatta.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-4">#LH-4</span>
+                    <h3 class="product-card-title" id="card-title-item-4">Magenta Kaftan Dress</h3>
+                    <span class="product-card-material" id="card-material-item-4">Flowy Georgette</span>
+                    <p class="product-card-desc" id="card-desc-item-4">A luxurious flowy kaftan dress in rich magenta featuring a symmetric ivory white pattern and a relaxed drape.</p>
                     <div class="price-container">
-                        <span class="price-current">₹3,299</span>
-                        <span class="price-original">₹4,999</span>
-                        <span class="price-discount">34% OFF</span>
+                        <span class="price-current" id="price-current-4">₹3,299</span>
+                        <span class="price-original" id="price-original-4">₹4,999</span>
+                        <span class="price-discount" id="price-discount-4">34% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Magenta%20Glow%20Anarkali%20Set%20(LH-104)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Magenta Kaftan Dress (LH-4)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 5 -->
-            <div class="menu-card fade-in-card" id="menu-card-5" data-category="tunics">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-5" src="items/item5.webp" alt="Ivory Gold Chanderi Tunic">
-                    <span class="menu-card-badge" id="badge-item-5">Pure Fabric</span>
+            <div class="product-card fade-in-card" id="product-card-5" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-5" src="items/item5.webp" alt="Pastel Blue Peplum Set">
+                    <span class="product-card-badge" id="badge-item-5">Pure Fabric</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-5">#LH-105</span>
-                    <h3 class="menu-card-title" id="title-item-5">Ivory Gold Chanderi Tunic</h3>
-                    <span class="menu-card-eng" id="eng-item-5">Chanderi Silk</span>
-                    <p class="menu-card-desc" id="desc-item-5">A minimal yet luxurious ivory-white short tunic featuring golden thread embroidery on the neckline and sleeves.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-5">#LH-5</span>
+                    <h3 class="product-card-title" id="card-title-item-5">Pastel Blue Peplum Set</h3>
+                    <span class="product-card-material" id="card-material-item-5">Soft Muslin Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-5">Sleeveless short peplum style kurti in light blue and lime green print, paired with green leaf patterned pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹1,499</span>
-                        <span class="price-original">₹2,199</span>
-                        <span class="price-discount">31% OFF</span>
+                        <span class="price-current" id="price-current-5">₹1,499</span>
+                        <span class="price-original" id="price-original-5">₹2,199</span>
+                        <span class="price-discount" id="price-discount-5">31% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Ivory%20Gold%20Chanderi%20Tunic%20(LH-105)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Pastel Blue Peplum Set (LH-5)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 6 -->
-            <div class="menu-card fade-in-card" id="menu-card-6" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-6" src="items/item6.webp" alt="Crimson Blossom Patiala Set">
-                    <span class="menu-card-badge" id="badge-item-6">Classic Fit</span>
+            <div class="product-card fade-in-card" id="product-card-6" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-6" src="items/item6.webp" alt="Fuchsia Kutch Embroidered Set">
+                    <span class="product-card-badge" id="badge-item-6">Classic Fit</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-6">#LH-106</span>
-                    <h3 class="menu-card-title" id="title-item-6">Crimson Blossom Patiala Set</h3>
-                    <span class="menu-card-eng" id="eng-item-6">Cotton Satin</span>
-                    <p class="menu-card-desc" id="desc-item-6">Vibrant crimson red short kurta with delicate prints paired with an ultra-soft draped Patiala salwar.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-6">#LH-6</span>
+                    <h3 class="product-card-title" id="card-title-item-6">Fuchsia Kutch Embroidered Set</h3>
+                    <span class="product-card-material" id="card-material-item-6">Art Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-6">Fuchsia/magenta kurta with multi-colored Gujarati embroidery and tassel details, paired with matching trousers.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,199</span>
-                        <span class="price-original">₹3,199</span>
-                        <span class="price-discount">31% OFF</span>
+                        <span class="price-current" id="price-current-6">₹2,199</span>
+                        <span class="price-original" id="price-original-6">₹3,199</span>
+                        <span class="price-discount" id="price-discount-6">31% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Crimson%20Blossom%20Patiala%20Set%20(LH-106)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Fuchsia Kutch Embroidered Set (LH-6)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 7 -->
-            <div class="menu-card fade-in-card" id="menu-card-7" data-category="gowns">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-7" src="items/item7.webp" alt="Indigo Dream Fusion Gown">
-                    <span class="menu-card-badge" id="badge-item-7">Vibrant Block</span>
+            <div class="product-card fade-in-card" id="product-card-7" data-category="gowns">
+                <div class="product-card-img">
+                    <img id="product-card-img-7" src="items/item7.webp" alt="Cream Mauve Ombre Set">
+                    <span class="product-card-badge" id="badge-item-7">Vibrant Block</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-7">#LH-107</span>
-                    <h3 class="menu-card-title" id="title-item-7">Indigo Dream Fusion Gown</h3>
-                    <span class="menu-card-eng" id="eng-item-7">Cotton Silk</span>
-                    <p class="menu-card-desc" id="desc-item-7">A deep indigo blue flowing gown featuring exquisite block-printed motifs and metallic gold borders.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-7">#LH-7</span>
+                    <h3 class="product-card-title" id="card-title-item-7">Cream Mauve Ombre Set</h3>
+                    <span class="product-card-material" id="card-material-item-7">Premium Rayon</span>
+                    <p class="product-card-desc" id="card-desc-item-7">Silk/rayon co-ord set with a diagonal ombre/tie-dye print running from cream to mauve/plum, with embroidered details.</p>
                     <div class="price-container">
-                        <span class="price-current">₹3,999</span>
-                        <span class="price-original">₹5,999</span>
-                        <span class="price-discount">33% OFF</span>
+                        <span class="price-current" id="price-current-7">₹3,999</span>
+                        <span class="price-original" id="price-original-7">₹5,999</span>
+                        <span class="price-discount" id="price-discount-7">33% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Indigo%20Dream%20Fusion%20Gown%20(LH-107)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Cream Mauve Ombre Set (LH-7)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 8 -->
-            <div class="menu-card fade-in-card" id="menu-card-8" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-8" src="items/item8.webp" alt="Vibrant Silk Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-8">Royal Fit</span>
+            <div class="product-card fade-in-card" id="product-card-8" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-8" src="items/item8.webp" alt="Sand Linen Co-ord Set">
+                    <span class="product-card-badge" id="badge-item-8">Royal Fit</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-8">#LH-108</span>
-                    <h3 class="menu-card-title" id="title-item-8">Vibrant Silk Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-8">Raw Silk</span>
-                    <p class="menu-card-desc" id="desc-item-8">A gorgeous deep pink and bright tangerine orange silk kurta set with intricate gold zardozi embroidery.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-8">#LH-8</span>
+                    <h3 class="product-card-title" id="card-title-item-8">Sand Linen Co-ord Set</h3>
+                    <span class="product-card-material" id="card-material-item-8">Raw Linen Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-8">Beige/sand-colored linen co-ord set with a button-down shirt featuring textured, raw-edge square fabric patches.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,799</span>
-                        <span class="price-original">₹3,999</span>
-                        <span class="price-discount">30% OFF</span>
+                        <span class="price-current" id="price-current-8">₹2,799</span>
+                        <span class="price-original" id="price-original-8">₹3,999</span>
+                        <span class="price-discount" id="price-discount-8">30% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Vibrant%20Silk%20Kurti%20Set%20(LH-108)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Sand Linen Co-ord Set (LH-8)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 9 -->
-            <div class="menu-card fade-in-card" id="menu-card-9" data-category="sarees">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-9" src="items/item9.webp" alt="Turquoise Royal Saree">
-                    <span class="menu-card-badge" id="badge-item-9">Designer Draped</span>
+            <div class="product-card fade-in-card" id="product-card-9" data-category="sarees">
+                <div class="product-card-img">
+                    <img id="product-card-img-9" src="items/item9.webp" alt="Lilac Scalloped Kurta Set">
+                    <span class="product-card-badge" id="badge-item-9">Designer Draped</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-9">#LH-109</span>
-                    <h3 class="menu-card-title" id="title-item-9">Turquoise Royal Saree</h3>
-                    <span class="menu-card-eng" id="eng-item-9">Premium Georgette</span>
-                    <p class="menu-card-desc" id="desc-item-9">A stunning turquoise and royal blue draped saree with a heavily embroidered gold borders and matching blouse.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-9">#LH-9</span>
+                    <h3 class="product-card-title" id="card-title-item-9">Lilac Scalloped Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-9">Premium Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-9">Lilac/lavender colored kurti set with a scalloped hem, featuring colorful geometric embroidery and wide-leg pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹5,899</span>
-                        <span class="price-original">₹8,499</span>
-                        <span class="price-discount">30% OFF</span>
+                        <span class="price-current" id="price-current-9">₹5,899</span>
+                        <span class="price-original" id="price-original-9">₹8,499</span>
+                        <span class="price-discount" id="price-discount-9">30% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Turquoise%20Royal%20Saree%20(LH-109)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Lilac Scalloped Kurta Set (LH-9)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 10 -->
-            <div class="menu-card fade-in-card" id="menu-card-10" data-category="gowns">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-10" src="items/item10.webp" alt="Mustard Ruby Lehenga">
-                    <span class="menu-card-badge" id="badge-item-10">Premium Couture</span>
+            <div class="product-card fade-in-card" id="product-card-10" data-category="sarees">
+                <div class="product-card-img">
+                    <img id="product-card-img-10" src="items/item10.webp" alt="Taupe Floral Embroidered Set">
+                    <span class="product-card-badge" id="badge-item-10">Premium Couture</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-10">#LH-110</span>
-                    <h3 class="menu-card-title" id="title-item-10">Mustard Ruby Lehenga</h3>
-                    <span class="menu-card-eng" id="eng-item-10">Silk Velvet & Net</span>
-                    <p class="menu-card-desc" id="desc-item-10">A highly vibrant mustard yellow and ruby red lehenga set adorned with heavy traditional gold embellishments.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-10">#LH-10</span>
+                    <h3 class="product-card-title" id="card-title-item-10">Taupe Floral Embroidered Set</h3>
+                    <span class="product-card-material" id="card-material-item-10">Cotton Linen</span>
+                    <p class="product-card-desc" id="card-desc-item-10">Grey/taupe mandarin collar linen tunic set with pink and gold floral embroidery around the waist.</p>
                     <div class="price-container">
-                        <span class="price-current">₹8,999</span>
-                        <span class="price-original">₹12,999</span>
-                        <span class="price-discount">30% OFF</span>
+                        <span class="price-current" id="price-current-10">₹8,999</span>
+                        <span class="price-original" id="price-original-10">₹12,999</span>
+                        <span class="price-discount" id="price-discount-10">30% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Mustard%20Ruby%20Lehenga%20(LH-110)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Taupe Floral Embroidered Set (LH-10)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 11 -->
-            <div class="menu-card fade-in-card" id="menu-card-11" data-category="gowns">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-11" src="items/item11.webp" alt="Mint Peach Gown">
-                    <span class="menu-card-badge" id="badge-item-11">Tiered Anarkali</span>
+            <div class="product-card fade-in-card" id="product-card-11" data-category="gowns">
+                <div class="product-card-img">
+                    <img id="product-card-img-11" src="items/item11.webp" alt="Mustard Lotus High-Low Set">
+                    <span class="product-card-badge" id="badge-item-11">Tiered Anarkali</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-11">#LH-111</span>
-                    <h3 class="menu-card-title" id="title-item-11">Mint Peach Gown</h3>
-                    <span class="menu-card-eng" id="eng-item-11">Chiffon & Net</span>
-                    <p class="menu-card-desc" id="desc-item-11">A pastel mint green and vibrant peach tiered ethnic gown detailed with delicate floral gold zardozi.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-11">#LH-11</span>
+                    <h3 class="product-card-title" id="card-title-item-11">Mustard Lotus High-Low Set</h3>
+                    <span class="product-card-material" id="card-material-item-11">Pure Crepe</span>
+                    <p class="product-card-desc" id="card-desc-item-11">Mustard yellow high-low asymmetric silk/crepe kurta set with olive borders and lotus prints.</p>
                     <div class="price-container">
-                        <span class="price-current">₹4,599</span>
-                        <span class="price-original">₹6,799</span>
-                        <span class="price-discount">32% OFF</span>
+                        <span class="price-current" id="price-current-11">₹4,599</span>
+                        <span class="price-original" id="price-original-11">₹6,799</span>
+                        <span class="price-discount" id="price-discount-11">32% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Mint%20Peach%20Gown%20(LH-111)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Mustard Lotus High-Low Set (LH-11)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 12 -->
-            <div class="menu-card fade-in-card" id="menu-card-12" data-category="tunics">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-12" src="items/item12.webp" alt="Multicolor Floral Tunic">
-                    <span class="menu-card-badge" id="badge-item-12">Showstopper</span>
+            <div class="product-card fade-in-card" id="product-card-12" data-category="gowns">
+                <div class="product-card-img">
+                    <img id="product-card-img-12" src="items/item12.webp" alt="Wine Kalamkari Kurta Set">
+                    <span class="product-card-badge" id="badge-item-12">Showstopper</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-12">#LH-112</span>
-                    <h3 class="menu-card-title" id="title-item-12">Multicolor Floral Tunic</h3>
-                    <span class="menu-card-eng" id="eng-item-12">Pure Silk Blend</span>
-                    <p class="menu-card-desc" id="desc-item-12">An absolute showstopper - a vibrant royal blue tunic overflowing with multicolor floral patterns and gold borders.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-12">#LH-12</span>
+                    <h3 class="product-card-title" id="card-title-item-12">Wine Kalamkari Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-12">Satin Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-12">Wine/plum colored silk/satin finish kurta set with hand-painted or printed floral and paisley designs.</p>
                     <div class="price-container">
-                        <span class="price-current">₹1,699</span>
-                        <span class="price-original">₹2,499</span>
-                        <span class="price-discount">32% OFF</span>
+                        <span class="price-current" id="price-current-12">₹1,699</span>
+                        <span class="price-original" id="price-original-12">₹2,499</span>
+                        <span class="price-discount" id="price-discount-12">32% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Multicolor%20Floral%20Tunic%20(LH-112)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Wine Kalamkari Kurta Set (LH-12)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -503,529 +479,489 @@
 
         </div>
 
+        <div style="height: 35px;"></div>
+
         <!-- Menu Grid section 2 -->
-        <div class="menu-grid-wide" id="menu-cards-container">
+        <div class="product-grid-wide" id="product-card-container">
             <!-- Item 13 -->
-            <div class="menu-card fade-in-card" id="menu-card-13" data-category="tunics">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-13" src="items/item13.webp" alt="Multicolor Floral Tunic">
-                    <span class="menu-card-badge" id="badge-item-13">Showstopper</span>
+            <div class="product-card fade-in-card" id="product-card-13" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-13" src="items/item13.webp" alt="Yellow Polka Layered Dress">
+                    <span class="product-card-badge" id="badge-item-13">Showstopper</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-13">#LH-113</span>
-                    <h3 class="menu-card-title" id="title-item-13">Multicolor Floral Tunic</h3>
-                    <span class="menu-card-eng" id="eng-item-13">Pure Silk Blend</span>
-                    <p class="menu-card-desc" id="desc-item-13">An absolute showstopper - a vibrant royal blue tunic overflowing with multicolor floral patterns and gold borders.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-13">#LH-13</span>
+                    <h3 class="product-card-title" id="card-title-item-13">Sage Green Embroidered Set</h3>
+                    <span class="product-card-material" id="card-material-item-13">Textured Khadi Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-13">Sophisticated sage green straight kurta featuring delicate hand embroidery on the neckline and sleeves.</p>
                     <div class="price-container">
-                        <span class="price-current">₹1,699</span>
-                        <span class="price-original">₹2,499</span>
-                        <span class="price-discount">32% OFF</span>
+                        <span class="price-current" id="price-current-13">₹1,699</span>
+                        <span class="price-original" id="price-original-13">₹2,499</span>
+                        <span class="price-discount" id="price-discount-13">32% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Multicolor%20Floral%20Tunic%20(LH-113)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Sage Green Embroidered Set (LH-13)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 14 -->
-            <div class="menu-card fade-in-card" id="menu-card-14" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-14" src="items/item14.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-14">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-14" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-14" src="items/item14.webp" alt="Turquoise High-Low Kurta">
+                    <span class="product-card-badge" id="badge-item-14">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-14">#LH-1014</span>
-                    <h3 class="menu-card-title" id="title-item-14">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-14">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-14">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-14">#LH-14</span>
+                    <h3 class="product-card-title" id="card-title-item-14">Slate Grey V-Neck Set</h3>
+                    <span class="product-card-material" id="card-material-item-14">Premium Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-14">Charcoal grey straight kurta featuring a delicate embroidered V-neckline and floral motifs.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-14">₹2,499</span>
+                        <span class="price-original" id="price-original-14">₹3,499</span>
+                        <span class="price-discount" id="price-discount-14">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1014)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Slate Grey V-Neck Set (LH-14)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 15 -->
-            <div class="menu-card fade-in-card" id="menu-card-15" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-15" src="items/item15.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-15">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-15" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-15" src="items/item15.webp" alt="Mint Green Floral Anarkali">
+                    <span class="product-card-badge" id="badge-item-15">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-15">#LH-1015</span>
-                    <h3 class="menu-card-title" id="title-item-15">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-15">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-15">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-15">#LH-15</span>
+                    <h3 class="product-card-title" id="card-title-item-15">Teal Blue V-Neck Set</h3>
+                    <span class="product-card-material" id="card-material-item-15">Premium Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-15">Dusty teal blue straight kurta featuring a delicate embroidered V-neckline and floral motifs.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-15">₹2,499</span>
+                        <span class="price-original" id="price-original-15">₹3,499</span>
+                        <span class="price-discount" id="price-discount-15">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1015)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Teal Blue V-Neck Set (LH-15)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 16 -->
-            <div class="menu-card fade-in-card" id="menu-card-16" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-16" src="items/item16.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-16">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-16" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-16" src="items/item16.webp" alt="Yellow Bell-Sleeve Kurta Set">
+                    <span class="product-card-badge" id="badge-item-16">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-16">#LH-1016</span>
-                    <h3 class="menu-card-title" id="title-item-16">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-16">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-16">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-16">#LH-16</span>
+                    <h3 class="product-card-title" id="card-title-item-16">Mustard Yellow V-Neck Set</h3>
+                    <span class="product-card-material" id="card-material-item-16">Premium Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-16">Bright mustard yellow straight kurta featuring a delicate embroidered V-neckline and floral motifs.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-16">₹2,499</span>
+                        <span class="price-original" id="price-original-16">₹3,499</span>
+                        <span class="price-discount" id="price-discount-16">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1016)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Mustard Yellow V-Neck Set (LH-16)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 17 -->
-            <div class="menu-card fade-in-card" id="menu-card-17" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-17" src="items/item17.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-17">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-17" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-17" src="items/item17.webp" alt="White Indigo Slit Kurta">
+                    <span class="product-card-badge" id="badge-item-17">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-17">#LH-1017</span>
-                    <h3 class="menu-card-title" id="title-item-17">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-17">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-17">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-17">#LH-17</span>
+                    <h3 class="product-card-title" id="card-title-item-17">Rust Orange V-Neck Set</h3>
+                    <span class="product-card-material" id="card-material-item-17">Premium Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-17">Vibrant rust orange straight kurta featuring a delicate embroidered V-neckline and floral motifs.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-17">₹2,499</span>
+                        <span class="price-original" id="price-original-17">₹3,499</span>
+                        <span class="price-discount" id="price-discount-17">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1017)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Rust Orange V-Neck Set (LH-17)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 18 -->
-            <div class="menu-card fade-in-card" id="menu-card-18" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-18" src="items/item18.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-18">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-18" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-18" src="items/item18.webp" alt="Plum Embroidered Kurta Set">
+                    <span class="product-card-badge" id="badge-item-18">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-18">#LH-1018</span>
-                    <h3 class="menu-card-title" id="title-item-18">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-18">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-18">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-18">#LH-18</span>
+                    <h3 class="product-card-title" id="card-title-item-18">Deep Teal Silk Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-18">Banarasi Satin Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-18">Deep teal/ocean blue silk/satin kurta with beads on the neckline and floral embroidery near the hem.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-18">₹2,499</span>
+                        <span class="price-original" id="price-original-18">₹3,499</span>
+                        <span class="price-discount" id="price-discount-18">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1018)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Deep Teal Silk Kurta Set (LH-18)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 19 -->
-            <div class="menu-card fade-in-card" id="menu-card-19" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-19" src="items/item19.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-19">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-19" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-19" src="items/item19.webp" alt="White Pink Floral Kurta Set">
+                    <span class="product-card-badge" id="badge-item-19">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-19">#LH-1019</span>
-                    <h3 class="menu-card-title" id="title-item-19">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-19">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-19">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-19">#LH-19</span>
+                    <h3 class="product-card-title" id="card-title-item-19">Magenta Silk Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-19">Banarasi Satin Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-19">Vibrant deep pink/magenta silk/satin kurta with beads on the neckline and floral embroidery near the hem.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-19">₹2,499</span>
+                        <span class="price-original" id="price-original-19">₹3,499</span>
+                        <span class="price-discount" id="price-discount-19">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1019)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Magenta Silk Kurta Set (LH-19)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 20 -->
-            <div class="menu-card fade-in-card" id="menu-card-20" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-20" src="items/item20.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-20">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-20" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-20" src="items/item20.webp" alt="Sage Green Co-ord Set">
+                    <span class="product-card-badge" id="badge-item-20">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-20">#LH-1020</span>
-                    <h3 class="menu-card-title" id="title-item-20">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-20">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-20">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-20">#LH-20</span>
+                    <h3 class="product-card-title" id="card-title-item-20">Deep Plum Silk Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-20">Banarasi Satin Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-20">Rich dark plum/purple silk/satin kurta with beads on the neckline and floral embroidery near the hem.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-20">₹2,499</span>
+                        <span class="price-original" id="price-original-20">₹3,499</span>
+                        <span class="price-discount" id="price-discount-20">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1020)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Deep Plum Silk Kurta Set (LH-20)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 21 -->
-            <div class="menu-card fade-in-card" id="menu-card-21" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-21" src="items/item21.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-21">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-21" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-21" src="items/item21.webp" alt="Teal Scallop Palazzo Set">
+                    <span class="product-card-badge" id="badge-item-21">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-21">#LH-1021</span>
-                    <h3 class="menu-card-title" id="title-item-21">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-21">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-21">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-21">#LH-21</span>
+                    <h3 class="product-card-title" id="card-title-item-21">Metallic Copper Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-21">Banarasi Satin Silk</span>
+                    <p class="product-card-desc" id="card-desc-item-21">Sleek copper brown/rust silk/satin kurta with beads on the neckline and floral embroidery near the hem.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-21">₹2,499</span>
+                        <span class="price-original" id="price-original-21">₹3,499</span>
+                        <span class="price-discount" id="price-discount-21">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1021)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Metallic Copper Kurta Set (LH-21)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 22 -->
-            <div class="menu-card fade-in-card" id="menu-card-22" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-22" src="items/item22.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-22">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-22" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-22" src="items/item22.webp" alt="White Yellow Embroidered Set">
+                    <span class="product-card-badge" id="badge-item-22">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-22">#LH-1022</span>
-                    <h3 class="menu-card-title" id="title-item-22">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-22">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-22">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-22">#LH-22</span>
+                    <h3 class="product-card-title" id="card-title-item-22">Ivory Sleeveless Sharara Set</h3>
+                    <span class="product-card-material" id="card-material-item-22">Slub Linen</span>
+                    <p class="product-card-desc" id="card-desc-item-22">Ivory white sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-22">₹2,499</span>
+                        <span class="price-original" id="price-original-22">₹3,499</span>
+                        <span class="price-discount" id="price-discount-22">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1022)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Ivory Sleeveless Sharara Set (LH-22)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 23 -->
-            <div class="menu-card fade-in-card" id="menu-card-23" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-23" src="items/item23.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-23">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-23" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-23" src="items/item23.webp" alt="Forest Green Gown">
+                    <span class="product-card-badge" id="badge-item-23">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-23">#LH-1023</span>
-                    <h3 class="menu-card-title" id="title-item-23">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-23">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-23">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-23">#LH-23</span>
+                    <h3 class="product-card-title" id="card-title-item-23">Magenta Sleeveless Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-23">Soft Art Rayon</span>
+                    <p class="product-card-desc" id="card-desc-item-23">Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-23">₹2,499</span>
+                        <span class="price-original" id="price-original-23">₹3,499</span>
+                        <span class="price-discount" id="price-discount-23">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1023)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Magenta Sleeveless Kurta Set (LH-23)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 24 -->
-            <div class="menu-card fade-in-card" id="menu-card-24" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-24" src="items/item24.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-24">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-24" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-24" src="items/item24.webp" alt="Powder Blue Scallop Saree Set">
+                    <span class="product-card-badge" id="badge-item-24">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-24">#LH-1024</span>
-                    <h3 class="menu-card-title" id="title-item-24">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-24">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-24">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-24">#LH-24</span>
+                    <h3 class="product-card-title" id="card-title-item-24">Deep Purple Sleeveless Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-24">Soft Art Rayon</span>
+                    <p class="product-card-desc" id="card-desc-item-24">Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-24">₹2,499</span>
+                        <span class="price-original" id="price-original-24">₹3,499</span>
+                        <span class="price-discount" id="price-discount-24">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1024)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Deep Purple Sleeveless Kurta Set (LH-24)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 25 -->
-            <div class="menu-card fade-in-card" id="menu-card-25" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-25" src="items/item25.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-25">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-25" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-25" src="items/item25.webp" alt="Pastel Green Embroidered Kurta">
+                    <span class="product-card-badge" id="badge-item-25">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-25">#LH-1025</span>
-                    <h3 class="menu-card-title" id="title-item-25">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-25">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-25">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-25">#LH-25</span>
+                    <h3 class="product-card-title" id="card-title-item-25">Burgundy Sleeveless Kurta Set</h3>
+                    <span class="product-card-material" id="card-material-item-25">Soft Art Rayon</span>
+                    <p class="product-card-desc" id="card-desc-item-25">Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-25">₹2,499</span>
+                        <span class="price-original" id="price-original-25">₹3,499</span>
+                        <span class="price-discount" id="price-discount-25">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1025)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Burgundy Sleeveless Kurta Set (LH-25)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 26 -->
-            <div class="menu-card fade-in-card" id="menu-card-26" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-26" src="items/item26.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-26">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-26" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-26" src="items/item26.webp" alt="Indigo Chevron Tunic Set">
+                    <span class="product-card-badge" id="badge-item-26">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-26">#LH-1026</span>
-                    <h3 class="menu-card-title" id="title-item-26">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-26">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-26">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-26">#LH-26</span>
+                    <h3 class="product-card-title" id="card-title-item-26">Coral Mesh Applique Set</h3>
+                    <span class="product-card-material" id="card-material-item-26">Cotton Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-26">Coral peach short kurta with applique cut-out mesh flower details and matching wide-leg pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-26">₹2,499</span>
+                        <span class="price-original" id="price-original-26">₹3,499</span>
+                        <span class="price-discount" id="price-discount-26">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1026)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Coral Mesh Applique Set (LH-26)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 27 -->
-            <div class="menu-card fade-in-card" id="menu-card-27" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-27" src="items/item27.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-27">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-27" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-27" src="items/item27.webp" alt="Yellow Chevron Kurta Set">
+                    <span class="product-card-badge" id="badge-item-27">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-27">#LH-1027</span>
-                    <h3 class="menu-card-title" id="title-item-27">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-27">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-27">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-27">#LH-27</span>
+                    <h3 class="product-card-title" id="card-title-item-27">Yellow Mesh Applique Set</h3>
+                    <span class="product-card-material" id="card-material-item-27">Cotton Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-27">Mustard yellow short kurta with applique cut-out mesh flower details and matching wide-leg pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-27">₹2,499</span>
+                        <span class="price-original" id="price-original-27">₹3,499</span>
+                        <span class="price-discount" id="price-discount-27">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1027)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Yellow Mesh Applique Set (LH-27)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 28 -->
-            <div class="menu-card fade-in-card" id="menu-card-28" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-28" src="items/item28.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-28">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-28" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-28" src="items/item28.webp" alt="Red Paisley Kurta Set">
+                    <span class="product-card-badge" id="badge-item-28">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-28">#LH-1028</span>
-                    <h3 class="menu-card-title" id="title-item-28">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-28">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-28">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-28">#LH-28</span>
+                    <h3 class="product-card-title" id="card-title-item-28">Lavender Mesh Applique Set</h3>
+                    <span class="product-card-material" id="card-material-item-28">Cotton Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-28">Light lavender short kurta with applique cut-out mesh flower details and matching wide-leg pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-28">₹2,499</span>
+                        <span class="price-original" id="price-original-28">₹3,499</span>
+                        <span class="price-discount" id="price-discount-28">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1028)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Lavender Mesh Applique Set (LH-28)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 29 -->
-            <div class="menu-card fade-in-card" id="menu-card-29" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-29" src="items/item29.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-29">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-29" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-29" src="items/item29.webp" alt="Cobalt Patterned Co-ord Set">
+                    <span class="product-card-badge" id="badge-item-29">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-29">#LH-1029</span>
-                    <h3 class="menu-card-title" id="title-item-29">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-29">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-29">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-29">#LH-29</span>
+                    <h3 class="product-card-title" id="card-title-item-29">Onion Pink Embroidered Set</h3>
+                    <span class="product-card-material" id="card-material-item-29">Textured Khadi Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-29">Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-29">₹2,499</span>
+                        <span class="price-original" id="price-original-29">₹3,499</span>
+                        <span class="price-discount" id="price-discount-29">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1029)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Onion Pink Embroidered Set (LH-29)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 30 -->
-            <div class="menu-card fade-in-card" id="menu-card-30" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-30" src="items/item30.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-30">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-30" data-category="kurtas">
+                <div class="product-card-img">
+                    <img id="product-card-img-30" src="items/item30.webp" alt="Peach Floral Tiered Gown">
+                    <span class="product-card-badge" id="badge-item-30">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-30">#LH-1030</span>
-                    <h3 class="menu-card-title" id="title-item-30">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-30">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-30">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-30">#LH-30</span>
+                    <h3 class="product-card-title" id="card-title-item-30">Mint Green Embroidered Set</h3>
+                    <span class="product-card-material" id="card-material-item-30">Textured Khadi Cotton</span>
+                    <p class="product-card-desc" id="card-desc-item-30">Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-30">₹2,499</span>
+                        <span class="price-original" id="price-original-30">₹3,499</span>
+                        <span class="price-discount" id="price-discount-30">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1030)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Mint Green Embroidered Set (LH-30)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 31 -->
-            <div class="menu-card fade-in-card" id="menu-card-31" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-31" src="items/item31.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-31">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-31" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-31" src="items/item31.webp" alt="Olive Green Printed Set">
+                    <span class="product-card-badge" id="badge-item-31">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-31">#LH-1031</span>
-                    <h3 class="menu-card-title" id="title-item-31">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-31">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-31">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-31">#LH-31</span>
+                    <h3 class="product-card-title" id="card-title-item-31">Peach Sleeveless Sharara Set</h3>
+                    <span class="product-card-material" id="card-material-item-31">Slub Linen</span>
+                    <p class="product-card-desc" id="card-desc-item-31">Peach/baby pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-31">₹2,499</span>
+                        <span class="price-original" id="price-original-31">₹3,499</span>
+                        <span class="price-discount" id="price-discount-31">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1031)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Peach Sleeveless Sharara Set (LH-31)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 32 -->
-            <div class="menu-card fade-in-card" id="menu-card-32" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-32" src="items/item32.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-32">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-32" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-32" src="items/item32.webp" alt="Ocean Blue Embroidered Kurta">
+                    <span class="product-card-badge" id="badge-item-32">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-32">#LH-1032</span>
-                    <h3 class="menu-card-title" id="title-item-32">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-32">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-32">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-32">#LH-32</span>
+                    <h3 class="product-card-title" id="card-title-item-32">Rose Pink Sleeveless Sharara Set</h3>
+                    <span class="product-card-material" id="card-material-item-32">Slub Linen</span>
+                    <p class="product-card-desc" id="card-desc-item-32">Rose pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-32">₹2,499</span>
+                        <span class="price-original" id="price-original-32">₹3,499</span>
+                        <span class="price-discount" id="price-discount-32">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1032)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Rose Pink Sleeveless Sharara Set (LH-32)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>
 
             <!-- Item 33 -->
-            <div class="menu-card fade-in-card" id="menu-card-33" data-category="kurtas">
-                <div class="menu-card-img">
-                    <img id="menu-card-img-33" src="items/item33.webp" alt="Royal Jaipur Tassel Kurti Set">
-                    <span class="menu-card-badge" id="badge-item-33">Best Seller</span>
+            <div class="product-card fade-in-card" id="product-card-33" data-category="tunics">
+                <div class="product-card-img">
+                    <img id="product-card-img-33" src="items/item33.webp" alt="Red Gold Printed Anarkali">
+                    <span class="product-card-badge" id="badge-item-33">Best Seller</span>
                 </div>
-                <div class="menu-card-details">
-                    <span class="menu-card-num" id="menu-card-num-33">#LH-1033</span>
-                    <h3 class="menu-card-title" id="title-item-33">Royal Jaipur Tassel Kurti Set</h3>
-                    <span class="menu-card-eng" id="eng-item-33">Jaipur Cotton</span>
-                    <p class="menu-card-desc" id="desc-item-33">A stunning flared cotton kurti adorned with hand-stitched floral borders and vibrant pink tassel ties.</p>
+                <div class="product-card-details">
+                    <span class="product-card-id" id="product-card-id-33">#LH-33</span>
+                    <h3 class="product-card-title" id="card-title-item-33">Taupe Mesh Applique Set</h3>
+                    <span class="product-card-material" id="card-material-item-33">Cotton Linen Blend</span>
+                    <p class="product-card-desc" id="card-desc-item-33">Greyish brown/taupe short kurta with applique cut-out mesh flower details and matching wide-leg pants.</p>
                     <div class="price-container">
-                        <span class="price-current">₹2,499</span>
-                        <span class="price-original">₹3,499</span>
-                        <span class="price-discount">28% OFF</span>
+                        <span class="price-current" id="price-current-33">₹2,499</span>
+                        <span class="price-original" id="price-original-33">₹3,499</span>
+                        <span class="price-discount" id="price-discount-33">28% OFF</span>
                     </div>
-                    <a href="https://wa.me/919033310101?text=Hi%20Label%20Harsha%2C%20I%20am%20interested%20in%20inquiring%20about%20the%20'Royal%20Jaipur%20Tassel%20Kurti%20Set%20(LH-1033)'.%20Could%20you%20please%20share%20more%20details%3F" target="_blank" class="btn-whatsapp">
-                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.729-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.493 5.351 1.494 5.544 0 10.057-4.512 10.06-10.062a10.02 10.02 0 0 0-2.955-7.118 10.02 10.02 0 0 0-7.114-2.954C6.386 2.514 1.874 7.026 1.87 12.578c-.002 2.037.509 3.69 1.497 5.362l-.986 3.604 3.698-.97c.003 0 .003 0 0 0z" />
-                        </svg>
-                        Inquire on WhatsApp
+                    <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the 'Taupe Mesh Applique Set (LH-33)'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                        <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon">
+                        <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
                     </a>
                 </div>
             </div>

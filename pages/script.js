@@ -43,7 +43,7 @@ themeBtn.addEventListener("click", () => {
 });
 
 // Menu dynamic category filter, direct reference in html code.
-function filterMenu(category, btnElement) {
+function filterCatalog(category, btnElement) {
     // Remove active classes from all filter buttons
     const buttons = document.querySelectorAll(".filter-btn");
     buttons.forEach(btn => btn.classList.remove("active"));
@@ -52,7 +52,7 @@ function filterMenu(category, btnElement) {
     if (btnElement) btnElement.classList.add("active");
 
     // Toggle element card visibility based on data attributes
-    const cards = document.querySelectorAll(".menu-card");
+    const cards = document.querySelectorAll(".product-card");
     cards.forEach(card => {
         const cardCategory = card.getAttribute("data-category");
         card.style.opacity = "0";

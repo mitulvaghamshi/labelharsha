@@ -447,14 +447,14 @@ header.hero-section::before {
 }
 
 /* Unlimited Showcase Feature Card styling */
-.thali-showcase-section {
+.showcase-section {
     background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     position: relative;
 }
 
-.thali-container {
+.showcase-container {
     max-width: 950px;
     margin: 0 auto;
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 20, 147, 0.04) 100%);
@@ -467,7 +467,7 @@ header.hero-section::before {
     overflow: hidden;
 }
 
-.thali-container::before {
+.showcase-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -477,7 +477,7 @@ header.hero-section::before {
     background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
 }
 
-.thali-badge {
+.showcase-badge {
     background-color: var(--accent);
     color: var(--black-bg);
     font-weight: 800;
@@ -492,7 +492,7 @@ header.hero-section::before {
     font-family: var(--font-alt);
 }
 
-.thali-title {
+.showcase-title {
     font-family: var(--font-display);
     font-size: 3.2rem;
     color: var(--primary);
@@ -501,7 +501,7 @@ header.hero-section::before {
     line-height: 1.2;
 }
 
-.thali-price {
+.showcase-discount {
     font-family: var(--font-display);
     font-size: 4rem;
     color: var(--accent);
@@ -513,14 +513,14 @@ header.hero-section::before {
     gap: 8px;
 }
 
-.thali-price span.small {
+.showcase-discount span.small {
     font-size: 1.6rem;
     color: var(--text-muted);
     font-weight: 600;
     font-family: var(--font-body);
 }
 
-.thali-desc {
+.showcase-desc {
     font-size: 1.15rem;
     color: var(--text-secondary);
     max-width: 750px;
@@ -528,7 +528,7 @@ header.hero-section::before {
     line-height: 1.8;
 }
 
-.thali-promo-grid {
+.showcase-promo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -564,7 +564,7 @@ header.hero-section::before {
     line-height: 1.6;
 }
 
-.wait-notice {
+.showcase-notice {
     background-color: rgba(255, 184, 28, 0.08);
     border: 1px solid var(--gold-glow);
     padding: 14px 28px;
@@ -578,7 +578,7 @@ header.hero-section::before {
 }
 
 /* Category Filter Buttons */
-.menu-filters {
+.catalog-filters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -609,19 +609,19 @@ header.hero-section::before {
 }
 
 /* Product Cards Grid layout */
-.menu-grid {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 35px;
 }
 
-.menu-grid-wide {
+.product-grid-wide {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
     gap: 35px;
 }
 
-.menu-card {
+.product-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -632,13 +632,13 @@ header.hero-section::before {
     height: 100%;
 }
 
-.menu-card:hover {
+.product-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
     box-shadow: 0 15px 35px rgba(255, 20, 147, 0.15);
 }
 
-.menu-card-img {
+.product-card-img {
     /* height: 380px; */
     /* Tall clothing display layout */
     width: 100%;
@@ -647,18 +647,18 @@ header.hero-section::before {
     overflow: hidden;
 }
 
-.menu-card-img img {
+.product-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.menu-card:hover .menu-card-img img {
+.product-card:hover .product-card-img img {
     transform: scale(1.08);
 }
 
-.menu-card-badge {
+.product-card-badge {
     position: absolute;
     top: 18px;
     right: 18px;
@@ -675,7 +675,7 @@ header.hero-section::before {
     font-family: var(--font-alt);
 }
 
-.menu-card-details {
+.product-card-details {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -683,7 +683,7 @@ header.hero-section::before {
     flex-grow: 1;
 }
 
-.menu-card-num {
+.product-card-id {
     font-family: var(--font-alt);
     font-size: 0.9rem;
     color: var(--primary);
@@ -691,7 +691,7 @@ header.hero-section::before {
     letter-spacing: 1px;
 }
 
-.menu-card-title {
+.product-card-title {
     font-family: var(--font-display);
     font-size: 1.5rem;
     color: var(--text-primary);
@@ -700,7 +700,7 @@ header.hero-section::before {
     line-height: 1.3;
 }
 
-.menu-card-eng {
+.product-card-material {
     font-size: 0.85rem;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -710,7 +710,7 @@ header.hero-section::before {
     font-weight: 700;
 }
 
-.menu-card-desc {
+.product-card-desc {
     font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.6;
@@ -1052,19 +1052,19 @@ footer.site-footer .footer-logo {
         font-size: 1.1rem;
     }
 
-    .thali-container {
+    .showcase-container {
         padding: 40px 25px;
     }
 
-    .thali-title {
+    .showcase-title {
         font-size: 2.2rem;
     }
 
-    .thali-price {
+    .showcase-discount {
         font-size: 3rem;
     }
 
-    .thali-promo-grid {
+    .showcase-promo-grid {
         grid-template-columns: 1fr;
     }
 
