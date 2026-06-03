@@ -1,16 +1,12 @@
-# Label Harsha
+<h1 align="center">Label Harsha</h1>
+
+<div align="center">
 
 [![logo](pages/icons/icon-512.webp)](https://mitulvaghamshi.github.io/labelharsha/ "Click to visit")
 
-Exquisite readymade ethnic and fusion wear for the modern woman. Premium custom-fit kurtis, luxury Sarees, designer Gowns, and chic Tunicst
+</div>
 
-<style>
-    img[src^="pages/items/item"] {
-        width: 30%;
-        height: auto;
-        border-radius: 12px;
-    }
-</style>
+<p align="center">Exquisite readymade ethnic and fusion wear for the modern woman. Premium custom-fit kurtis, luxury Sarees, designer Gowns, and chic Tunicst</p>
 
 # Product Catalog
 
