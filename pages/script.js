@@ -96,8 +96,7 @@ function populateCatalog() {
                     <span class="price-discount" id="price-discount-${item.id}">${item.priceDiscount} Off</span>
                 </div>
                 <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the '${item.product} (LH-${item.id})'. Could you please share more details." target="_blank" class="btn-whatsapp">
-                    <img src="icons/wp.svg" alt="WhatsApp" width="28px" height="28px" class="btn-whatsapp-icon" loading="lazy">
-                    <span id="btn-whatsapp-text">Inquire on WhatsApp</span>
+                    <img src="icons/whatsapp.svg" alt="WhatsApp" class="btn-whatsapp-icon" loading="lazy">
                 </a>
             </div>
         </div>`;
@@ -285,15 +284,15 @@ const data = [
     {
         "id": "13",
         "productId": "LH",
-        "badge": "Showstopper",
+        "badge": "Best Seller",
         "image": "item13.webp",
-        "product": "Sage Green Embroidered Set",
-        "material": "Textured Khadi Cotton",
-        "category": "kurtas",
+        "product": "Taupe Mesh Applique Set",
+        "material": "Cotton Linen Blend",
+        "category": "tunics",
         "priceCurrent": "0",
         "priceOriginal": "0",
         "priceDiscount": "0",
-        "description": "Sophisticated sage green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
+        "description": "Greyish brown/taupe short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
     {
         "id": "14",
@@ -542,17 +541,4 @@ const data = [
         "priceDiscount": "0",
         "description": "Rose pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
     },
-    {
-        "id": "33",
-        "productId": "LH",
-        "badge": "Best Seller",
-        "image": "item33.webp",
-        "product": "Taupe Mesh Applique Set",
-        "material": "Cotton Linen Blend",
-        "category": "tunics",
-        "priceCurrent": "0",
-        "priceOriginal": "0",
-        "priceDiscount": "0",
-        "description": "Greyish brown/taupe short kurta with applique cut-out mesh flower details and matching wide-leg pants."
-    }
 ];

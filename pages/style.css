@@ -192,7 +192,7 @@ header.hero-section {
     position: relative;
     height: 95vh;
     min-height: 650px;
-    background: url('imgs/img0.webp') no-repeat center center / cover;
+    background: url('icons/header.webp') no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -767,22 +767,14 @@ header.hero-section::before {
 /* WhatsApp Inquire Button */
 .btn-whatsapp {
     background-color: #25d366;
-    color: #ffffff;
     border: none;
     border-radius: 30px;
     padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-flex;
     align-items: center;
+    display: inline-flex;
     justify-content: center;
-    gap: 8px;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
-    font-family: var(--font-alt);
     transition: all 0.25s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 .btn-whatsapp:hover {
@@ -792,7 +784,6 @@ header.hero-section::before {
 }
 
 .btn-whatsapp img {
-    width: 24px;
     height: 24px;
 }
 
