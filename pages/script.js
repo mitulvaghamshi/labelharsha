@@ -73,38 +73,31 @@ function filterCatalog(category, btnElement) {
 }
 
 // Populate catalog from JSON data
-function populateCatalog() {
-    const containerTall = document.getElementById("product-card-container");
-    const containerWide = document.getElementById("product-card-container-wide");
-    containerTall.innerHTML = "";
-    containerWide.innerHTML = "";
-    data.forEach(item => {
-        const cardsHtml = `
-        <div class="product-card fade-in-card" id="product-card-${item.id}" data-category="${item.category}">
-            <div class="product-card-img" id="product-card-img-${item.id}">
-                <img src="items/${item.image}" alt="${item.product}" loading="lazy">
-                <span class="product-card-badge" id="badge-item-${item.id}">${item.badge}</span>
+function populateCatalog(tag, start, end) {
+    const section = document.getElementById(`product-card-container-${tag}`);
+    section.innerHTML = "";
+    data.slice(start, end).forEach(item => {
+        section.innerHTML += `
+        <div class="product-card fade-in-card" data-category="${item.category}">
+            <div class="product-card-img">
+                <img src="items/${item.image}" alt="${item.product} (${item.productId})" loading="lazy">
+                <span class="product-card-badge">${item.badge}</span>
             </div>
             <div class="product-card-details">
-                <span class="product-card-id" id="product-card-id-${item.id}">#${item.id}</span>
-                <h3 class="product-card-title" id="card-title-item-${item.id}">${item.product}</h3>
-                <span class="product-card-material" id="card-material-item-${item.id}">${item.material}</span>
-                <p class="product-card-desc" id="card-desc-item-${item.id}">${item.description}</p>
+                <span class="product-card-id">#${item.productId}</span>
+                <h3 class="product-card-title">${item.product}</h3>
+                <span class="product-card-material">${item.material}</span>
+                <p class="product-card-desc">${item.description}</p>
                 <div class="price-container">
-                    <span class="price-current" id="price-current-${item.id}">₹${item.priceCurrent}</span>
-                    <span class="price-original" id="price-original-${item.id}">₹${item.priceOriginal}</span>
-                    <span class="price-discount" id="price-discount-${item.id}">${item.priceDiscount} Off</span>
+                    <span class="price-current">₹${item.priceCurrent}</span>
+                    <span class="price-original">₹${item.priceOriginal}</span>
+                    <span class="price-discount">${item.priceDiscount} OFF</span>
                 </div>
-                <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the '${item.product} (LH-${item.id})'. Could you please share more details." target="_blank" class="btn-whatsapp">
-                    <img src="icons/whatsapp.svg" alt="WhatsApp" class="btn-whatsapp-icon" loading="lazy">
+                <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the '${item.product} (${item.productId})'. Could you please share more details." target="_blank" class="btn-whatsapp">
+                    <img src="icons/whatsapp.svg" alt="WhatsApp">
                 </a>
             </div>
         </div>`;
-        if (item.id <= 12) {
-            containerTall.innerHTML += cardsHtml;
-        } else {
-            containerWide.innerHTML += cardsHtml;
-        }
     });
 }
 
@@ -121,13 +114,14 @@ window.addEventListener("scroll", () => {
 // Init on page load
 window.addEventListener("DOMContentLoaded", () => {
     initTheme();
-    populateCatalog();
+    populateCatalog("tall", 0, 12);
+    populateCatalog("wide", 13, data.length)
 });
 
 const data = [
     {
         "id": "1",
-        "productId": "LH",
+        "productId": "LH0001/ALL",
         "badge": "Best Seller",
         "image": "item1.webp",
         "product": "Terracotta Slit Tassel Kurta",
@@ -140,7 +134,7 @@ const data = [
     },
     {
         "id": "2",
-        "productId": "LH",
+        "productId": "LH0002/ALL",
         "badge": "New Arrival",
         "image": "item2.webp",
         "product": "Indigo Leaf Printed Kurta",
@@ -153,7 +147,7 @@ const data = [
     },
     {
         "id": "3",
-        "productId": "LH",
+        "productId": "LH0003/ALL",
         "badge": "Signature",
         "image": "item3.webp",
         "product": "Charcoal Floral Contrast Kurta",
@@ -166,7 +160,7 @@ const data = [
     },
     {
         "id": "4",
-        "productId": "LH",
+        "productId": "LH0004/ALL",
         "badge": "Trending",
         "image": "item4.webp",
         "product": "Magenta Kaftan Dress",
@@ -179,7 +173,7 @@ const data = [
     },
     {
         "id": "5",
-        "productId": "LH",
+        "productId": "LH0005/ALL",
         "badge": "Pure Fabric",
         "image": "item5.webp",
         "product": "Pastel Blue Peplum Set",
@@ -192,7 +186,7 @@ const data = [
     },
     {
         "id": "6",
-        "productId": "LH",
+        "productId": "LH0006/ALL",
         "badge": "Classic Fit",
         "image": "item6.webp",
         "product": "Fuchsia Kutch Embroidered Set",
@@ -205,7 +199,7 @@ const data = [
     },
     {
         "id": "7",
-        "productId": "LH",
+        "productId": "LH0007/ALL",
         "badge": "Vibrant Block",
         "image": "item7.webp",
         "product": "Cream Mauve Ombre Set",
@@ -218,7 +212,7 @@ const data = [
     },
     {
         "id": "8",
-        "productId": "LH",
+        "productId": "LH0008/ALL",
         "badge": "Royal Fit",
         "image": "item8.webp",
         "product": "Sand Linen Co-ord Set",
@@ -231,7 +225,7 @@ const data = [
     },
     {
         "id": "9",
-        "productId": "LH",
+        "productId": "LH0009/ALL",
         "badge": "Designer Draped",
         "image": "item9.webp",
         "product": "Lilac Scalloped Kurta Set",
@@ -244,7 +238,7 @@ const data = [
     },
     {
         "id": "10",
-        "productId": "LH",
+        "productId": "LH00010/ALL",
         "badge": "Premium Couture",
         "image": "item10.webp",
         "product": "Taupe Floral Embroidered Set",
@@ -257,7 +251,7 @@ const data = [
     },
     {
         "id": "11",
-        "productId": "LH",
+        "productId": "LH00011/ALL",
         "badge": "Tiered Anarkali",
         "image": "item11.webp",
         "product": "Mustard Lotus High-Low Set",
@@ -270,7 +264,7 @@ const data = [
     },
     {
         "id": "12",
-        "productId": "LH",
+        "productId": "LH00012/ALL",
         "badge": "Showstopper",
         "image": "item12.webp",
         "product": "Wine Kalamkari Kurta Set",
@@ -283,7 +277,7 @@ const data = [
     },
     {
         "id": "13",
-        "productId": "LH",
+        "productId": "LH00013/ALL",
         "badge": "Best Seller",
         "image": "item13.webp",
         "product": "Taupe Mesh Applique Set",
@@ -296,7 +290,7 @@ const data = [
     },
     {
         "id": "14",
-        "productId": "LH",
+        "productId": "LH00014/ALL",
         "badge": "Best Seller",
         "image": "item14.webp",
         "product": "Slate Grey V-Neck Set",
@@ -309,7 +303,7 @@ const data = [
     },
     {
         "id": "15",
-        "productId": "LH",
+        "productId": "LH00015/ALL",
         "badge": "Best Seller",
         "image": "item15.webp",
         "product": "Teal Blue V-Neck Set",
@@ -322,7 +316,7 @@ const data = [
     },
     {
         "id": "16",
-        "productId": "LH",
+        "productId": "LH00016/ALL",
         "badge": "Best Seller",
         "image": "item16.webp",
         "product": "Mustard Yellow V-Neck Set",
@@ -335,7 +329,7 @@ const data = [
     },
     {
         "id": "17",
-        "productId": "LH",
+        "productId": "LH00017/ALL",
         "badge": "Best Seller",
         "image": "item17.webp",
         "product": "Rust Orange V-Neck Set",
@@ -348,7 +342,7 @@ const data = [
     },
     {
         "id": "18",
-        "productId": "LH",
+        "productId": "LH00018/ALL",
         "badge": "Best Seller",
         "image": "item18.webp",
         "product": "Deep Teal Silk Kurta Set",
@@ -361,7 +355,7 @@ const data = [
     },
     {
         "id": "19",
-        "productId": "LH",
+        "productId": "LH00019/ALL",
         "badge": "Best Seller",
         "image": "item19.webp",
         "product": "Magenta Silk Kurta Set",
@@ -374,7 +368,7 @@ const data = [
     },
     {
         "id": "20",
-        "productId": "LH",
+        "productId": "LH00020/ALL",
         "badge": "Best Seller",
         "image": "item20.webp",
         "product": "Deep Plum Silk Kurta Set",
@@ -387,7 +381,7 @@ const data = [
     },
     {
         "id": "21",
-        "productId": "LH",
+        "productId": "LH00021/ALL",
         "badge": "Best Seller",
         "image": "item21.webp",
         "product": "Metallic Copper Kurta Set",
@@ -400,7 +394,7 @@ const data = [
     },
     {
         "id": "22",
-        "productId": "LH",
+        "productId": "LH00022/ALL",
         "badge": "Best Seller",
         "image": "item22.webp",
         "product": "Ivory Sleeveless Sharara Set",
@@ -413,7 +407,7 @@ const data = [
     },
     {
         "id": "23",
-        "productId": "LH",
+        "productId": "LH00023/ALL",
         "badge": "Best Seller",
         "image": "item23.webp",
         "product": "Magenta Sleeveless Kurta Set",
@@ -426,7 +420,7 @@ const data = [
     },
     {
         "id": "24",
-        "productId": "LH",
+        "productId": "LH00024/ALL",
         "badge": "Best Seller",
         "image": "item24.webp",
         "product": "Deep Purple Sleeveless Kurta Set",
@@ -439,7 +433,7 @@ const data = [
     },
     {
         "id": "25",
-        "productId": "LH",
+        "productId": "LH00025/ALL",
         "badge": "Best Seller",
         "image": "item25.webp",
         "product": "Burgundy Sleeveless Kurta Set",
@@ -452,7 +446,7 @@ const data = [
     },
     {
         "id": "26",
-        "productId": "LH",
+        "productId": "LH00026/ALL",
         "badge": "Best Seller",
         "image": "item26.webp",
         "product": "Coral Mesh Applique Set",
@@ -465,7 +459,7 @@ const data = [
     },
     {
         "id": "27",
-        "productId": "LH",
+        "productId": "LH00027/ALL",
         "badge": "Best Seller",
         "image": "item27.webp",
         "product": "Yellow Mesh Applique Set",
@@ -478,7 +472,7 @@ const data = [
     },
     {
         "id": "28",
-        "productId": "LH",
+        "productId": "LH00028/ALL",
         "badge": "Best Seller",
         "image": "item28.webp",
         "product": "Lavender Mesh Applique Set",
@@ -491,7 +485,7 @@ const data = [
     },
     {
         "id": "29",
-        "productId": "LH",
+        "productId": "LH00029/ALL",
         "badge": "Best Seller",
         "image": "item29.webp",
         "product": "Onion Pink Embroidered Set",
@@ -504,7 +498,7 @@ const data = [
     },
     {
         "id": "30",
-        "productId": "LH",
+        "productId": "LH00030/ALL",
         "badge": "Best Seller",
         "image": "item30.webp",
         "product": "Mint Green Embroidered Set",
@@ -517,7 +511,7 @@ const data = [
     },
     {
         "id": "31",
-        "productId": "LH",
+        "productId": "LH00031/ALL",
         "badge": "Best Seller",
         "image": "item31.webp",
         "product": "Peach Sleeveless Sharara Set",
@@ -530,7 +524,7 @@ const data = [
     },
     {
         "id": "32",
-        "productId": "LH",
+        "productId": "LH00032/ALL",
         "badge": "Best Seller",
         "image": "item32.webp",
         "product": "Rose Pink Sleeveless Sharara Set",
