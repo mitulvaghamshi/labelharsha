@@ -74,10 +74,6 @@
 </head>
 
 <body>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=https://github.com/mitulvaghamshi/labelharsha/blob/main/README.md">
-    </noscript>
-
     <!-- Top Navigation -->
     <nav class="nav-bar">
         <a href="#" class="nav-logo" id="nav-logo-link">
@@ -475,14 +471,12 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
 
         <div style="height: 35px;"></div>
 
-        <!-- Menu Grid section 2 -->
-        <div class="product-grid-wide" id="product-card-container">
+        <!-- Menu Grid section wide -->
+        <div class="product-grid-wide" id="product-card-container-wide">
             <!-- Item 13 -->
             <div class="product-card fade-in-card" id="product-card-13" data-category="kurtas">
                 <div class="product-card-img">
@@ -965,7 +959,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -1075,7 +1068,13 @@
 
             <!-- Styled Google Map -->
             <div class="map-card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d230.28500395337463!2d72.93832742722132!3d22.55814709015933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1780422532034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Label Harsha Boutique Location Map"></iframe>
+                <noscript>
+                    <h4 id="map-fallback-title">
+                        Your browser doesn't seem to support JavaScript.<br>
+                        <a href="https://www.google.com/maps/place/Label+Harsha/@22.5581707,72.9381538,18z?entry=ttu" target="_blank">Open Google Maps</a>
+                    </h4>
+                </noscript>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d230.28500395337463!2d72.93832742722132!3d22.55814709015933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1780422532034!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Label Harsha Boutique Location Map" title="Label Harsha Boutique Location Map" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" role="img"></iframe>
             </div>
         </div>
     </section>
@@ -1096,8 +1095,8 @@
         </svg>
     </button>
 
-    <!-- Vanilla Javascript Logic for theme switching and filtration -->
-    <script src="script.js"></script>
+    <!-- Vanilla Javascript Logic for theme switching, filtration and catalog population from JSON file -->
+    <script async defer src="script.js"></script>
 </body>
 
 </html>
