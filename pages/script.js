@@ -115,7 +115,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("DOMContentLoaded", () => {
     initTheme();
     populateCatalog("tall", 0, 12);
-    populateCatalog("wide", 13, data.length)
+    populateCatalog("wide", 12, data.length)
 });
 
 const data = [
