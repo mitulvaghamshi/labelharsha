@@ -84,7 +84,7 @@ function populateCatalog(tag, data) {
         if ((+item.priceDiscount) > 0) {
             prices = `
             <span class="price-current">₹${item.priceCurrent}/-</span>
-            <span class="price-original">₹${item.priceOriginal}/-</span>
+            <span class="price-original">₹${(item.priceOriginal * (1 + item.priceDiscount / 100)).toFixed(0)}/-</span>
             <span class="price-discount">${item.priceDiscount} OFF</span>
             `;
         }
@@ -139,7 +139,7 @@ const dataSet1 = [
         "category": "kurtas",
         "priceCurrent": "1100",
         "priceOriginal": "1100",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Elegant sleeveless rust-red kurta featuring a high center slit with patterned blue accents and front tassels."
     },
     {
@@ -152,7 +152,7 @@ const dataSet1 = [
         "category": "kurtas",
         "priceCurrent": "1290",
         "priceOriginal": "1290",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "A striking royal blue long-sleeved kurta adorned with a contrast leaf-and-flower motif on the front."
     },
     {
@@ -165,7 +165,7 @@ const dataSet1 = [
         "category": "kurtas",
         "priceCurrent": "1290",
         "priceOriginal": "1290",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Modern greyish-brown straight kurta featuring contrast black panels and bold printed floral outlines."
     },
     {
@@ -178,7 +178,7 @@ const dataSet1 = [
         "category": "tunics",
         "priceCurrent": "1750",
         "priceOriginal": "1750",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "A luxurious flowy kaftan dress in rich magenta featuring a symmetric ivory white pattern and a relaxed drape."
     },
     {
@@ -191,7 +191,7 @@ const dataSet1 = [
         "category": "tunics",
         "priceCurrent": "1290",
         "priceOriginal": "1290",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sleeveless short peplum style kurti in light blue and lime green print, paired with green leaf patterned pants."
     },
     {
@@ -204,7 +204,7 @@ const dataSet1 = [
         "category": "kurtas",
         "priceCurrent": "1890",
         "priceOriginal": "1890",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Fuchsia/magenta kurta with multi-colored Gujarati embroidery and tassel details, paired with matching trousers."
     },
     {
@@ -217,7 +217,7 @@ const dataSet1 = [
         "category": "gowns",
         "priceCurrent": "1900",
         "priceOriginal": "1900",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Silk/rayon co-ord set with a diagonal ombre/tie-dye print running from cream to mauve/plum, with embroidered details."
     },
     {
@@ -230,7 +230,7 @@ const dataSet1 = [
         "category": "tunics",
         "priceCurrent": "1290",
         "priceOriginal": "1290",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Beige/sand-colored linen co-ord set with a button-down shirt featuring textured, raw-edge square fabric patches."
     },
     {
@@ -243,7 +243,7 @@ const dataSet1 = [
         "category": "sarees",
         "priceCurrent": "1680",
         "priceOriginal": "1680",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Lilac/lavender colored kurti set with a scalloped hem, featuring colorful geometric embroidery and wide-leg pants."
     },
     {
@@ -256,7 +256,7 @@ const dataSet1 = [
         "category": "sarees",
         "priceCurrent": "1370",
         "priceOriginal": "1370",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Grey/taupe mandarin collar linen tunic set with pink and gold floral embroidery around the waist."
     },
     {
@@ -269,7 +269,7 @@ const dataSet1 = [
         "category": "gowns",
         "priceCurrent": "2015",
         "priceOriginal": "2015",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Mustard yellow high-low asymmetric silk/crepe kurta set with olive borders and lotus prints."
     },
     {
@@ -282,7 +282,7 @@ const dataSet1 = [
         "category": "gowns",
         "priceCurrent": "2015",
         "priceOriginal": "2015",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Wine/plum colored silk/satin finish kurta set with hand-painted or printed floral and paisley designs."
     },
 ];
@@ -298,7 +298,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1750",
         "priceOriginal": "1750",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Charcoal grey straight kurta featuring a delicate embroidered V-neckline and floral motifs."
     },
     {
@@ -311,7 +311,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1750",
         "priceOriginal": "1750",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Dusty teal blue straight kurta featuring a delicate embroidered V-neckline and floral motifs."
     },
     {
@@ -324,7 +324,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1750",
         "priceOriginal": "1750",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Bright mustard yellow straight kurta featuring a delicate embroidered V-neckline and floral motifs."
     },
     {
@@ -337,7 +337,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1750",
         "priceOriginal": "1750",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Vibrant rust orange straight kurta featuring a delicate embroidered V-neckline and floral motifs."
     },
 
@@ -351,7 +351,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1390",
         "priceOriginal": "1390",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Deep teal/ocean blue silk/satin kurta with beads on the neckline and floral embroidery near the hem."
     },
     {
@@ -364,7 +364,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1390",
         "priceOriginal": "1390",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Vibrant deep pink/magenta silk/satin kurta with beads on the neckline and floral embroidery near the hem."
     },
     {
@@ -377,7 +377,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1390",
         "priceOriginal": "1390",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Rich dark plum/purple silk/satin kurta with beads on the neckline and floral embroidery near the hem."
     },
     {
@@ -390,7 +390,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1390",
         "priceOriginal": "1390",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sleek copper brown/rust silk/satin kurta with beads on the neckline and floral embroidery near the hem."
     },
 
@@ -404,7 +404,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1050",
         "priceOriginal": "1050",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
     },
     {
@@ -417,7 +417,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1050",
         "priceOriginal": "1050",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
     },
     {
@@ -430,7 +430,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "1050",
         "priceOriginal": "1050",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
     },
 
@@ -444,7 +444,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1470",
         "priceOriginal": "1470",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Mustard yellow short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
     {
@@ -457,7 +457,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1470",
         "priceOriginal": "1470",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Coral peach short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
     {
@@ -470,7 +470,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1470",
         "priceOriginal": "1470",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Light lavender short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
 
@@ -484,7 +484,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "2200",
         "priceOriginal": "2200",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
     },
     {
@@ -497,7 +497,7 @@ const dataSet2 = [
         "category": "kurtas",
         "priceCurrent": "2200",
         "priceOriginal": "2200",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
     },
 
@@ -511,7 +511,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1410",
         "priceOriginal": "1410",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Rose pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
     },
     {
@@ -524,7 +524,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1410",
         "priceOriginal": "1410",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Peach/baby pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
     },
     {
@@ -537,7 +537,7 @@ const dataSet2 = [
         "category": "tunics",
         "priceCurrent": "1410",
         "priceOriginal": "1410",
-        "priceDiscount": "0",
+        "priceDiscount": "10",
         "description": "Ivory white sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
     },
 ];
