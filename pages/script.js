@@ -131,7 +131,7 @@ window.addEventListener("DOMContentLoaded", () => {
 const dataSet1 = [
     {
         "id": "1",
-        "productId": "LH0001/ALL",
+        "productId": "LH01/ALL",
         "badge": "In Stock",
         "image": "item1.webp",
         "product": "Terracotta Slit Tassel Kurta",
@@ -144,7 +144,7 @@ const dataSet1 = [
     },
     {
         "id": "2",
-        "productId": "LH0002/ALL",
+        "productId": "LH02/ALL",
         "badge": "In Stock",
         "image": "item2.webp",
         "product": "Indigo Leaf Printed Kurta",
@@ -157,7 +157,7 @@ const dataSet1 = [
     },
     {
         "id": "3",
-        "productId": "LH0003/ALL",
+        "productId": "LH03/ALL",
         "badge": "In Stock",
         "image": "item3.webp",
         "product": "Charcoal Floral Contrast Kurta",
@@ -170,7 +170,7 @@ const dataSet1 = [
     },
     {
         "id": "4",
-        "productId": "LH0004/ALL",
+        "productId": "LH04/ALL",
         "badge": "In Stock",
         "image": "item4.webp",
         "product": "Magenta Kaftan Dress",
@@ -183,7 +183,7 @@ const dataSet1 = [
     },
     {
         "id": "5",
-        "productId": "LH0005/ALL",
+        "productId": "LH05/ALL",
         "badge": "In Stock",
         "image": "item5.webp",
         "product": "Pastel Blue Peplum Set",
@@ -196,7 +196,7 @@ const dataSet1 = [
     },
     {
         "id": "6",
-        "productId": "LH0006/ALL",
+        "productId": "LH06/ALL",
         "badge": "In Stock",
         "image": "item6.webp",
         "product": "Fuchsia Kutch Embroidered Set",
@@ -209,7 +209,7 @@ const dataSet1 = [
     },
     {
         "id": "7",
-        "productId": "LH0007/ALL",
+        "productId": "LH07/ALL",
         "badge": "In Stock",
         "image": "item7.webp",
         "product": "Cream Mauve Ombre Set",
@@ -222,7 +222,7 @@ const dataSet1 = [
     },
     {
         "id": "8",
-        "productId": "LH0008/ALL",
+        "productId": "LH08/ALL",
         "badge": "In Stock",
         "image": "item8.webp",
         "product": "Sand Linen Co-ord Set",
@@ -235,7 +235,7 @@ const dataSet1 = [
     },
     {
         "id": "9",
-        "productId": "LH0009/ALL",
+        "productId": "LH09/ALL",
         "badge": "In Stock",
         "image": "item9.webp",
         "product": "Lilac Scalloped Kurta Set",
@@ -248,7 +248,7 @@ const dataSet1 = [
     },
     {
         "id": "10",
-        "productId": "LH00010/ALL",
+        "productId": "LH010/ALL",
         "badge": "In Stock",
         "image": "item10.webp",
         "product": "Taupe Floral Embroidered Set",
@@ -261,7 +261,7 @@ const dataSet1 = [
     },
     {
         "id": "11",
-        "productId": "LH00011/ALL",
+        "productId": "LH011/ALL",
         "badge": "In Stock",
         "image": "item11.webp",
         "product": "Mustard Lotus High-Low Set",
@@ -274,7 +274,7 @@ const dataSet1 = [
     },
     {
         "id": "12",
-        "productId": "LH00012/ALL",
+        "productId": "LH012/ALL",
         "badge": "In Stock",
         "image": "item12.webp",
         "product": "Wine Kalamkari Kurta Set",
@@ -290,7 +290,7 @@ const dataSet1 = [
 const dataSet2 = [
     {
         "id": "1-1",
-        "productId": "LH00014/ALL",
+        "productId": "LH01-1/ALL",
         "badge": "In Stock",
         "image": "item14.webp",
         "product": "Slate Grey V-Neck Set",
@@ -303,7 +303,7 @@ const dataSet2 = [
     },
     {
         "id": "1-2",
-        "productId": "LH00015/ALL",
+        "productId": "LH01-2/ALL",
         "badge": "In Stock",
         "image": "item15.webp",
         "product": "Teal Blue V-Neck Set",
@@ -316,7 +316,7 @@ const dataSet2 = [
     },
     {
         "id": "1-3",
-        "productId": "LH00016/ALL",
+        "productId": "LH01-3/ALL",
         "badge": "In Stock",
         "image": "item16.webp",
         "product": "Mustard Yellow V-Neck Set",
@@ -329,7 +329,7 @@ const dataSet2 = [
     },
     {
         "id": "1-4",
-        "productId": "LH00017/ALL",
+        "productId": "LH01-4/ALL",
         "badge": "In Stock",
         "image": "item17.webp",
         "product": "Rust Orange V-Neck Set",
@@ -343,7 +343,7 @@ const dataSet2 = [
 
     {
         "id": "2-1",
-        "productId": "LH00018/ALL",
+        "productId": "LH02-1/ALL",
         "badge": "In Stock",
         "image": "item18.webp",
         "product": "Deep Teal Silk Kurta Set",
@@ -356,7 +356,7 @@ const dataSet2 = [
     },
     {
         "id": "2-2",
-        "productId": "LH00019/ALL",
+        "productId": "LH02-2/ALL",
         "badge": "In Stock",
         "image": "item19.webp",
         "product": "Magenta Silk Kurta Set",
@@ -369,7 +369,7 @@ const dataSet2 = [
     },
     {
         "id": "2-3",
-        "productId": "LH00020/ALL",
+        "productId": "LH02-3/ALL",
         "badge": "In Stock",
         "image": "item20.webp",
         "product": "Deep Plum Silk Kurta Set",
@@ -382,7 +382,7 @@ const dataSet2 = [
     },
     {
         "id": "2-4",
-        "productId": "LH00021/ALL",
+        "productId": "LH02-4/ALL",
         "badge": "In Stock",
         "image": "item21.webp",
         "product": "Metallic Copper Kurta Set",
@@ -395,48 +395,21 @@ const dataSet2 = [
     },
 
     {
-        "id": "3-1",
-        "productId": "LH00023/ALL",
-        "badge": "In Stock",
-        "image": "item23.webp",
-        "product": "Magenta Sleeveless Kurta Set",
-        "material": "Soft Art Rayon",
-        "category": "kurtas",
-        "priceCurrent": "1050",
-        "priceOriginal": "1050",
-        "priceDiscount": "10",
-        "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
-    },
-    {
-        "id": "3-2",
-        "productId": "LH00024/ALL",
-        "badge": "In Stock",
-        "image": "item24.webp",
-        "product": "Deep Purple Sleeveless Kurta Set",
-        "material": "Soft Art Rayon",
-        "category": "kurtas",
-        "priceCurrent": "1050",
-        "priceOriginal": "1050",
-        "priceDiscount": "10",
-        "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
-    },
-    {
-        "id": "3-3",
-        "productId": "LH00025/ALL",
-        "badge": "In Stock",
-        "image": "item25.webp",
-        "product": "Burgundy Sleeveless Kurta Set",
-        "material": "Soft Art Rayon",
-        "category": "kurtas",
-        "priceCurrent": "1050",
-        "priceOriginal": "1050",
-        "priceDiscount": "10",
-        "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
-    },
-
-    {
         "id": "4-1",
-        "productId": "LH00027/ALL",
+        "productId": "LH04-1/ALL",
+        "badge": "In Stock",
+        "image": "item13.webp",
+        "product": "Taupe Mesh Applique Set",
+        "material": "Cotton Linen Blend",
+        "category": "tunics",
+        "priceCurrent": "1470",
+        "priceOriginal": "1470",
+        "priceDiscount": "10",
+        "description": "Tunics, Greyish brown/taupe short kurta with applique cut-out mesh flower details and matching wide-leg pants."
+    },
+    {
+        "id": "4-2",
+        "productId": "LH04-2/ALL",
         "badge": "In Stock",
         "image": "item27.webp",
         "product": "Yellow Mesh Applique Set",
@@ -448,8 +421,8 @@ const dataSet2 = [
         "description": "Mustard yellow short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
     {
-        "id": "4-2",
-        "productId": "LH00026/ALL",
+        "id": "4-3",
+        "productId": "LH04-3/ALL",
         "badge": "In Stock",
         "image": "item26.webp",
         "product": "Coral Mesh Applique Set",
@@ -461,8 +434,8 @@ const dataSet2 = [
         "description": "Coral peach short kurta with applique cut-out mesh flower details and matching wide-leg pants."
     },
     {
-        "id": "4-3",
-        "productId": "LH00028/ALL",
+        "id": "4-4",
+        "productId": "LH04-4/ALL",
         "badge": "In Stock",
         "image": "item28.webp",
         "product": "Lavender Mesh Applique Set",
@@ -475,35 +448,48 @@ const dataSet2 = [
     },
 
     {
-        "id": "5-1",
-        "productId": "LH00029/ALL",
+        "id": "3-1",
+        "productId": "LH03-1/ALL",
         "badge": "In Stock",
-        "image": "item29.webp",
-        "product": "Onion Pink Embroidered Set",
-        "material": "Textured Khadi Cotton",
+        "image": "item23.webp",
+        "product": "Magenta Sleeveless Kurta Set",
+        "material": "Soft Art Rayon",
         "category": "kurtas",
-        "priceCurrent": "2200",
-        "priceOriginal": "2200",
+        "priceCurrent": "1050",
+        "priceOriginal": "1050",
         "priceDiscount": "10",
-        "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
+        "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
     },
     {
-        "id": "5-2",
-        "productId": "LH00030/ALL",
+        "id": "3-2",
+        "productId": "LH03-2/ALL",
         "badge": "In Stock",
-        "image": "item30.webp",
-        "product": "Mint Green Embroidered Set",
-        "material": "Textured Khadi Cotton",
+        "image": "item24.webp",
+        "product": "Deep Purple Sleeveless Kurta Set",
+        "material": "Soft Art Rayon",
         "category": "kurtas",
-        "priceCurrent": "2200",
-        "priceOriginal": "2200",
+        "priceCurrent": "1050",
+        "priceOriginal": "1050",
         "priceDiscount": "10",
-        "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
+        "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
+    },
+    {
+        "id": "3-3",
+        "productId": "LH03-3/ALL",
+        "badge": "In Stock",
+        "image": "item25.webp",
+        "product": "Burgundy Sleeveless Kurta Set",
+        "material": "Soft Art Rayon",
+        "category": "kurtas",
+        "priceCurrent": "1050",
+        "priceOriginal": "1050",
+        "priceDiscount": "10",
+        "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
     },
 
     {
         "id": "6-1",
-        "productId": "LH00032/ALL",
+        "productId": "LH06-1/ALL",
         "badge": "In Stock",
         "image": "item32.webp",
         "product": "Rose Pink Sleeveless Sharara Set",
@@ -516,7 +502,7 @@ const dataSet2 = [
     },
     {
         "id": "6-2",
-        "productId": "LH00031/ALL",
+        "productId": "LH06-2/ALL",
         "badge": "In Stock",
         "image": "item31.webp",
         "product": "Peach Sleeveless Sharara Set",
@@ -529,7 +515,7 @@ const dataSet2 = [
     },
     {
         "id": "6-3",
-        "productId": "LH00022/ALL",
+        "productId": "LH06-3/ALL",
         "badge": "In Stock",
         "image": "item22.webp",
         "product": "Ivory Sleeveless Sharara Set",
@@ -539,5 +525,32 @@ const dataSet2 = [
         "priceOriginal": "1410",
         "priceDiscount": "10",
         "description": "Ivory white sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
+    },
+
+    {
+        "id": "5-1",
+        "productId": "LH05-1/ALL",
+        "badge": "In Stock",
+        "image": "item29.webp",
+        "product": "Onion Pink Embroidered Set",
+        "material": "Textured Khadi Cotton",
+        "category": "kurtas",
+        "priceCurrent": "2200",
+        "priceOriginal": "2200",
+        "priceDiscount": "10",
+        "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
+    },
+    {
+        "id": "5-2",
+        "productId": "LH05-2/ALL",
+        "badge": "In Stock",
+        "image": "item30.webp",
+        "product": "Mint Green Embroidered Set",
+        "material": "Textured Khadi Cotton",
+        "category": "kurtas",
+        "priceCurrent": "2200",
+        "priceOriginal": "2200",
+        "priceDiscount": "10",
+        "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
     },
 ];
