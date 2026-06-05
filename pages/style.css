@@ -691,6 +691,10 @@ header.hero-section::before {
     font-family: var(--font-alt);
 }
 
+.product-card-badge-oos {
+    background: var(--text-muted);
+}
+
 .product-card-details {
     padding: 30px;
     display: flex;
