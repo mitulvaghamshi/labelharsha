@@ -701,15 +701,9 @@ Inventory.Product = ((root) => {
     }
 
     return {
-        catalog1: () => {
-            populateCatalog("tall", dataSet1);
-        },
-        catalog2: () => {
-            populateCatalog("wide", dataSet2);
-        },
-        catalog3: () => {
-            populateCatalog("tall", dataSet3);
-        },
+        catalog1: () => populateCatalog("tall", dataSet1),
+        catalog2: () => populateCatalog("wide", dataSet2),
+        catalog3: () => populateCatalog("tall", dataSet3),
     };
 })(root);
 
