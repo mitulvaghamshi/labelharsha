@@ -2,8 +2,8 @@ const Inventory = {};
 
 const root = document.getElementById("product-container");
 
-Inventory.Product = ((root) => {
-    const dataSet1 = [
+Inventory.Catalog = ((root) => {
+    const d1g1 = [
         {
             "id": "1",
             "tag": "LH01/ALL",
@@ -222,7 +222,7 @@ Inventory.Product = ((root) => {
         },
     ];
 
-    const dataSet2 = [
+    const d2g1 = [
         {
             "id": "1-1",
             "tag": "LH01-1/ALL",
@@ -271,6 +271,9 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Vibrant rust orange straight kurta featuring a delicate embroidered V-neckline and floral motifs."
         },
+    ];
+
+    const d2g2 = [
 
         {
             "id": "2-1",
@@ -320,7 +323,48 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Sleek copper brown/rust silk/satin kurta with beads on the neckline and floral embroidery near the hem."
         },
+    ];
 
+    const d2g3 = [
+        {
+            "id": "3-1",
+            "tag": "LH03-1/ALL",
+            "badge": "In Stock",
+            "image": "item.3.1.webp",
+            "product": "Magenta Sleeveless Kurta Set",
+            "material": "Soft Art Rayon",
+            "category": "kurtas",
+            "price": "1050",
+            "discount": "10",
+            "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
+        },
+        {
+            "id": "3-2",
+            "tag": "LH03-2/ALL",
+            "badge": "In Stock",
+            "image": "item.3.2.webp",
+            "product": "Deep Purple Sleeveless Kurta Set",
+            "material": "Soft Art Rayon",
+            "category": "kurtas",
+            "price": "1050",
+            "discount": "10",
+            "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
+        },
+        {
+            "id": "3-3",
+            "tag": "LH03-3/ALL",
+            "badge": "In Stock",
+            "image": "item.3.3.webp",
+            "product": "Burgundy Sleeveless Kurta Set",
+            "material": "Soft Art Rayon",
+            "category": "kurtas",
+            "price": "1050",
+            "discount": "10",
+            "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
+        },
+    ];
+
+    const d2g4 = [
         {
             "id": "4-1",
             "tag": "LH04-1/ALL",
@@ -369,44 +413,36 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Light lavender short kurta with applique cut-out mesh flower details and matching wide-leg pants."
         },
+    ];
 
+    const d2g5 = [
         {
-            "id": "3-1",
-            "tag": "LH03-1/ALL",
+            "id": "5-1",
+            "tag": "LH05-1/ALL",
             "badge": "In Stock",
-            "image": "item.3.1.webp",
-            "product": "Magenta Sleeveless Kurta Set",
-            "material": "Soft Art Rayon",
+            "image": "item.5.1.webp",
+            "product": "Onion Pink Embroidered Set",
+            "material": "Textured Khadi Cotton",
             "category": "kurtas",
-            "price": "1050",
+            "price": "2200",
             "discount": "10",
-            "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
+            "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
         },
         {
-            "id": "3-2",
-            "tag": "LH03-2/ALL",
+            "id": "5-2",
+            "tag": "LH05-2/ALL",
             "badge": "In Stock",
-            "image": "item.3.2.webp",
-            "product": "Deep Purple Sleeveless Kurta Set",
-            "material": "Soft Art Rayon",
+            "image": "item.5.2.webp",
+            "product": "Mint Green Embroidered Set",
+            "material": "Textured Khadi Cotton",
             "category": "kurtas",
-            "price": "1050",
+            "price": "2200",
             "discount": "10",
-            "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
+            "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
         },
-        {
-            "id": "3-3",
-            "tag": "LH03-3/ALL",
-            "badge": "In Stock",
-            "image": "item.3.3.webp",
-            "product": "Burgundy Sleeveless Kurta Set",
-            "material": "Soft Art Rayon",
-            "category": "kurtas",
-            "price": "1050",
-            "discount": "10",
-            "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
-        },
+    ];
 
+    const d2g6 = [
         {
             "id": "6-1",
             "tag": "LH06-1/ALL",
@@ -443,34 +479,9 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Ivory white sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
         },
-
-        {
-            "id": "5-1",
-            "tag": "LH05-1/ALL",
-            "badge": "In Stock",
-            "image": "item.5.1.webp",
-            "product": "Onion Pink Embroidered Set",
-            "material": "Textured Khadi Cotton",
-            "category": "kurtas",
-            "price": "2200",
-            "discount": "10",
-            "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
-        },
-        {
-            "id": "5-2",
-            "tag": "LH05-2/ALL",
-            "badge": "In Stock",
-            "image": "item.5.2.webp",
-            "product": "Mint Green Embroidered Set",
-            "material": "Textured Khadi Cotton",
-            "category": "kurtas",
-            "price": "2200",
-            "discount": "10",
-            "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
-        },
     ];
 
-    const dataSet3 = [
+    const d3g1 = [
         {
             "id": "7-1",
             "tag": "LH07-1/ALL",
@@ -555,7 +566,9 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Elegant olive-mustard straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
         },
+    ];
 
+    const d3g2 = [
         {
             "id": "8-1",
             "tag": "LH08-1/ALL",
@@ -640,6 +653,9 @@ Inventory.Product = ((root) => {
             "discount": "10",
             "description": "Moss green three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
         },
+    ];
+
+    const d3g3 = [
         {
             "id": "19",
             "tag": "LH019/ALL",
@@ -654,17 +670,44 @@ Inventory.Product = ((root) => {
         },
     ];
 
+    const dataSet = [
+        {
+            "id": "1",
+            "type": "tall",
+            "slider": false,
+            "items": d1g1,
+        },
+        {
+            "id": "2",
+            "type": "wide",
+            "slider": true,
+            "items": [
+                d2g1,
+                d2g2,
+                d2g3,
+                d2g4,
+                d2g5,
+                d2g6,
+            ],
+        },
+        {
+            "id": "3",
+            "type": "tall",
+            "slider": true,
+            "items": [
+                d3g1,
+                d3g2,
+                d3g3,
+            ],
+        },
+    ];
+
     const cf = new Intl.NumberFormat(undefined, {
         style: "currency", currency: "INR"
     });
 
-    // Populate catalog from JSON data
-    function populateCatalog(tag, data) {
-        const itemsContainer = document.createElement("div");
-        itemsContainer.id = `product-card-container-${tag}`;
-        itemsContainer.classList.add(`product-grid-${tag}`);
-
-        data.forEach(item => {
+    function buildItems(data) {
+        return data.map(item => {
             let prices = `<span class="price-current">₹${item.price}/-</span>`;
             if ((+item.discount) > 0) {
                 prices = `
@@ -673,14 +716,12 @@ Inventory.Product = ((root) => {
                 <span class="price-discount">${item.discount} OFF</span>
                 `;
             }
-
             let badgeClass = "product-card-badge";
             if (String(item.badge).toLowerCase().includes("out")) {
                 badgeClass += " product-card-badge-oos";
             }
-
-            itemsContainer.innerHTML += `
-            <div class="product-card fade-in-card" data-category="${item.category}">
+            return `
+            <div class="product-card" data-category="${item.category}">
                 <div class="product-card-img">
                     <img src="items/${item.image}" alt="${item.product} (${item.tag})" loading="lazy">
                 </div>
@@ -696,14 +737,28 @@ Inventory.Product = ((root) => {
                     </a>
                 </div>
             </div>`;
-        });
-        root.appendChild(itemsContainer);
+        }).join("");
     }
 
     return {
-        catalog1: () => populateCatalog("tall", dataSet1),
-        catalog2: () => populateCatalog("wide", dataSet2),
-        catalog3: () => populateCatalog("tall", dataSet3),
+        populate: () => {
+            dataSet.forEach(set => {
+                let content = "";
+                if (set.slider) {
+                    content = set.items.map(group => {
+                        return `<div class="slider"><div class="slides">
+                            ${buildItems(group)}
+                        </div></div>`;
+                    }).join("");
+                } else {
+                    content = buildItems(set.items);
+                }
+                root.innerHTML += `
+                <div id="product-card-container-${set.type}" class="product-grid-${set.type}">
+                    ${content}
+                </div><div style="height: 35px;"></div>`;
+            });
+        },
     };
 })(root);
 
@@ -767,24 +822,20 @@ window.addEventListener("scroll", (_) => {
 window.addEventListener("DOMContentLoaded", (_) => {
     Inventory.Theme.init();
     root.innerHTML = "";
-    Inventory.Product.catalog1();
-    root.innerHTML += `<div style="height: 35px;"></div>`;
-    Inventory.Product.catalog2();
-    root.innerHTML += `<div style="height: 35px;"></div>`;
-    Inventory.Product.catalog3();
+    Inventory.Catalog.populate();
 });
 
 // Theme Toggle Elements
 document.getElementById("theme-toggle").onclick = (_) => Inventory.Theme.handler();
 
 // Menu dynamic category filter, direct reference in html code.
-function filterCatalog(category, btnElement) {
+function filterCatalog(category, button) {
     // Remove active classes from all filter buttons
     const buttons = document.querySelectorAll(".filter-btn");
     buttons.forEach(btn => btn.classList.remove("active"));
 
     // Add active class to clicked button
-    if (btnElement) btnElement.classList.add("active");
+    if (button) button.classList.add("active");
 
     // Toggle element card visibility based on data attributes
     const cards = document.querySelectorAll(".product-card");
