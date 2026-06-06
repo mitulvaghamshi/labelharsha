@@ -470,6 +470,194 @@ Inventory.Product = ((root) => {
         },
     ];
 
+    const dataSet3 = [
+        {
+            "id": "7-1",
+            "tag": "LH07-1/ALL",
+            "badge": "In Stock",
+            "image": "item.7.1.webp",
+            "product": "Olive Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant olive-green straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-2",
+            "tag": "LH07-2/ALL",
+            "badge": "In Stock",
+            "image": "item.7.2.webp",
+            "product": "Wine red Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant wine-red straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-3",
+            "tag": "LH07-3/ALL",
+            "badge": "In Stock",
+            "image": "item.7.3.webp",
+            "product": "Jet Black Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant jet-black straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-4",
+            "tag": "LH07-4/ALL",
+            "badge": "In Stock",
+            "image": "item.7.4.webp",
+            "product": "Midnight Blue Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant midnight-blue straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-5",
+            "tag": "LH07-5/ALL",
+            "badge": "In Stock",
+            "image": "item.7.5.webp",
+            "product": "Deep Plum Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant deep-plum straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-6",
+            "tag": "LH07-6/ALL",
+            "badge": "In Stock",
+            "image": "item.7.6.webp",
+            "product": "Mustard Gold Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant mustard gold straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+        {
+            "id": "7-7",
+            "tag": "LH07-7/ALL",
+            "badge": "In Stock",
+            "image": "item.7.7.webp",
+            "product": "Olive Mustard Embroidered Straight Kurta",
+            "material": "Cotton Blend",
+            "category": "kurtas",
+            "price": "325",
+            "discount": "10",
+            "description": "Elegant olive-mustard straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
+        },
+
+        {
+            "id": "8-1",
+            "tag": "LH08-1/ALL",
+            "badge": "In Stock",
+            "image": "item.8.1.webp",
+            "product": "Purple Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Rich purple three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-2",
+            "tag": "LH08-2/ALL",
+            "badge": "In Stock",
+            "image": "item.8.2.webp",
+            "product": "Dusty Teal Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Dusty teal three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-3",
+            "tag": "LH08-3/ALL",
+            "badge": "In Stock",
+            "image": "item.8.3.webp",
+            "product": "Deep Maroon Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Deep maroon three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-4",
+            "tag": "LH08-4/ALL",
+            "badge": "In Stock",
+            "image": "item.8.4.webp",
+            "product": "Navy Blue Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Navy blue three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-5",
+            "tag": "LH08-5/ALL",
+            "badge": "In Stock",
+            "image": "item.8.5.webp",
+            "product": "Rusty Red Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Rusty red three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-6",
+            "tag": "LH08-6/ALL",
+            "badge": "In Stock",
+            "image": "item.8.6.webp",
+            "product": "Deep Crimson Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Deep crimson three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "8-7",
+            "tag": "LH08-7/ALL",
+            "badge": "In Stock",
+            "image": "item.8.7.webp",
+            "product": "Moss Geen Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "780",
+            "discount": "10",
+            "description": "Moss green three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
+        },
+        {
+            "id": "19",
+            "tag": "LH019/ALL",
+            "badge": "In Stock",
+            "image": "item19.webp",
+            "product": "Indigo Printed Suit Set",
+            "material": "Printed Lawn Cotton",
+            "category": "suits",
+            "price": "1650",
+            "discount": "10",
+            "description": "Stylish indigo-blue printed suit featuring traditional geometric and floral patterns, coordinated palazzo pants, and a matching printed dupatta with tassel accents."
+        },
+    ];
+
+    const cf = new Intl.NumberFormat(undefined, {
+        style: "currency", currency: "INR"
+    });
+
     // Populate catalog from JSON data
     function populateCatalog(tag, data) {
         const itemsContainer = document.createElement("div");
