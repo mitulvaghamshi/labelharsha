@@ -222,6 +222,69 @@ Inventory.Catalog = ((root) => {
         },
     ];
 
+    const d1g2 = [
+        {
+            "id": "19",
+            "tag": "LH019/ALL",
+            "badge": "In Stock",
+            "image": "item19.webp",
+            "product": "Indigo Printed Suit Set",
+            "material": "Printed Lawn Cotton",
+            "category": "suits",
+            "price": "1650",
+            "discount": "10",
+            "description": "Stylish indigo-blue printed suit featuring traditional geometric and floral patterns, coordinated palazzo pants, and a matching printed dupatta with tassel accents."
+        },
+        {
+            "id": "20",
+            "tag": "LH020/ALL",
+            "badge": "In Stock",
+            "image": "item20.webp",
+            "product": "Ivory Tribal Print Kurta Set",
+            "material": "Printed Lawn Cotton",
+            "category": "suits",
+            "price": "1700",
+            "discount": "10",
+            "description": "Elegant ivory kurta set adorned with vibrant tribal-inspired geometric motifs in earthy tones, paired with straight-fit trousers. Features intricate front panel detailing, printed sleeve accents, and a comfortable contemporary silhouette suitable for casual and festive wear."
+        },
+        {
+            "id": "21",
+            "tag": "LH021/ALL",
+            "badge": "In Stock",
+            "image": "item21.webp",
+            "product": "Sky Blue Printed Suit Set",
+            "material": "Printed Lawn Cotton",
+            "category": "suits",
+            "price": "1160",
+            "discount": "10",
+            "description": "Graceful sky-blue printed suit featuring delicate white floral-inspired block motifs, coordinated straight pants, and a matching printed dupatta with decorative border detailing. Designed with a flattering V-neckline and subtle embellishments for an effortlessly elegant look."
+        },
+        {
+            "id": "22",
+            "tag": "LH022/ALL",
+            "badge": "In Stock",
+            "image": "item22.webp",
+            "product": "Olive Geometric Printed Suit Set",
+            "material": "Printed Lawn Cotton",
+            "category": "suits",
+            "price": "2280",
+            "discount": "10",
+            "description": "Contemporary olive-green printed suit showcasing bold geometric and abstract patterns in contrasting navy and earthy tones. Paired with matching trousers and a coordinated printed dupatta, this statement ensemble blends traditional artistry with modern sophistication."
+        },
+        {
+            "id": "23",
+            "tag": "LH023/ALL",
+            "badge": "In Stock",
+            "image": "item23.webp",
+            "product": "Lavender Embellished Co-ord Set",
+            "material": "Chiffon & Crepe",
+            "category": "co-ords",
+            "price": "3100",
+            "discount": "10",
+            "description": "Graceful lavender co-ord set featuring a flowy embellished poncho-style top with delicate embroidery along the neckline and sleeves, paired with wide-leg palazzo pants for an elegant contemporary silhouette."
+        },
+    ];
+
     const d2g1 = [
         {
             "id": "1-1",
@@ -657,16 +720,28 @@ Inventory.Catalog = ((root) => {
 
     const d3g3 = [
         {
-            "id": "19",
-            "tag": "LH019/ALL",
+            "id": "9-1",
+            "tag": "LH09-1/ALL",
             "badge": "In Stock",
-            "image": "item19.webp",
-            "product": "Indigo Printed Suit Set",
-            "material": "Printed Lawn Cotton",
+            "image": "item.9.1.webp",
+            "product": "Plum Peacock Embroidered Suit Set",
+            "material": "Cotton Blend",
             "category": "suits",
-            "price": "1650",
+            "price": "550",
             "discount": "10",
-            "description": "Stylish indigo-blue printed suit featuring traditional geometric and floral patterns, coordinated palazzo pants, and a matching printed dupatta with tassel accents."
+            "description": "Elegant plum-colored straight-cut kurta featuring intricate peacock embroidery on the yoke, paired with matching straight pants. Ideal for festive gatherings and casual ethnic wear."
+        },
+        {
+            "id": "9-2",
+            "tag": "LH09-2/ALL",
+            "badge": "In Stock",
+            "image": "item.9.2.webp",
+            "product": "Teal Heritage Embroidered Suit Set",
+            "material": "Cotton Blend",
+            "category": "suits",
+            "price": "550",
+            "discount": "10",
+            "description": "Sophisticated teal suit set adorned with heritage-inspired embroidery featuring traditional motifs on the yoke, complemented by matching straight-fit pants for a refined ethnic look."
         },
     ];
 
@@ -699,6 +774,12 @@ Inventory.Catalog = ((root) => {
                 d3g2,
                 d3g3,
             ],
+        },
+        {
+            "id": "4",
+            "type": "tall",
+            "slider": false,
+            "items": d1g2,
         },
     ];
 
