@@ -102,6 +102,37 @@ nav.nav-bar {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1100;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Animation for the burger when active */
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .nav-logo {
     display: flex;
     align-items: center;
@@ -1105,6 +1136,14 @@ footer.site-footer .footer-logo {
         grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
         gap: 25px;
     }
+
+    .theme-mode-text {
+        display: none;
+    }
+
+    .toggle-btn {
+        padding: 9px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1128,9 +1167,36 @@ footer.site-footer .footer-logo {
         padding: 0 4%;
     }
 
-    /* Hide Navigation bar on small screens */
+    .hamburger-menu {
+        display: flex;
+        /* Show hamburger on tablets/mobile */
+    }
+
     .nav-links-container {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        /* Hidden by default */
+        width: 320px;
+        height: 100vh;
+        background-color: var(--bg-card);
+        border-left: 1px solid var(--border-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.4s ease-in-out;
+        z-index: 999;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Class added via JS */
+    .nav-links-container.active {
+        left: 0;
+    }
+
+    /* Overlay to dim the rest of the screen when menu is open */
+    .nav-links-container.active~.overlay {
+        display: block;
     }
 }
 
@@ -1175,13 +1241,5 @@ footer.site-footer .footer-logo {
         display: grid;
         grid-template-columns: 1fr;
         gap: 25px;
-    }
-
-    .theme-mode-text {
-        display: none;
-    }
-
-    .toggle-btn {
-        padding: 9px;
     }
 }

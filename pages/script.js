@@ -889,6 +889,25 @@ Inventory.Theme = (() => {
     };
 })();
 
+// Navigation Logic for Mobile Hamburger Menu
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+
+// Toggle menu
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Close menu when a link is clicked (useful for single-page navigation)
+const links = document.querySelectorAll('.nav-link');
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
 // Back to top scroll listener
 window.addEventListener("scroll", (_) => {
     const backToTopBtn = document.getElementById("back-to-top");
@@ -907,7 +926,9 @@ window.addEventListener("DOMContentLoaded", (_) => {
 });
 
 // Theme Toggle Elements
-document.getElementById("theme-toggle").onclick = (_) => Inventory.Theme.handler();
+document.getElementById("theme-toggle").addEventListener('click', (_) => {
+    Inventory.Theme.handler();
+});
 
 // Menu dynamic category filter, direct reference in html code.
 function filterCatalog(category, button) {
