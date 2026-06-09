@@ -58,7 +58,7 @@ html.theme-light {
     --text-primary: var(--text-dark);
     --text-secondary: #3B3147;
     --shadow-color: rgba(255, 20, 147, 0.08);
-    --hero-overlay: rgba(255, 253, 249, 0.85);
+    --hero-overlay: rgba(255, 253, 249, 0.7);
     --price-color: #D30B5D;
 }
 
@@ -736,8 +736,8 @@ header.hero-section::before {
 }
 
 .product-card:hover .product-card-img img {
-    transform: scale(1.09);
-    transition: transform 2.5s
+    transform: scale(1.07);
+    transition: transform 1s
 }
 
 .product-card-badge {
