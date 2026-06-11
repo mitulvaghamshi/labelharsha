@@ -1,0 +1,319 @@
+@import url(https://themes.googleusercontent.com/fonts/css?kit=AqgWgZyVC5DgXLgSRaaJRorNNwalQhNp4h-F6hB2VlWxYEfnvBBHnCj0pjiiBnw6);
+
+:root {
+    color-scheme: dark light;
+}
+
+.doc-content {
+    margin: auto;
+}
+
+table td,
+table th {
+    padding: 0
+}
+
+.c11 {
+    border-right-style: solid;
+    padding: 0pt 7.2pt 0pt 7.2pt;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    vertical-align: middle;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 126pt;
+    border-bottom-style: solid
+}
+
+.c9 {
+    border-right-style: solid;
+    padding: 0pt 7.2pt 0pt 7.2pt;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    vertical-align: middle;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 118.5pt;
+    border-bottom-style: solid
+}
+
+.c21 {
+    border-right-style: solid;
+    padding: 0pt 7.2pt 0pt 7.2pt;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    vertical-align: middle;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 244.5pt;
+    border-bottom-style: solid
+}
+
+.c1 {
+    border-right-style: solid;
+    padding: 0pt 7.2pt 0pt 7.2pt;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    vertical-align: middle;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 218.2pt;
+    border-bottom-style: solid
+}
+
+.c13 {
+    border-right-style: solid;
+    padding: 0pt 7.2pt 0pt 7.2pt;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    vertical-align: middle;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 42.8pt;
+    border-bottom-style: solid
+}
+
+.c8 {
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 17pt;
+    font-family: "Corbel";
+    font-style: normal
+}
+
+.c2 {
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 5pt;
+    font-family: "Corbel";
+    font-style: normal
+}
+
+.c5 {
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Arial";
+    font-style: normal
+}
+
+.c27 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.1291666666666667;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+    height: 11pt
+}
+
+.c17 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 0.85;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+}
+
+.c32 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.1291666666666667;
+    orphans: 2;
+    widows: 2;
+    text-align: center;
+}
+
+.c7 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+}
+
+.c16 {
+    padding-top: 6pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+}
+
+.c10 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c24 {
+    font-size: 14pt;
+    font-family: "Corbel";
+    font-style: italic;
+    font-weight: 400
+}
+
+.c37 {
+    font-weight: 400;
+    font-size: 14pt;
+    font-family: "Arial";
+    font-style: italic
+}
+
+.c15 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    text-align: left;
+    height: 11pt
+}
+
+.c19 {
+    text-decoration: none;
+    vertical-align: baseline;
+    font-style: normal
+}
+
+.c3 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    text-align: center;
+}
+
+.c20 {
+    text-decoration: none;
+    vertical-align: baseline;
+    font-style: normal
+}
+
+.c22 {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: auto
+}
+
+.c25 {
+    font-weight: 700;
+    font-size: 19pt;
+    font-family: "Corbel"
+}
+
+.c30 {
+    font-weight: 700;
+    font-size: 51pt;
+    font-family: "Algerian"
+}
+
+.c28 {
+    font-weight: 400;
+    font-size: 16pt;
+    font-family: "Nirmala UI"
+}
+
+.c23 {
+    font-size: 16pt;
+    font-weight: 700;
+    font-family: "Corbel"
+}
+
+.c36 {
+    font-weight: 400;
+    font-size: 5pt;
+    font-family: "Corbel"
+}
+
+.c14 {
+    font-size: 17pt;
+    font-weight: 400;
+    font-family: "Corbel"
+}
+
+.c26 {
+    font-weight: 400;
+    font-size: 17pt;
+    font-family: "Nirmala UI"
+}
+
+.c18 {
+    font-size: 17pt;
+    font-weight: 700;
+    font-family: "Corbel"
+}
+
+.c31 {
+    font-size: 16pt;
+    font-weight: 700;
+    font-family: "Nirmala UI"
+}
+
+.c4 {
+    font-size: 16pt;
+    font-weight: 700;
+    font-family: "Shruti"
+}
+
+.c35 {
+    max-width: 8.26771654in;
+    max-height: 11.69291339in;
+    padding: 32pt 16pt;
+    border: 1px solid;
+}
+
+.c33 {
+    text-decoration: none;
+    vertical-align: baseline
+}
+
+.c34 {
+    margin-right: -14pt
+}
+
+.c12 {
+    height: 20pt
+}
+
+.c0 {
+    height: 36pt
+}
+
+.c29 {
+    height: 11pt
+}
+
+p {
+    margin: 0;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+h1 {
+    padding-top: 20pt;
+    font-size: 20pt;
+    padding-bottom: 6pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
