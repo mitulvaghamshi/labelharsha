@@ -107,7 +107,7 @@ Inventory.Catalog = ((root) => {
             "image": "item9.webp",
             "product": "Lilac Scalloped Kurta Set",
             "material": "Premium Cotton",
-            "category": "sarees",
+            "category": "kurta",
             "price": "1680",
             "discount": "10",
             "description": "Lilac/lavender colored kurti set with a scalloped hem, featuring colorful geometric embroidery and wide-leg pants."
@@ -119,7 +119,7 @@ Inventory.Catalog = ((root) => {
             "image": "item10.webp",
             "product": "Taupe Floral Embroidered Set",
             "material": "Cotton Linen",
-            "category": "sarees",
+            "category": "kurta",
             "price": "1370",
             "discount": "10",
             "description": "Grey/taupe mandarin collar linen tunic set with pink and gold floral embroidery around the waist."
