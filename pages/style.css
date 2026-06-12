@@ -611,13 +611,16 @@ header.hero-section::before {
 /* Category Filter Buttons */
 .catalog-filters {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex-direction: row;
     gap: 15px;
+    padding: 16px;
     margin-bottom: 60px;
 }
 
 .filter-btn {
+    text-wrap-mode: nowrap;
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
     color: var(--text-primary);
@@ -626,6 +629,7 @@ header.hero-section::before {
     font-size: 0.95rem;
     font-weight: 700;
     cursor: pointer;
+    max-lines: 1;
     font-family: var(--font-alt);
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -666,7 +670,7 @@ header.hero-section::before {
     -webkit-overflow-scrolling: touch;
 }
 
-.slides::-webkit-scrollbar {
+/* .slides::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
@@ -677,7 +681,7 @@ header.hero-section::before {
 
 .slides::-webkit-scrollbar-track {
     background: transparent;
-}
+} */
 
 .slides>div {
     width: 100%;
@@ -1121,6 +1125,23 @@ footer.site-footer .footer-logo {
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--price-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
 }
 
 /* Responsive Tablet/Mobile styling overrides */
