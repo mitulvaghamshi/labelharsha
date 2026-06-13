@@ -189,24 +189,24 @@ Inventory.Catalog = ((root) => {
             "tag": "LH016/ALL",
             "badge": "In Stock",
             "image": "item16.webp",
-            "product": "Sage Floral Kurta Palazzo Set",
-            "material": "Cotton Blend",
-            "category": "kurta + palazzo + dupatta",
-            "price": "1630",
+            "product": "Indigo Block Print Anarkali Kurta Set",
+            "material": "Premium Cotton Blend",
+            "category": "kurta + pants + dupatta",
+            "price": "1570",
             "discount": "10",
-            "description": "Sage green kurta palazzo set featuring large white floral prints with subtle gold accents. Comes with matching palazzo pants and dupatta for an elegant ethnic look."
+            "description": "A stunning navy blue Anarkali kurta featuring intricate block print motifs, a flared silhouette with decorative borders, and a matching dupatta. Crafted from premium cotton for a comfortable ethnic look."
         },
         {
             "id": "17",
             "tag": "LH017/ALL",
             "badge": "In Stock",
             "image": "item17.webp",
-            "product": "Mustard Floral Kurta Palazzo Set",
-            "material": "Cotton Blend",
-            "category": "kurta + palazzo + dupatta",
-            "price": "1630",
+            "product": "Terracotta Floral Embroidery Kurta Set",
+            "material": "Premium Cotton Blend",
+            "category": "kurta + trousers + dupatta",
+            "price": "1160",
             "discount": "10",
-            "description": "Mustard yellow kurta palazzo set adorned with oversized white floral motifs and delicate botanical detailing. Includes matching palazzo pants and lightweight dupatta."
+            "description": "Elegant terracotta-colored kurta featuring white floral embroidery and a matching scalloped-edge dupatta, paired with coordinated straight trousers."
         },
         {
             "id": "18",
@@ -282,30 +282,6 @@ Inventory.Catalog = ((root) => {
             "price": "3100",
             "discount": "10",
             "description": "Graceful lavender co-ord set featuring a flowy embellished poncho-style top with delicate embroidery along the neckline and sleeves, paired with wide-leg palazzo pants for an elegant contemporary silhouette."
-        },
-        {
-            "id": "24",
-            "tag": "LH024/ALL",
-            "badge": "In Stock",
-            "image": "item24.webp",
-            "product": "Indigo Block Print Anarkali Kurta Set",
-            "material": "Premium Cotton Blend",
-            "category": "kurta + pants + dupatta",
-            "price": "1570",
-            "discount": "10",
-            "description": "A stunning navy blue Anarkali kurta featuring intricate block print motifs, a flared silhouette with decorative borders, and a matching dupatta. Crafted from premium cotton for a comfortable ethnic look."
-        },
-        {
-            "id": "25",
-            "tag": "LH025/ALL",
-            "badge": "In Stock",
-            "image": "item25.webp",
-            "product": "Terracotta Floral Embroidery Kurta Set",
-            "material": "Premium Cotton Blend",
-            "category": "kurta + trousers + dupatta",
-            "price": "1160",
-            "discount": "10",
-            "description": "Elegant terracotta-colored kurta featuring white floral embroidery and a matching scalloped-edge dupatta, paired with coordinated straight trousers."
         },
     ];
 
@@ -769,6 +745,33 @@ Inventory.Catalog = ((root) => {
         },
     ];
 
+    const d3g4 = [
+        { //16
+            "id": "10-1",
+            "tag": "LH010-1/ALL",
+            "badge": "In Stock",
+            "image": "item.10.1.webp",
+            "product": "Sage Floral Kurta Palazzo Set",
+            "material": "Cotton Blend",
+            "category": "kurta + palazzo + dupatta",
+            "price": "1630",
+            "discount": "10",
+            "description": "Sage green kurta palazzo set featuring large white floral prints with subtle gold accents. Comes with matching palazzo pants and dupatta for an elegant ethnic look."
+        },
+        { //17
+            "id": "10-2",
+            "tag": "LH010-2/ALL",
+            "badge": "In Stock",
+            "image": "item.10.2.webp",
+            "product": "Mustard Floral Kurta Palazzo Set",
+            "material": "Cotton Blend",
+            "category": "kurta + palazzo + dupatta",
+            "price": "1630",
+            "discount": "10",
+            "description": "Mustard yellow kurta palazzo set adorned with oversized white floral motifs and delicate botanical detailing. Includes matching palazzo pants and lightweight dupatta."
+        },
+    ];
+
     const dataSet = [
         {
             "id": "1",
@@ -797,6 +800,7 @@ Inventory.Catalog = ((root) => {
                 d3g1,
                 d3g2,
                 d3g3,
+                d3g4,
             ],
         },
         {
