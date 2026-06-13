@@ -295,6 +295,18 @@ Inventory.Catalog = ((root) => {
             "discount": "10",
             "description": "A stunning navy blue Anarkali kurta featuring intricate block print motifs, a flared silhouette with decorative borders, and a matching dupatta. Crafted from premium cotton for a comfortable ethnic look."
         },
+        {
+            "id": "25",
+            "tag": "LH025/ALL",
+            "badge": "In Stock",
+            "image": "item25.webp",
+            "product": "Terracotta Floral Embroidery Kurta Set",
+            "material": "Premium Cotton Blend",
+            "category": "kurta + trousers + dupatta",
+            "price": "1160",
+            "discount": "10",
+            "description": "Elegant terracotta-colored kurta featuring white floral embroidery and a matching scalloped-edge dupatta, paired with coordinated straight trousers."
+        },
     ];
 
     const d2g1 = [
