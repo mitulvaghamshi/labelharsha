@@ -684,7 +684,7 @@ header.hero-section::before {
     display: flex;
 }
 
-@keyframes nudgeSlide {
+/* @keyframes nudgeSlide {
     0% {
         transform: translateX(0);
     }
@@ -700,7 +700,7 @@ header.hero-section::before {
 
 .slides:hover .product-card {
     animation: nudgeSlide 1s;
-}
+} */
 
 .product-card:hover {
     border-color: var(--primary);
