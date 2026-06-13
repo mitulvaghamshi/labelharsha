@@ -283,6 +283,18 @@ Inventory.Catalog = ((root) => {
             "discount": "10",
             "description": "Graceful lavender co-ord set featuring a flowy embellished poncho-style top with delicate embroidery along the neckline and sleeves, paired with wide-leg palazzo pants for an elegant contemporary silhouette."
         },
+        {
+            "id": "24",
+            "tag": "LH024/ALL",
+            "badge": "In Stock",
+            "image": "item24.webp",
+            "product": "Indigo Block Print Anarkali Kurta Set",
+            "material": "Premium Cotton Blend",
+            "category": "kurta + pants + dupatta",
+            "price": "1570",
+            "discount": "10",
+            "description": "A stunning navy blue Anarkali kurta featuring intricate block print motifs, a flared silhouette with decorative borders, and a matching dupatta. Crafted from premium cotton for a comfortable ethnic look."
+        },
     ];
 
     const d2g1 = [
