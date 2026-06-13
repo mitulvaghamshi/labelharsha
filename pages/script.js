@@ -220,9 +220,6 @@ Inventory.Catalog = ((root) => {
             "discount": "10",
             "description": "Soft mint green kurta set adorned with delicate pink floral embroidery, scalloped hem detailing, three-quarter sleeves, and tapered matching trousers."
         },
-    ];
-
-    const d1g2 = [
         {
             "id": "19",
             "tag": "LH019/ALL",
@@ -285,6 +282,33 @@ Inventory.Catalog = ((root) => {
         },
     ];
 
+    const d1g2 = [
+        {
+            "id": "10-1",
+            "tag": "LH010-1/ALL",
+            "badge": "In Stock",
+            "image": "item.10.1.webp",
+            "product": "Sage Floral Kurta Palazzo Set",
+            "material": "Cotton Blend",
+            "category": "kurta + palazzo + dupatta",
+            "price": "1630",
+            "discount": "10",
+            "description": "Sage green kurta palazzo set featuring large white floral prints with subtle gold accents. Comes with matching palazzo pants and dupatta for an elegant ethnic look."
+        },
+        {
+            "id": "10-2",
+            "tag": "LH010-2/ALL",
+            "badge": "In Stock",
+            "image": "item.10.2.webp",
+            "product": "Mustard Floral Kurta Palazzo Set",
+            "material": "Cotton Blend",
+            "category": "kurta + palazzo + dupatta",
+            "price": "1630",
+            "discount": "10",
+            "description": "Mustard yellow kurta palazzo set adorned with oversized white floral motifs and delicate botanical detailing. Includes matching palazzo pants and lightweight dupatta."
+        },
+    ];
+
     const d2g1 = [
         {
             "id": "1-1",
@@ -337,7 +361,6 @@ Inventory.Catalog = ((root) => {
     ];
 
     const d2g2 = [
-
         {
             "id": "2-1",
             "tag": "LH02-1/ALL",
@@ -745,42 +768,9 @@ Inventory.Catalog = ((root) => {
         },
     ];
 
-    const d3g4 = [
-        { //16
-            "id": "10-1",
-            "tag": "LH010-1/ALL",
-            "badge": "In Stock",
-            "image": "item.10.1.webp",
-            "product": "Sage Floral Kurta Palazzo Set",
-            "material": "Cotton Blend",
-            "category": "kurta + palazzo + dupatta",
-            "price": "1630",
-            "discount": "10",
-            "description": "Sage green kurta palazzo set featuring large white floral prints with subtle gold accents. Comes with matching palazzo pants and dupatta for an elegant ethnic look."
-        },
-        { //17
-            "id": "10-2",
-            "tag": "LH010-2/ALL",
-            "badge": "In Stock",
-            "image": "item.10.2.webp",
-            "product": "Mustard Floral Kurta Palazzo Set",
-            "material": "Cotton Blend",
-            "category": "kurta + palazzo + dupatta",
-            "price": "1630",
-            "discount": "10",
-            "description": "Mustard yellow kurta palazzo set adorned with oversized white floral motifs and delicate botanical detailing. Includes matching palazzo pants and lightweight dupatta."
-        },
-    ];
-
     const dataSet = [
         {
             "id": "1",
-            "type": "tall",
-            "slider": false,
-            "items": d1g1,
-        },
-        {
-            "id": "2",
             "type": "wide",
             "slider": true,
             "items": [
@@ -793,6 +783,12 @@ Inventory.Catalog = ((root) => {
             ],
         },
         {
+            "id": "2",
+            "type": "tall",
+            "slider": false,
+            "items": d1g1,
+        },
+        {
             "id": "3",
             "type": "tall",
             "slider": true,
@@ -800,96 +796,128 @@ Inventory.Catalog = ((root) => {
                 d3g1,
                 d3g2,
                 d3g3,
-                d3g4,
+                d1g2,
             ],
         },
-        {
-            "id": "4",
-            "type": "tall",
-            "slider": false,
-            "items": d1g2,
-        },
     ];
+
+    // Define which "raw" data categories belong to which "UI" category
+    const categoryMap = {
+        'kurta_set': [
+            'kurta + pants (set)', 'kurta set', 'kurta + trousers (set)',
+            'kurta + trousers', 'kurta + palazzo + dupatta', 'kurta + pants + dupatta',
+            'kurta + palazzo + dupatta', 'kurta + trousers + dupatta', 'silk kurta set',
+            'suit set', 'explicit suit set', 'standard kurta'
+        ],
+        'tunic_kaftan': [
+            'tunic/kaftan', 'co-ord tunic', 'poncho/tunic + palazzo',
+            'tunic + pants', 'short kurti + palazzo + dupatta'
+        ],
+        'co_ord': [
+            'co-ord set/gown style', 'long kurta/gown style', 'tunic + pants (co-ord)'
+        ],
+        'single_kurta': [
+            'single kurta', 'short kurta', 'straight kurta'
+        ],
+        'special': [
+            'silk kurta', 'silk kurta set'
+        ],
+    };
 
     const cf = new Intl.NumberFormat(undefined, {
         style: "currency", currency: "INR"
     });
 
-    function buildItems(data) {
-        return data.map(item => {
-            let prices = `<span class="price-current">₹${item.price}/-</span>`;
-            if ((+item.discount) > 0) {
-                prices = `
-                <span class="price-current">${cf.format(item.price)}/-</span>
-                <span class="price-original">${cf.format(item.price * (1 + item.discount / 100))}</span>
-                <span class="price-discount">${item.discount} OFF</span>
-                `;
-            }
-            let badgeClass = "product-card-badge";
-            if (String(item.badge).toLowerCase().includes("out")) {
-                badgeClass += " product-card-badge-oos";
-            }
-            return `
+    function _buildItems(data, hasMultiple) {
+        return data.map(item => `
             <div class="product-card" data-category="${item.category}">
                 <div class="product-card-img">
                     <img src="items/${item.image}" alt="${item.product} (${item.tag})" loading="lazy">
+                    ${hasMultiple ? `<div class="product-card_nav">
+                        <button class="prev" aria-label="Previous Slide">&#10094;</button>
+                        <button class="next" aria-label="Next Slide">&#10095;</button>
+                    </div>` : ''}
                 </div>
                 <div class="product-card-details">
-                    <span class="${badgeClass}">${item.badge}</span>
+                    <span class="product-card-badge ${String(item.badge).toLowerCase().includes("out") ? `product-card-badge-oos` : ``}">${item.badge}</span>
                     <span class="product-card-id">#${item.tag}</span>
                     <h3 class="product-card-title">${item.product}</h3>
                     <span class="product-card-material">${item.material}</span>
                     <p class="product-card-desc">${item.description}</p>
-                    <div class="price-container">${prices}</div>
+                    <div class="price-container">
+                        <span class="price-current">${cf.format(item.price)}/-</span>
+                        ${(+item.discount) > 0 ? `<span class="price-original">${cf.format(item.price * (1 + item.discount / 100))}</span>
+                        <span class="price-discount">${item.discount} OFF</span>` : ''}
+                    </div>
                     <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the '${item.product} (${item.tag})'. Could you please share more details." target="_blank" class="btn-whatsapp">
                         <img src="icons/whatsapp.svg" alt="WhatsApp">
                     </a>
                 </div>
+            </div>
+        `).join("");
+    }
+
+    function _populate() {
+        dataSet.forEach(set => {
+            root.innerHTML += `<div id="product-card-container-${set.type}" class="product-grid-${set.type}">
+                ${set.slider
+                    ? set.items.map(group => `<div class="slider"><div class="slides">${_buildItems(group, true)}</div></div>`).join("")
+                    : _buildItems(set.items)}</div><div style="height: 35px;">
             </div>`;
-        }).join("");
+        });
+    }
+
+    function _filter(category, element) {
+        // Update active button UI
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        element.classList.add('active');
+
+        // Toggle element card visibility based on data attributes
+        const cards = document.querySelectorAll(".product-card");
+        cards.forEach(card => {
+            const cardCategory = card.getAttribute("data-category");
+            card.style.opacity = "0";
+            card.style.transform = "translateY(10px)";
+
+            setTimeout(() => {
+                if (category === "all" || categoryMap[category].includes(cardCategory)) {
+                    card.style.display = "flex";
+                    setTimeout(() => {
+                        card.style.opacity = "1";
+                        card.style.transform = "translateY(0)";
+                    }, 50);
+                } else {
+                    card.style.display = "none";
+                }
+            }, 200);
+        });
     }
 
     return {
-        populate: () => {
-            dataSet.forEach(set => {
-                let content = "";
-                if (set.slider) {
-                    content = set.items.map(group => {
-                        return `<div class="slider"><div class="slides">
-                            ${buildItems(group)}
-                        </div></div>`;
-                    }).join("");
-                } else {
-                    content = buildItems(set.items);
-                }
-                root.innerHTML += `
-                <div id="product-card-container-${set.type}" class="product-grid-${set.type}">
-                    ${content}
-                </div><div style="height: 35px;"></div>`;
-            });
-        },
+        populateItems: _populate,
+        filter: _filter,
     };
 })(root);
 
-Inventory.Theme = (() => {
+Inventory.Utility = (() => {
     const sunIcon = document.getElementById("theme-sun-icon");
     const moonIcon = document.getElementById("theme-moon-icon");
     const themeToggleText = document.getElementById("theme-toggle-text");
 
     // Initialize theme settings on load
-    function initTheme() {
+    function _initTheme() {
         // Check local storage or system preference
         const savedTheme = localStorage.getItem("theme");
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
         if (savedTheme === "theme-light" || (!savedTheme && !prefersDark)) {
-            setLightTheme();
+            _setLightTheme();
         } else {
-            setDarkTheme();
+            _setDarkTheme();
         }
     }
 
-    function setLightTheme() {
+    function _setLightTheme() {
         document.documentElement.className = "theme-light";
         sunIcon.style.display = "none";
         moonIcon.style.display = "block";
@@ -897,7 +925,7 @@ Inventory.Theme = (() => {
         localStorage.setItem("theme", "theme-light");
     }
 
-    function setDarkTheme() {
+    function _setDarkTheme() {
         document.documentElement.className = "theme-dark";
         sunIcon.style.display = "block";
         moonIcon.style.display = "none";
@@ -905,17 +933,46 @@ Inventory.Theme = (() => {
         localStorage.setItem("theme", "theme-dark");
     }
 
-    return {
-        init: () => initTheme(),
-        handler: () => {
-            if (document.documentElement.classList.contains("theme-dark")) {
-                setLightTheme();
-            } else {
-                setDarkTheme();
+    function _setupSliderNavigation() {
+        // Select all cards that have buttons inside them
+        document.querySelectorAll('.product-card').forEach(card => {
+            // Find the parent .slides container
+            const slideContainer = card.closest('.slides');
+            const prevBtn = card.querySelector('.prev');
+            const nextBtn = card.querySelector('.next');
+
+            if (slideContainer && prevBtn && nextBtn) {
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation(); // Stop the event from bubbling up
+                    slideContainer.scrollBy({ left: slideContainer.offsetWidth, behavior: 'smooth' });
+                });
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    slideContainer.scrollBy({ left: -slideContainer.offsetWidth, behavior: 'smooth' });
+                });
             }
-        }
+        });
+    }
+
+    return {
+        setupSliderNavigation: _setupSliderNavigation,
+        initTheme: _initTheme,
+        handleThemeChange: () => {
+            if (document.documentElement.classList.contains("theme-dark")) {
+                _setLightTheme();
+            } else {
+                _setDarkTheme();
+            }
+        },
     };
 })();
+
+// Menu dynamic category filter, direct reference in html code.
+function filterCatalog(category, element) {
+    Inventory.Catalog.filter(category, element);
+}
 
 // Navigation Logic for Mobile Hamburger Menu
 const hamburger = document.getElementById('hamburger-menu');
@@ -948,62 +1005,13 @@ window.addEventListener("scroll", (_) => {
 
 // Init on page load
 window.addEventListener("DOMContentLoaded", (_) => {
-    Inventory.Theme.init();
+    Inventory.Utility.initTheme();
     root.innerHTML = "";
-    Inventory.Catalog.populate();
+    Inventory.Catalog.populateItems();
+    Inventory.Utility.setupSliderNavigation();
 });
 
 // Theme Toggle Elements
 document.getElementById("theme-toggle").addEventListener('click', (_) => {
-    Inventory.Theme.handler();
+    Inventory.Utility.handleThemeChange();
 });
-
-// Define which "raw" data categories belong to which "UI" category
-const categoryMap = {
-    'kurta_set': [
-        'kurta + pants (set)', 'kurta set', 'kurta + trousers (set)',
-        'kurta + trousers', 'kurta + palazzo + dupatta', 'kurta + pants + dupatta',
-        'kurta + palazzo + dupatta', 'kurta + trousers + dupatta', 'silk kurta set',
-        'suit set', 'explicit suit set', 'standard kurta'
-    ],
-    'tunic_kaftan': [
-        'tunic/kaftan', 'co-ord tunic', 'poncho/tunic + palazzo',
-        'tunic + pants', 'short kurti + palazzo + dupatta'
-    ],
-    'co_ord': [
-        'co-ord set/gown style', 'long kurta/gown style', 'tunic + pants (co-ord)'
-    ],
-    'single_kurta': [
-        'single kurta', 'short kurta', 'straight kurta'
-    ],
-    'special': [
-        'silk kurta', 'silk kurta set'
-    ],
-};
-
-// Menu dynamic category filter, direct reference in html code.
-function filterCatalog(category, element) {
-    // Update active button UI
-    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-    element.classList.add('active');
-
-    // Toggle element card visibility based on data attributes
-    const cards = document.querySelectorAll(".product-card");
-    cards.forEach(card => {
-        const cardCategory = card.getAttribute("data-category");
-        card.style.opacity = "0";
-        card.style.transform = "translateY(10px)";
-
-        setTimeout(() => {
-            if (category === "all" || categoryMap[category].includes(cardCategory)) {
-                card.style.display = "flex";
-                setTimeout(() => {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0)";
-                }, 50);
-            } else {
-                card.style.display = "none";
-            }
-        }, 200);
-    });
-}

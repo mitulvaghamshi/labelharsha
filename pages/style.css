@@ -634,9 +634,9 @@ header.hero-section::before {
 
 .filter-btn.active,
 .filter-btn:hover {
+    color: var(--white);
     background: var(--primary-gradient);
     border-color: transparent;
-    color: var(--white);
     box-shadow: 0 8px 20px rgba(255, 20, 147, 0.35);
     transform: translateY(-3px);
 }
@@ -662,10 +662,9 @@ header.hero-section::before {
 .slides {
     height: 100%;
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
 }
 
 .slides>div {
@@ -679,10 +678,10 @@ header.hero-section::before {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    overflow: hidden;
     box-shadow: var(--shadow-soft);
-    display: flex;
     flex-direction: column;
+    overflow: hidden;
+    display: flex;
 }
 
 @keyframes nudgeSlide {
@@ -709,7 +708,6 @@ header.hero-section::before {
 }
 
 .product-card-img {
-    /* height: 380px; */
     width: 100%;
     background-color: var(--bg-secondary);
     position: relative;
@@ -727,6 +725,40 @@ header.hero-section::before {
     transform: scale(1.07);
     transition: transform 1s
 }
+
+/* Container for buttons to position them absolutely relative to the card */
+.product-card_nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    /* Ensure it's on top of the image */
+    z-index: 100;
+    /* This allows clicking "through" the container to the buttons if they have pointer-events: auto */
+    pointer-events: none;
+}
+
+.product-card_nav button {
+    /* Re-enable interaction for the buttons specifically */
+    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product_card_nav button:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Hide buttons on the first and last slide if desired, or keep them always visible for a consistent UI */
 
 .product-card-badge {
     background: var(--primary-gradient);
@@ -1079,7 +1111,7 @@ footer.site-footer .footer-logo {
 /* Scroll back to top button styling */
 .back-to-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 16px;
     right: -60px;
     background: var(--primary-gradient);
     color: var(--white);
@@ -1097,7 +1129,7 @@ footer.site-footer .footer-logo {
 }
 
 .back-to-top.show {
-    right: 20px;
+    right: 16px;
 }
 
 .back-to-top:hover {
