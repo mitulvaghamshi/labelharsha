@@ -942,14 +942,34 @@ document.getElementById("theme-toggle").addEventListener('click', (_) => {
     Inventory.Theme.handler();
 });
 
-// Menu dynamic category filter, direct reference in html code.
-function filterCatalog(category, button) {
-    // Remove active classes from all filter buttons
-    const buttons = document.querySelectorAll(".filter-btn");
-    buttons.forEach(btn => btn.classList.remove("active"));
+// Define which "raw" data categories belong to which "UI" category
+const categoryMap = {
+    'kurta_set': [
+        'kurta + pants (set)', 'kurta set', 'kurta + trousers (set)',
+        'kurta + trousers', 'kurta + palazzo + dupatta', 'kurta + pants + dupatta',
+        'kurta + palazzo + dupatta', 'kurta + trousers + dupatta', 'silk kurta set',
+        'suit set', 'explicit suit set', 'standard kurta'
+    ],
+    'tunic_kaftan': [
+        'tunic/kaftan', 'co-ord tunic', 'poncho/tunic + palazzo',
+        'tunic + pants', 'short kurti + palazzo + dupatta'
+    ],
+    'co_ord': [
+        'co-ord set/gown style', 'long kurta/gown style', 'tunic + pants (co-ord)'
+    ],
+    'single_kurta': [
+        'single kurta', 'short kurta', 'straight kurta'
+    ],
+    'special': [
+        'silk kurta', 'silk kurta set'
+    ],
+};
 
-    // Add active class to clicked button
-    if (button) button.classList.add("active");
+// Menu dynamic category filter, direct reference in html code.
+function filterCatalog(category, element) {
+    // Update active button UI
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    element.classList.add('active');
 
     // Toggle element card visibility based on data attributes
     const cards = document.querySelectorAll(".product-card");
@@ -959,7 +979,7 @@ function filterCatalog(category, button) {
         card.style.transform = "translateY(10px)";
 
         setTimeout(() => {
-            if (category === "all" || cardCategory === category) {
+            if (category === "all" || categoryMap[category].includes(cardCategory)) {
                 card.style.display = "flex";
                 setTimeout(() => {
                     card.style.opacity = "1";
