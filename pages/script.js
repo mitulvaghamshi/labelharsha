@@ -218,6 +218,14 @@ Inventory.Utility = (() => {
     };
 })();
 
+// Find all filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        const category = e.target.getAttribute('data-category');
+        Inventory.Catalog.filter(category, e.target);
+    });
+});
+
 // Menu dynamic category filter, direct reference in html code.
 function filterCatalog(category, element) {
     Inventory.Catalog.filter(category, element);
