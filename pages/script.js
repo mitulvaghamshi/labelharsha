@@ -6,97 +6,97 @@ const root = document.getElementById("product-container");
 
 Inventory.Catalog = ((root) => {
     const d1g1 = [
-        "LH001/NA",
-        "LH002/NA",
-        "LH003/NA",
-        "LH004/NA",
-        "LH005/NA",
-        "LH006/NA",
-        "LH007/NA",
-        "LH008/NA",
-        "LH009/NA",
-        "LH010/NA",
-        "LH011/NA",
-        "LH012/NA",
-        "LH013/NA",
-        "LH014/NA",
-        "LH015/NA",
-        "LH016/NA",
-        "LH017/NA",
-        "LH018/NA",
-        "LH019/NA",
-        "LH020/NA",
-        "LH021/NA",
-        "LH022/NA",
-        "LH023/NA",
+        "LH000-01/T/NA",
+        "LH000-02/T/NA",
+        "LH000-03/T/NA",
+        "LH000-04/T/NA",
+        "LH000-05/T/NA",
+        "LH000-06/T/NA",
+        "LH000-07/T/NA",
+        "LH000-08/T/NA",
+        "LH000-09/T/NA",
+        "LH000-10/T/NA",
+        "LH000-11/T/NA",
+        "LH000-12/T/NA",
+        "LH000-13/T/NA",
+        "LH000-14/T/NA",
+        "LH000-15/T/NA",
+        "LH000-16/T/NA",
+        "LH000-17/T/NA",
+        "LH000-18/T/NA",
+        "LH000-19/T/NA",
+        "LH000-20/T/NA",
+        "LH000-21/T/NA",
+        "LH000-22/T/NA",
+        "LH000-23/T/NA",
     ]; // tall singles
 
     const d2g1 = [
-        "LH001-01/NA",
-        "LH001-02/NA",
-        "LH001-03/NA",
-        "LH001-04/NA",
+        "LH001-01/W/G1",
+        "LH001-02/W/G1",
+        "LH001-03/W/G1",
+        "LH001-04/W/G1",
     ]; // wide grouped
 
     const d2g2 = [
-        "LH002-01/NA",
-        "LH002-02/NA",
-        "LH002-03/NA",
-        "LH002-04/NA",
+        "LH002-01/W/G2",
+        "LH002-02/W/G2",
+        "LH002-03/W/G2",
+        "LH002-04/W/G2",
     ]; // wide grouped
 
     const d2g3 = [
-        "LH003-01/NA",
-        "LH003-02/NA",
-        "LH003-03/NA",
+        "LH003-01/W/G3",
+        "LH003-02/W/G3",
+        "LH003-03/W/G3",
     ]; // wide grouped
 
     const d2g4 = [
-        "LH004-01/NA",
-        "LH004-02/NA",
-        "LH004-03/NA",
-        "LH004-04/NA",
+        "LH004-01/W/G4",
+        "LH004-02/W/G4",
+        "LH004-03/W/G4",
+        "LH004-04/W/G4",
     ]; // wide grouped
 
     const d2g5 = [
-        "LH005-01/NA",
-        "LH005-02/NA",
+        "LH005-01/W/G5",
+        "LH005-02/W/G5",
     ]; // wide grouped
 
     const d2g6 = [
-        "LH006-01/NA",
-        "LH006-02/NA",
-        "LH006-03/NA",
+        "LH006-01/W/G6",
+        "LH006-02/W/G6",
+        "LH006-03/W/G6",
     ]; // wide grouped
 
     const d3g1 = [
-        "LH007-01/NA",
-        "LH007-02/NA",
-        "LH007-03/NA",
-        "LH007-04/NA",
-        "LH007-05/NA",
-        "LH007-06/NA",
-        "LH007-07/NA",
+        "LH007-01/T/G7",
+        "LH007-02/T/G7",
+        "LH007-03/T/G7",
+        "LH007-04/T/G7",
+        "LH007-05/T/G7",
+        "LH007-06/T/G7",
+        "LH007-07/T/G7",
     ]; // tall grouped
 
     const d3g2 = [
-        "LH008-01/NA",
-        "LH008-02/NA",
-        "LH008-03/NA",
-        "LH008-04/NA",
-        "LH008-05/NA",
-        "LH008-06/NA",
-        "LH008-07/NA",
+        "LH008-01/T/G8",
+        "LH008-02/T/G8",
+        "LH008-03/T/G8",
+        "LH008-04/T/G8",
+        "LH008-05/T/G8",
+        "LH008-06/T/G8",
+        "LH008-07/T/G8",
     ]; // tall grouped
 
     const d4g1 = [
-        "LH009-01/NA",
-        "LH009-02/NA",
+        "LH009-01/T/G9",
+        "LH009-02/T/G9",
     ]; // tall grouped
 
     const d4g2 = [
-        "LH010-01/NA",
-        "LH010-02/NA",
+        "LH010-01/T/G10",
+        "LH010-02/T/G10",
     ]; // tall grouped
 
     const productGroups = [
