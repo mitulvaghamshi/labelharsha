@@ -1,4 +1,4 @@
-import ALL_PRODUCTS from './products.json' with { type: 'json' };
+import ALL_PRODUCTS from './items.json' with { type: 'json' };
 
 const Inventory = {};
 
@@ -29,45 +29,45 @@ Inventory.Catalog = ((root) => {
         "LH021/NA",
         "LH022/NA",
         "LH023/NA",
-    ];// tall singles
+    ]; // tall singles
 
     const d2g1 = [
         "LH001-01/NA",
         "LH001-02/NA",
         "LH001-03/NA",
         "LH001-04/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d2g2 = [
         "LH002-01/NA",
         "LH002-02/NA",
         "LH002-03/NA",
         "LH002-04/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d2g3 = [
         "LH003-01/NA",
         "LH003-02/NA",
         "LH003-03/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d2g4 = [
         "LH004-01/NA",
         "LH004-02/NA",
         "LH004-03/NA",
         "LH004-04/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d2g5 = [
         "LH005-01/NA",
         "LH005-02/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d2g6 = [
         "LH006-01/NA",
         "LH006-02/NA",
         "LH006-03/NA",
-    ];// wide grouped
+    ]; // wide grouped
 
     const d3g1 = [
         "LH007-01/NA",
@@ -77,7 +77,7 @@ Inventory.Catalog = ((root) => {
         "LH007-05/NA",
         "LH007-06/NA",
         "LH007-07/NA",
-    ];// tall grouped
+    ]; // tall grouped
 
     const d3g2 = [
         "LH008-01/NA",
@@ -87,19 +87,19 @@ Inventory.Catalog = ((root) => {
         "LH008-05/NA",
         "LH008-06/NA",
         "LH008-07/NA",
-    ];// tall grouped
+    ]; // tall grouped
 
     const d4g1 = [
         "LH009-01/NA",
         "LH009-02/NA",
-    ];// tall grouped
+    ]; // tall grouped
 
     const d4g2 = [
         "LH010-01/NA",
         "LH010-02/NA",
-    ];// tall grouped
+    ]; // tall grouped
 
-    const dataSet = [
+    const productGroups = [
         {
             "type": "tall",
             "group": false,
@@ -159,6 +159,10 @@ Inventory.Catalog = ((root) => {
     function _buildItems(itemIds, hasMultiple) {
         return itemIds.map(itemId => {
             const item = ALL_PRODUCTS.find(p => p.tag === itemId);
+            if (!item) {
+                console.debug(`Unable to find Item with Id: '${itemId}'`);
+                return "";
+            }
             return `<div class="product-card" data-category="${item.category}">
                 <div class="product-card-img">
                     <img src="items/${item.image}" alt="${item.product} (${item.tag})" loading="lazy">
@@ -187,7 +191,7 @@ Inventory.Catalog = ((root) => {
     }
 
     function _populate() {
-        dataSet.forEach(set => {
+        productGroups.forEach(set => {
             root.innerHTML += `<div id="product-card-container-${set.type}" class="product-grid-${set.type}">
                 ${set.group ? set.items.map(itemIds => `<div class="slider"><div class="slides">
                     ${_buildItems(itemIds, true)}
