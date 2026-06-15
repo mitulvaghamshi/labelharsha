@@ -1146,7 +1146,8 @@ footer.site-footer .footer-logo {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1155,7 +1156,7 @@ footer.site-footer .footer-logo {
 
 ::-webkit-scrollbar-thumb {
     background: var(--price-color);
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
