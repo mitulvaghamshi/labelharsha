@@ -5,6 +5,8 @@ const Inventory = {};
 const root = document.getElementById("product-container");
 
 Inventory.Catalog = ((root) => {
+    const cf = new Intl.NumberFormat(undefined, { style: "currency", currency: "INR" });
+
     const productGroups = [
         {
             type: "tall",
@@ -37,33 +39,6 @@ Inventory.Catalog = ((root) => {
                     .map(p => p.tag))
         }
     ];
-
-    // Define which "raw" data categories belong to which "UI" category
-    const categoryMap = {
-        'kurta_set': [
-            'kurta + pants (set)', 'kurta set', 'kurta + trousers (set)',
-            'kurta + trousers', 'kurta + palazzo + dupatta', 'kurta + pants + dupatta',
-            'kurta + palazzo + dupatta', 'kurta + trousers + dupatta', 'silk kurta set',
-            'suit set', 'explicit suit set', 'standard kurta'
-        ],
-        'tunic_kaftan': [
-            'tunic/kaftan', 'co-ord tunic', 'poncho/tunic + palazzo',
-            'tunic + pants', 'short kurti + palazzo + dupatta'
-        ],
-        'co_ord': [
-            'co-ord set/gown style', 'long kurta/gown style', 'tunic + pants (co-ord)'
-        ],
-        'single_kurta': [
-            'single kurta', 'short kurta', 'straight kurta'
-        ],
-        'special': [
-            'silk kurta', 'silk kurta set'
-        ],
-    };
-
-    const cf = new Intl.NumberFormat(undefined, {
-        style: "currency", currency: "INR"
-    });
 
     function _buildItems(itemIds) {
         return itemIds.map(itemId => {
@@ -127,9 +102,8 @@ Inventory.Catalog = ((root) => {
             const cardCategory = card.getAttribute("data-category");
             card.style.opacity = "0";
             card.style.transform = "translateY(10px)";
-
             setTimeout(() => {
-                if (category === "all" || categoryMap[category].includes(cardCategory)) {
+                if (category === "all" || category === cardCategory) {
                     card.style.display = "flex";
                     setTimeout(() => {
                         card.style.opacity = "1";
@@ -236,7 +210,7 @@ const hamburger = document.getElementById('hamburger-menu');
 const navLinks = document.getElementById('nav-links');
 
 // Toggle menu
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', (_) => {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
@@ -244,7 +218,7 @@ hamburger.addEventListener('click', () => {
 // Close menu when a link is clicked (useful for single-page navigation)
 const links = document.querySelectorAll('.nav-link');
 links.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (_) => {
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
     });

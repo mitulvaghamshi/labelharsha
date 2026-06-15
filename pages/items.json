@@ -6,7 +6,7 @@
         "image": "item1.webp",
         "product": "Terracotta Slit Tassel Kurta",
         "material": "Premium Slub Cotton",
-        "category": "single kurta",
+        "category": "single-kurta",
         "price": "1100",
         "discount": "10",
         "description": "Elegant sleeveless rust-red kurta featuring a high center slit with patterned blue accents and front tassels."
@@ -18,7 +18,7 @@
         "image": "item2.webp",
         "product": "Indigo Leaf Printed Kurta",
         "material": "Soft Crepe Silk",
-        "category": "single kurta",
+        "category": "single-kurta",
         "price": "1290",
         "discount": "10",
         "description": "A striking royal blue long-sleeved kurta adorned with a contrast leaf-and-flower motif on the front."
@@ -30,7 +30,7 @@
         "image": "item3.webp",
         "product": "Charcoal Floral Contrast Kurta",
         "material": "Chanderi Blend",
-        "category": "single kurta",
+        "category": "single-kurta",
         "price": "1290",
         "discount": "10",
         "description": "Modern greyish-brown straight kurta featuring contrast black panels and bold printed floral outlines."
@@ -42,7 +42,7 @@
         "image": "item4.webp",
         "product": "Magenta Kaftan Dress",
         "material": "Flowy Georgette",
-        "category": "tunic/kaftan",
+        "category": "tunic-kaftan",
         "price": "1750",
         "discount": "10",
         "description": "A luxurious flowy kaftan dress in rich magenta featuring a symmetric ivory white pattern and a relaxed drape."
@@ -54,7 +54,7 @@
         "image": "item5.webp",
         "product": "Pastel Blue Peplum Set",
         "material": "Soft Muslin Cotton",
-        "category": "kurta + pants (set)",
+        "category": "kurta-set",
         "price": "1290",
         "discount": "10",
         "description": "Sleeveless short peplum style kurti in light blue and lime green print, paired with green leaf patterned pants."
@@ -66,7 +66,7 @@
         "image": "item6.webp",
         "product": "Fuchsia Kutch Embroidered Set",
         "material": "Art Silk",
-        "category": "kurta + trouser (set)",
+        "category": "kurta-set",
         "price": "1890",
         "discount": "10",
         "description": "Fuchsia/magenta kurta with multi-colored Gujarati embroidery and tassel details, paired with matching trousers."
@@ -78,7 +78,7 @@
         "image": "item7.webp",
         "product": "Cream Mauve Ombre Set",
         "material": "Premium Rayon",
-        "category": "co-ord set/gown style",
+        "category": "co-ord-set",
         "price": "1900",
         "discount": "10",
         "description": "Silk/rayon co-ord set with a diagonal ombre/tie-dye print running from cream to mauve/plum, with embroidered details."
@@ -90,7 +90,7 @@
         "image": "item8.webp",
         "product": "Sand Linen Co-ord Set",
         "material": "Raw Linen Cotton",
-        "category": "co-ord tunic",
+        "category": "co-ord-set",
         "price": "1290",
         "discount": "10",
         "description": "Beige/sand-colored linen co-ord set with a button-down shirt featuring textured, raw-edge square fabric patches."
@@ -102,7 +102,7 @@
         "image": "item9.webp",
         "product": "Lilac Scalloped Kurta Set",
         "material": "Premium Cotton",
-        "category": "kurta + pants (set)",
+        "category": "kurta-set",
         "price": "1680",
         "discount": "10",
         "description": "Lilac/lavender colored kurti set with a scalloped hem, featuring colorful geometric embroidery and wide-leg pants."
@@ -114,7 +114,7 @@
         "image": "item10.webp",
         "product": "Taupe Floral Embroidered Set",
         "material": "Cotton Linen",
-        "category": "tunic set",
+        "category": "tunic-set",
         "price": "1370",
         "discount": "10",
         "description": "Grey/taupe mandarin collar linen tunic set with pink and gold floral embroidery around the waist."
@@ -126,7 +126,7 @@
         "image": "item11.webp",
         "product": "Mustard Lotus High-Low Set",
         "material": "Pure Crepe",
-        "category": "long kurta/gown style",
+        "category": "gown-style",
         "price": "2015",
         "discount": "10",
         "description": "Mustard yellow high-low asymmetric silk/crepe kurta set with olive borders and lotus prints."
@@ -138,7 +138,7 @@
         "image": "item12.webp",
         "product": "Wine Kalamkari Kurta Set",
         "material": "Satin Silk",
-        "category": "silk kurta set",
+        "category": "silk-kurta-set",
         "price": "2015",
         "discount": "10",
         "description": "Wine/plum colored silk/satin finish kurta set with hand-painted or printed floral and paisley designs."
@@ -150,7 +150,7 @@
         "image": "item13.webp",
         "product": "Sky Blue Striped Printed Kurta Set",
         "material": "Cotton",
-        "category": "kurta + pants (set)",
+        "category": "kurta-set",
         "price": "1450",
         "discount": "10",
         "description": "Sky blue and white striped kurta set featuring circular ethnic motifs, relaxed silhouette, three-quarter sleeves, and matching straight pants."
@@ -162,7 +162,7 @@
         "image": "item14.webp",
         "product": "Wine Printed Co-ord Set",
         "material": "Cotton",
-        "category": "tunic + pants (co-ord)",
+        "category": "tunic-set",
         "price": "1360",
         "discount": "10",
         "description": "Wine and blue printed co-ord set with an A-line collared tunic, statement sleeves, and matching straight-fit pants featuring coordinated border detailing."
@@ -174,7 +174,7 @@
         "image": "item15.webp",
         "product": "Mint Printed Co-Ord Kurta Set",
         "material": "Cotton",
-        "category": "kurta set",
+        "category": "kurta-set",
         "price": "0",
         "discount": "0",
         "description": "Mint green printed kurta set with subtle white ethnic motifs, collared neckline, and striped straight-fit pants. A comfortable and contemporary everyday ethnic outfit."
@@ -186,7 +186,7 @@
         "image": "item16.webp",
         "product": "Mint Floral Embroidered Kurta Set",
         "material": "Chiffon",
-        "category": "kurta + trousers",
+        "category": "kurta-set",
         "price": "2150",
         "discount": "10",
         "description": "Soft mint green kurta set adorned with delicate pink floral embroidery, scalloped hem detailing, three-quarter sleeves, and tapered matching trousers."
@@ -198,7 +198,7 @@
         "image": "item17.webp",
         "product": "Terracotta Floral Embroidery Kurta Set",
         "material": "Premium Cotton Blend",
-        "category": "kurta + trousers + dupatta",
+        "category": "kurta-suit-set",
         "price": "1160",
         "discount": "10",
         "description": "Elegant terracotta-colored kurta featuring white floral embroidery and a matching scalloped-edge dupatta, paired with coordinated straight trousers."
@@ -210,7 +210,7 @@
         "image": "item18.webp",
         "product": "Indigo Block Print Anarkali Kurta Set",
         "material": "Premium Cotton Blend",
-        "category": "kurta + pants + dupatta",
+        "category": "anarkali-set",
         "price": "1570",
         "discount": "10",
         "description": "A stunning navy blue Anarkali kurta featuring intricate block print motifs, a flared silhouette with decorative borders, and a matching dupatta. Crafted from premium cotton for a comfortable ethnic look."
@@ -222,7 +222,7 @@
         "image": "item19.webp",
         "product": "Indigo Printed Suit Set",
         "material": "Printed Lawn Cotton",
-        "category": "kurta + pants + dupatta",
+        "category": "suit-set",
         "price": "1650",
         "discount": "10",
         "description": "Stylish indigo-blue printed suit featuring traditional geometric and floral patterns, coordinated palazzo pants, and a matching printed dupatta with tassel accents."
@@ -234,7 +234,7 @@
         "image": "item20.webp",
         "product": "Ivory Tribal Print Kurta Set",
         "material": "Printed Lawn Cotton",
-        "category": "kurta + trousers",
+        "category": "kurta-set",
         "price": "1700",
         "discount": "10",
         "description": "Elegant ivory kurta set adorned with vibrant tribal-inspired geometric motifs in earthy tones, paired with straight-fit trousers. Features intricate front panel detailing, printed sleeve accents, and a comfortable contemporary silhouette suitable for casual and festive wear."
@@ -246,7 +246,7 @@
         "image": "item21.webp",
         "product": "Sky Blue Printed Suit Set",
         "material": "Printed Lawn Cotton",
-        "category": "kurta + pants + dupatta",
+        "category": "suit-set",
         "price": "1160",
         "discount": "10",
         "description": "Graceful sky-blue printed suit featuring delicate white floral-inspired block motifs, coordinated straight pants, and a matching printed dupatta with decorative border detailing. Designed with a flattering V-neckline and subtle embellishments for an effortlessly elegant look."
@@ -258,7 +258,7 @@
         "image": "item22.webp",
         "product": "Olive Geometric Printed Suit Set",
         "material": "Printed Lawn Cotton",
-        "category": "kurta + trousers + dupatta",
+        "category": "suit-set",
         "price": "2280",
         "discount": "10",
         "description": "Contemporary olive-green printed suit showcasing bold geometric and abstract patterns in contrasting navy and earthy tones. Paired with matching trousers and a coordinated printed dupatta, this statement ensemble blends traditional artistry with modern sophistication."
@@ -270,7 +270,7 @@
         "image": "item23.webp",
         "product": "Lavender Embellished Co-ord Set",
         "material": "Chiffon & Crepe",
-        "category": "poncho/tunic + palazzo",
+        "category": "co-ord-set",
         "price": "3100",
         "discount": "10",
         "description": "Graceful lavender co-ord set featuring a flowy embellished poncho-style top with delicate embroidery along the neckline and sleeves, paired with wide-leg palazzo pants for an elegant contemporary silhouette."
@@ -330,7 +330,7 @@
         "image": "item.2.1.webp",
         "product": "Deep Teal Silk Kurta Set",
         "material": "Banarasi Satin Silk",
-        "category": "silk kurta",
+        "category": "silk-kurta",
         "price": "1390",
         "discount": "10",
         "description": "Deep teal/ocean blue silk/satin kurta with beads on the neckline and floral embroidery near the hem."
@@ -342,7 +342,7 @@
         "image": "item.2.2.webp",
         "product": "Magenta Silk Kurta Set",
         "material": "Banarasi Satin Silk",
-        "category": "silk kurta",
+        "category": "silk-kurta",
         "price": "1390",
         "discount": "10",
         "description": "Vibrant deep pink/magenta silk/satin kurta with beads on the neckline and floral embroidery near the hem."
@@ -354,7 +354,7 @@
         "image": "item.2.3.webp",
         "product": "Deep Plum Silk Kurta Set",
         "material": "Banarasi Satin Silk",
-        "category": "silk kurta",
+        "category": "silk-kurta",
         "price": "1390",
         "discount": "10",
         "description": "Rich dark plum/purple silk/satin kurta with beads on the neckline and floral embroidery near the hem."
@@ -366,7 +366,7 @@
         "image": "item.2.4.webp",
         "product": "Metallic Copper Kurta Set",
         "material": "Banarasi Satin Silk",
-        "category": "silk kurta",
+        "category": "silk-kurta",
         "price": "1390",
         "discount": "10",
         "description": "Sleek copper brown/rust silk/satin kurta with beads on the neckline and floral embroidery near the hem."
@@ -378,7 +378,7 @@
         "image": "item.3.1.webp",
         "product": "Magenta Sleeveless Kurta Set",
         "material": "Soft Art Rayon",
-        "category": "short kurta",
+        "category": "short-kurta",
         "price": "1050",
         "discount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in bright magenta pink, featuring mirror work on the neck."
@@ -390,7 +390,7 @@
         "image": "item.3.2.webp",
         "product": "Deep Purple Sleeveless Kurta Set",
         "material": "Soft Art Rayon",
-        "category": "short kurta",
+        "category": "short-kurta",
         "price": "1050",
         "discount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in deep purple, featuring mirror work on the neck."
@@ -402,7 +402,7 @@
         "image": "item.3.3.webp",
         "product": "Burgundy Sleeveless Kurta Set",
         "material": "Soft Art Rayon",
-        "category": "short kurta",
+        "category": "short-kurta",
         "price": "1050",
         "discount": "10",
         "description": "Sleeveless straight-cut silk/rayon kurti in dark burgundy, featuring mirror work on the neck."
@@ -414,7 +414,7 @@
         "image": "item.4.1.webp",
         "product": "Taupe Mesh Applique Set",
         "material": "Cotton Linen Blend",
-        "category": "tunic + pants",
+        "category": "tunic-set",
         "price": "1470",
         "discount": "10",
         "description": "Tunics, Greyish brown/taupe short kurta with applique cut-out mesh flower details and matching wide-leg pants."
@@ -426,7 +426,7 @@
         "image": "item.4.2.webp",
         "product": "Yellow Mesh Applique Set",
         "material": "Cotton Linen Blend",
-        "category": "tunic + pants",
+        "category": "tunic-set",
         "price": "1470",
         "discount": "10",
         "description": "Mustard yellow short kurta with applique cut-out mesh flower details and matching wide-leg pants."
@@ -438,7 +438,7 @@
         "image": "item.4.3.webp",
         "product": "Coral Mesh Applique Set",
         "material": "Cotton Linen Blend",
-        "category": "tunic + pants",
+        "category": "tunic-set",
         "price": "1470",
         "discount": "10",
         "description": "Coral peach short kurta with applique cut-out mesh flower details and matching wide-leg pants."
@@ -450,7 +450,7 @@
         "image": "item.4.4.webp",
         "product": "Lavender Mesh Applique Set",
         "material": "Cotton Linen Blend",
-        "category": "tunic + pants",
+        "category": "tunic-set",
         "price": "1470",
         "discount": "10",
         "description": "Light lavender short kurta with applique cut-out mesh flower details and matching wide-leg pants."
@@ -462,7 +462,7 @@
         "image": "item.5.1.webp",
         "product": "Onion Pink Embroidered Set",
         "material": "Textured Khadi Cotton",
-        "category": "straight kurta",
+        "category": "straight-kurta",
         "price": "2200",
         "discount": "10",
         "description": "Dusty onion pink straight kurta featuring delicate hand embroidery on the neckline and sleeves."
@@ -474,7 +474,7 @@
         "image": "item.5.2.webp",
         "product": "Mint Green Embroidered Set",
         "material": "Textured Khadi Cotton",
-        "category": "straight kurta",
+        "category": "straight-kurta",
         "price": "2200",
         "discount": "10",
         "description": "Sage mint green straight kurta featuring delicate hand embroidery on the neckline and sleeves."
@@ -486,7 +486,7 @@
         "image": "item.6.1.webp",
         "product": "Rose Pink Sleeveless Sharara Set",
         "material": "Slub Linen",
-        "category": "short kurti + palazzo + dupatta",
+        "category": "sharara-set",
         "price": "1410",
         "discount": "10",
         "description": "Rose pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
@@ -498,7 +498,7 @@
         "image": "item.6.2.webp",
         "product": "Peach Sleeveless Sharara Set",
         "material": "Slub Linen",
-        "category": "short kurti + palazzo + dupatta",
+        "category": "sharara-set",
         "price": "1410",
         "discount": "10",
         "description": "Peach/baby pink sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
@@ -510,7 +510,7 @@
         "image": "item.6.3.webp",
         "product": "Ivory Sleeveless Sharara Set",
         "material": "Slub Linen",
-        "category": "short kurti + palazzo + dupatta",
+        "category": "sharara-set",
         "price": "1410",
         "discount": "10",
         "description": "Ivory white sleeveless short kurti with pocket mirror details, paired with wide palazzo pants and a dupatta."
@@ -522,7 +522,7 @@
         "image": "item.7.1.webp",
         "product": "Olive Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant olive-green straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -534,7 +534,7 @@
         "image": "item.7.2.webp",
         "product": "Wine red Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant wine-red straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -546,7 +546,7 @@
         "image": "item.7.3.webp",
         "product": "Jet Black Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant jet-black straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -558,7 +558,7 @@
         "image": "item.7.4.webp",
         "product": "Midnight Blue Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant midnight-blue straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -570,7 +570,7 @@
         "image": "item.7.5.webp",
         "product": "Deep Plum Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant deep-plum straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -582,7 +582,7 @@
         "image": "item.7.6.webp",
         "product": "Mustard Gold Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant mustard gold straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -594,7 +594,7 @@
         "image": "item.7.7.webp",
         "product": "Olive Mustard Embroidered Straight Kurta",
         "material": "Cotton Blend",
-        "category": "standard kurta",
+        "category": "straight-kurta",
         "price": "325",
         "discount": "10",
         "description": "Elegant olive-mustard straight kurta featuring white floral embroidery on the neckline and scattered embroidered motifs."
@@ -606,7 +606,7 @@
         "image": "item.8.1.webp",
         "product": "Purple Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Rich purple three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -618,7 +618,7 @@
         "image": "item.8.2.webp",
         "product": "Dusty Teal Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Dusty teal three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -630,7 +630,7 @@
         "image": "item.8.3.webp",
         "product": "Deep Maroon Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Deep maroon three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -642,7 +642,7 @@
         "image": "item.8.4.webp",
         "product": "Navy Blue Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Navy blue three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -654,7 +654,7 @@
         "image": "item.8.5.webp",
         "product": "Rusty Red Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Rusty red three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -666,7 +666,7 @@
         "image": "item.8.6.webp",
         "product": "Deep Crimson Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Deep crimson three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -678,7 +678,7 @@
         "image": "item.8.7.webp",
         "product": "Moss Geen Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "780",
         "discount": "10",
         "description": "Moss green three-piece suit set with intricate floral embroidery on the neckline, matching trousers, and an embroidered dupatta with decorative borders."
@@ -690,7 +690,7 @@
         "image": "item.9.1.webp",
         "product": "Plum Peacock Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "550",
         "discount": "10",
         "description": "Elegant plum-colored straight-cut kurta featuring intricate peacock embroidery on the yoke, paired with matching straight pants. Ideal for festive gatherings and casual ethnic wear."
@@ -702,7 +702,7 @@
         "image": "item.9.2.webp",
         "product": "Teal Heritage Embroidered Suit Set",
         "material": "Cotton Blend",
-        "category": "explicit suit set",
+        "category": "suit-set",
         "price": "550",
         "discount": "10",
         "description": "Sophisticated teal suit set adorned with heritage-inspired embroidery featuring traditional motifs on the yoke, complemented by matching straight-fit pants for a refined ethnic look."
@@ -714,7 +714,7 @@
         "image": "item.10.1.webp",
         "product": "Sage Floral Kurta Palazzo Set",
         "material": "Cotton Blend",
-        "category": "kurta + palazzo + dupatta",
+        "category": "kurta-palazzo-set",
         "price": "1630",
         "discount": "10",
         "description": "Sage green kurta palazzo set featuring large white floral prints with subtle gold accents. Comes with matching palazzo pants and dupatta for an elegant ethnic look."
@@ -726,7 +726,7 @@
         "image": "item.10.2.webp",
         "product": "Mustard Floral Kurta Palazzo Set",
         "material": "Cotton Blend",
-        "category": "kurta + palazzo + dupatta",
+        "category": "kurta-palazzo-set",
         "price": "1630",
         "discount": "10",
         "description": "Mustard yellow kurta palazzo set adorned with oversized white floral motifs and delicate botanical detailing. Includes matching palazzo pants and lightweight dupatta."
