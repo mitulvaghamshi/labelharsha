@@ -5,128 +5,37 @@ const Inventory = {};
 const root = document.getElementById("product-container");
 
 Inventory.Catalog = ((root) => {
-    const d1g1 = [
-        "LH000-01/T/NA",
-        "LH000-02/T/NA",
-        "LH000-03/T/NA",
-        "LH000-04/T/NA",
-        "LH000-05/T/NA",
-        "LH000-06/T/NA",
-        "LH000-07/T/NA",
-        "LH000-08/T/NA",
-        "LH000-09/T/NA",
-        "LH000-10/T/NA",
-        "LH000-11/T/NA",
-        "LH000-12/T/NA",
-        "LH000-13/T/NA",
-        "LH000-14/T/NA",
-        "LH000-15/T/NA",
-        "LH000-16/T/NA",
-        "LH000-17/T/NA",
-        "LH000-18/T/NA",
-        "LH000-19/T/NA",
-        "LH000-20/T/NA",
-        "LH000-21/T/NA",
-        "LH000-22/T/NA",
-        "LH000-23/T/NA",
-    ]; // tall singles
-
-    const d2g1 = [
-        "LH001-01/W/G1",
-        "LH001-02/W/G1",
-        "LH001-03/W/G1",
-        "LH001-04/W/G1",
-    ]; // wide grouped
-
-    const d2g2 = [
-        "LH002-01/W/G2",
-        "LH002-02/W/G2",
-        "LH002-03/W/G2",
-        "LH002-04/W/G2",
-    ]; // wide grouped
-
-    const d2g3 = [
-        "LH003-01/W/G3",
-        "LH003-02/W/G3",
-        "LH003-03/W/G3",
-    ]; // wide grouped
-
-    const d2g4 = [
-        "LH004-01/W/G4",
-        "LH004-02/W/G4",
-        "LH004-03/W/G4",
-        "LH004-04/W/G4",
-    ]; // wide grouped
-
-    const d2g5 = [
-        "LH005-01/W/G5",
-        "LH005-02/W/G5",
-    ]; // wide grouped
-
-    const d2g6 = [
-        "LH006-01/W/G6",
-        "LH006-02/W/G6",
-        "LH006-03/W/G6",
-    ]; // wide grouped
-
-    const d3g1 = [
-        "LH007-01/T/G7",
-        "LH007-02/T/G7",
-        "LH007-03/T/G7",
-        "LH007-04/T/G7",
-        "LH007-05/T/G7",
-        "LH007-06/T/G7",
-        "LH007-07/T/G7",
-    ]; // tall grouped
-
-    const d3g2 = [
-        "LH008-01/T/G8",
-        "LH008-02/T/G8",
-        "LH008-03/T/G8",
-        "LH008-04/T/G8",
-        "LH008-05/T/G8",
-        "LH008-06/T/G8",
-        "LH008-07/T/G8",
-    ]; // tall grouped
-
-    const d4g1 = [
-        "LH009-01/T/G9",
-        "LH009-02/T/G9",
-    ]; // tall grouped
-
-    const d4g2 = [
-        "LH010-01/T/G10",
-        "LH010-02/T/G10",
-    ]; // tall grouped
-
     const productGroups = [
         {
-            "type": "tall",
-            "group": false,
-            "items": d1g1,
+            type: "tall",
+            group: false,
+            items: ALL_PRODUCTS
+                .filter(p => p.tag.split('/')[1] === 'T' && p.tag.split('/')[2] === 'NA')
+                .map(p => p.tag)
         },
         {
-            "type": "wide",
-            "group": true,
-            "items": [
-                d2g1,
-                d2g2,
-                d2g3,
-                d2g4,
-                d2g5,
-                d2g6,
-            ],
+            type: "wide",
+            group: true,
+            // This gathers all items with type W into sub-groups based on their Carousel ID (G1, G2, etc.)
+            items: [...new Set(ALL_PRODUCTS
+                .filter(p => p.tag.split('/')[1] === 'W')
+                .map(p => p.tag.split('/')[2]))]
+                .map(cid => ALL_PRODUCTS
+                    .filter(p => p.tag.split('/')[2] === cid)
+                    .map(p => p.tag))
         },
         {
-            "type": "tall",
-            "group": true,
-            "items": [
-                d3g1,
-                d3g2,
-                d4g1,
-                d4g2,
-            ],
-        },
+            type: "tall",
+            group: true,
+            // This gathers all items with type T that have a specific Carousel ID (G1, G2...)
+            // or are part of a larger group defined by the third index.
+            items: [...new Set(ALL_PRODUCTS
+                .filter(p => p.tag.split('/')[1] === 'T' && p.tag.split('/')[2] !== 'NA')
+                .map(p => p.tag.split('/')[2]))]
+                .map(cid => ALL_PRODUCTS
+                    .filter(p => p.tag.split('/')[2] === cid)
+                    .map(p => p.tag))
+        }
     ];
 
     // Define which "raw" data categories belong to which "UI" category
@@ -156,23 +65,30 @@ Inventory.Catalog = ((root) => {
         style: "currency", currency: "INR"
     });
 
-    function _buildItems(itemIds, hasMultiple) {
+    function _buildItems(itemIds) {
         return itemIds.map(itemId => {
             const item = ALL_PRODUCTS.find(p => p.tag === itemId);
             if (!item) {
                 console.debug(`Unable to find Item with Id: '${itemId}'`);
                 return "";
             }
+            // Logic to determine carousel from tag: "baseid-itemid/Type/CarouselId"
+            // Example: LH001-01/W/G1 -> Type is "W" (Wide), CarouselID is "G1"
+            const parts = item.tag.split('/');
+            const type = parts[1]; // e.g., "T" or "W"
+            const carouselId = parts[2]; // e.g., "NA", "G1", "G2"
+            const isCarousel = carouselId !== "NA";
+
             return `<div class="product-card" data-category="${item.category}">
                 <div class="product-card-img">
                     <img src="items/${item.image}" alt="${item.product} (${item.tag})" loading="lazy">
-                    ${hasMultiple ? `<div class="product-card_nav">
+                    ${isCarousel ? `<div class="product-card_nav">
                         <button class="prev" aria-label="Previous Slide">&#10094;</button>
                         <button class="next" aria-label="Next Slide">&#10095;</button>
-                    </div>` : ''}
+                    </div>` : ""}
                 </div>
                 <div class="product-card-details">
-                    <span class="product-card-badge ${String(item.badge).toLowerCase().includes("out") ? `product-card-badge-oos` : ``}">${item.badge}</span>
+                    <span class="product-card-badge ${String(item.badge).toLowerCase().includes("out") ? "product-card-badge-oos" : ""}">${item.badge}</span>
                     <span class="product-card-id">${item.tag}</span>
                     <h3 class="product-card-title">${item.product}</h3>
                     <span class="product-card-material">${item.material}</span>
@@ -180,7 +96,7 @@ Inventory.Catalog = ((root) => {
                     <div class="price-container">
                         <span class="price-current">${cf.format(item.price)}/-</span>
                         ${(+item.discount) > 0 ? `<span class="price-original">${cf.format(item.price * (1 + item.discount / 100))}</span>
-                        <span class="price-discount">${item.discount} OFF</span>` : ''}
+                        <span class="price-discount">${item.discount} OFF</span>` : ""}
                     </div>
                     <a href="https://wa.me/919033310101?text=Hi Label Harsha, I am interested in inquiring about the '${item.product} (${item.tag})'. Could you please share more details." target="_blank" class="btn-whatsapp">
                         <img src="icons/whatsapp.svg" alt="WhatsApp">
@@ -194,10 +110,9 @@ Inventory.Catalog = ((root) => {
         productGroups.forEach(set => {
             root.innerHTML += `<div id="product-card-container-${set.type}" class="product-grid-${set.type}">
                 ${set.group ? set.items.map(itemIds => `<div class="slider"><div class="slides">
-                    ${_buildItems(itemIds, true)}
+                    ${_buildItems(itemIds)}
                 </div></div>`).join("") : _buildItems(set.items)}
-            </div>
-            <div style="height: 35px;"></div>`;
+            </div><div style="height: 35px;"></div>`;
         });
     }
 
