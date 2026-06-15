@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![logo](pages/icons/icon-512.webp)](https://mitulvaghamshi.github.io/labelharsha/ "Click to visit")
+[![logo](public/icons/icon-512.webp)](https://mitulvaghamshi.github.io/labelharsha/ "Click to visit")
 
 </div>
 
