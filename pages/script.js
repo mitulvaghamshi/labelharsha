@@ -200,11 +200,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     });
 });
 
-// Menu dynamic category filter, direct reference in html code.
-function filterCatalog(category, element) {
-    Inventory.Catalog.filter(category, element);
-}
-
 // Navigation Logic for Mobile Hamburger Menu
 const hamburger = document.getElementById('hamburger-menu');
 const navLinks = document.getElementById('nav-links');
