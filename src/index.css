@@ -735,7 +735,7 @@ header.hero-section::before {
     padding: 12px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
