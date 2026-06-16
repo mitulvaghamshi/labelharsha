@@ -70,13 +70,16 @@ export function VisitUsContent() {
                 <div className="map-card">
                     <iframe
                         title="Label Harsha Boutique Location Map"
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d230.28500395337463!2d72.93832742722132!3d22.55814709015933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1780422532034!5m2!1sen!1sin"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d230.28488344452242!2d72.93825752087201!3d22.558219268283747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1781597081283!5m2!1sen!2sin"
+                        width="500"
+                        height="460"
                         style={{ border: 0 }}
-                        allowFullScreen=""
+                        allowfullscreen=""
                         loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
+                        referrerpolicy="no-referrer-when-downgrade"
                         aria-label="Label Harsha Boutique Location Map"
-                    />
+                    >
+                    </iframe>
                 </div>
             </div>
         </section>
