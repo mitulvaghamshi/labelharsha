@@ -74,9 +74,9 @@ export function VisitUsContent() {
                         width="500"
                         height="460"
                         style={{ border: 0 }}
-                        allowfullscreen=""
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                         aria-label="Label Harsha Boutique Location Map"
                     >
                     </iframe>

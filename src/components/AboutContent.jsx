@@ -40,6 +40,8 @@ export function AboutContent() {
                 <div className="about-image">
                     <img
                         src="icons/icon-512.webp"
+                        width={512}
+                        height={512}
                         alt="Label Harsha Business Logo"
                         loading="lazy"
                     />

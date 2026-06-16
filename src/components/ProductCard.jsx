@@ -36,7 +36,7 @@ const WhatsAppButton = ({ product, tag }) => {
             rel="noopener noreferrer"
             className="btn-whatsapp"
         >
-            <img src="icons/whatsapp.svg" alt="WhatsApp" />
+            <img src="icons/whatsapp.svg" width={'103px'} height={'24px'} alt="WhatsApp" />
         </a>
     );
 };

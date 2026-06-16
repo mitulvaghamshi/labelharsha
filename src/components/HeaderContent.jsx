@@ -10,6 +10,12 @@ const Button = ({ href, children, variant = 'primary' }) => {
 export function HeaderContent() {
   return (
     <header className="hero-section" id="home">
+      <img
+        src="icons/header.webp"
+        className="hero-image"
+        fetchpriority="high"
+        alt="Label Harsha - Vibrant Autumn & Spring Collections"
+      />
       <div className="hero-content">
         <span className="hero-badge">Vibrant Autumn & Spring Collections</span>
         <h1 className="hero-title">Label Harsha</h1>
@@ -24,7 +30,7 @@ export function HeaderContent() {
               width="20"
               height="20"
               fill="currentColor"
-              style={{ marginRight: '8px' }} // Added a small margin for the icon
+              style={{ marginRight: '8px' }}
             >
               <path d="M17.21 9l-4.3-6.2c-.38-.55-1.09-.56-1.47-.02L7.08 9H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-3.79zM12 5.5L15.25 10H8.75L12 5.5zM12 18c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
             </svg>
