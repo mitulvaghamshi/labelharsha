@@ -4,23 +4,19 @@ import { ProductCard } from "./ProductCard";
 export function ProductCarousel({ items }) {
     const containerRef = useRef(null);
 
-    const scrollNext = () => {
+    const handleScroll = (direction) => {
         if (containerRef.current) {
+            const amount = containerRef.current.offsetWidth;
+
             containerRef.current.scrollBy({
-                left: containerRef.current.offsetWidth,
+                left: direction === 'next' ? amount : -amount,
                 behavior: 'smooth'
             });
         }
     };
 
-    const scrollPrev = () => {
-        if (containerRef.current) {
-            containerRef.current.scrollBy({
-                left: -containerRef.current.offsetWidth,
-                behavior: 'smooth'
-            });
-        }
-    };
+    const scrollPrev = () => handleScroll('prev');
+    const scrollNext = () => handleScroll('next');
 
     return (
         <div className="slider">
