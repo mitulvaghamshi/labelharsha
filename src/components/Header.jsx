@@ -9,7 +9,7 @@ const Button = ({ href, children, variant = 'primary' }) => {
   );
 };
 
-export function HeaderContent() {
+export function Header() {
   return (
     <header className="hero-section" id="home">
       <img

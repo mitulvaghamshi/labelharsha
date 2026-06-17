@@ -1,4 +1,4 @@
-import '../styles/ShowCase.css';
+import '../styles/Showcase.css';
 
 const PromoCard = ({ icon, title, description }) => (
     <div className="promo-item">
@@ -10,7 +10,7 @@ const PromoCard = ({ icon, title, description }) => (
     </div>
 );
 
-export function ShowCaseContent() {
+export function Showcase() {
     const promotions = [
         {
             icon: "🎉",

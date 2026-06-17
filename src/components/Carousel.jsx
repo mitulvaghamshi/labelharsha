@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ProductCard } from "./ProductCard";
+import { Product } from "./Product";
 
 export function ProductCarousel({ items }) {
     const containerRef = useRef(null);
@@ -23,7 +23,7 @@ export function ProductCarousel({ items }) {
             <div className="slides" ref={containerRef}>
                 {items.map((item) => (
                     <div key={item.id}>
-                        <ProductCard
+                        <Product
                             item={item}
                             isCarousel={true}
                             onPrev={scrollPrev}

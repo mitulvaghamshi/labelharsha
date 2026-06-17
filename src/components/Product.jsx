@@ -41,7 +41,7 @@ const WhatsAppButton = ({ product, tag }) => {
     );
 };
 
-export function ProductCard({ item, isCarousel, onPrev, onNext }) {
+export function Product({ item, isCarousel, onPrev, onNext }) {
     const handleNav = (action) => {
         const handler = (e) => {
             e.preventDefault();

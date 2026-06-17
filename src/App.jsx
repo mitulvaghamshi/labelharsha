@@ -1,25 +1,25 @@
-import { AboutContent } from './components/AboutContent';
-import { BackToTopButton } from './components/BackToTopButton';
-import { FooterContent } from './components/FooterContent';
-import { HeaderContent } from './components/HeaderContent';
-import { ProductsContent } from './components/ProductsContent';
-import { ReviewsContent } from './components/ReviewsContent';
-import { ShowCaseContent } from './components/ShowCaseContent';
-import { TopNavigation } from './components/TopNavigation';
-import { VisitUsContent } from './components/VisitUsContent';
+import { About } from './components/About';
+import { BackToTop } from './components/BackToTop';
+import { Catalog } from './components/Catalog';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { NavBar } from './components/NavBar';
+import { Reviews } from './components/Reviews';
+import { Showcase } from './components/Showcase';
+import { VisitUs } from './components/VisitUs';
 
 export default function App() {
   return (
     <>
-      <TopNavigation />
-      <HeaderContent />
-      <AboutContent />
-      <ShowCaseContent />
-      <ProductsContent />
-      <ReviewsContent />
-      <VisitUsContent />
-      <FooterContent />
-      <BackToTopButton />
+      <NavBar />
+      <Header />
+      <About />
+      <Showcase />
+      <Catalog />
+      <Reviews />
+      <VisitUs />
+      <Footer />
+      <BackToTop />
     </>
   );
 }

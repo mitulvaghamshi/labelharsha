@@ -6,7 +6,7 @@ const FeatureItem = ({ icon, text }) => (
     </div>
 );
 
-export function AboutContent() {
+export function About() {
     const features = [
         { icon: '✨', text: 'Vibrant Designer Colors' },
         { icon: '🤜️', text: 'Handpicked Premium Fabrics' },

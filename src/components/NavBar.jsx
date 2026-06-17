@@ -7,7 +7,7 @@ const BrandLogo = ({ on_click }) => (
     </a>
 );
 
-const NavigationLinks = ({ is_open, onClick }) => {
+const NavLinks = ({ is_open, onClick }) => {
     const links = [
         { label: "Home", href: "#" },
         { label: "Philosophy", href: "#about" },
@@ -48,7 +48,7 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
     );
 };
 
-export function TopNavigation() {
+export function NavBar() {
     // Mobile menu management
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -86,7 +86,7 @@ export function TopNavigation() {
                 <span />
             </div>
             <BrandLogo onClick={closeMenu} />
-            <NavigationLinks is_open={menuOpen} onClick={closeMenu} />
+            <NavLinks is_open={menuOpen} onClick={closeMenu} />
             <div className="nav-controls">
                 <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>

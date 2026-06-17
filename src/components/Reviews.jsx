@@ -15,7 +15,7 @@ const ReviewCard = ({ review }) => (
     </div>
 );
 
-export function ReviewsContent() {
+export function Reviews() {
     return (
         <section className="testimonials-section" id="testimonials">
             <div className="container">

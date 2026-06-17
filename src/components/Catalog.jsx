@@ -1,13 +1,12 @@
 import { useState } from 'react';
 
-import { ProductCard } from './ProductCard';
-import { ProductCarousel } from './ProductCarousel';
+import { Carousel } from './Carousel';
+import { Product } from './Product';
 
 import { CATEGORIES } from '../utils/categories';
-import { getProducts } from '../utils/getProducts';
-import ALL_PRODUCTS from '../utils/items.json';
+import { getProducts } from '../utils/products';
 
-import '../styles/ProductGrid.css';
+import '../styles/Catalog.css';
 
 function HeaderSection() {
     return (
@@ -47,9 +46,9 @@ function ProductSection({ children }) {
     );
 };
 
-export function ProductsContent() {
+export function Catalog() {
     const [activeCategory, setActiveCategory] = useState("all");
-    const { tallUngrouped, wideGroups, tallGroups } = getProducts(ALL_PRODUCTS, activeCategory);
+    const { tallUngrouped, wideGroups, tallGroups } = getProducts(activeCategory);
 
     const hasAnyProducts = tallUngrouped.length > 0 || wideGroups.length > 0 || tallGroups.length > 0;
 
@@ -64,7 +63,7 @@ export function ProductsContent() {
                     <ProductSection>
                         <div id="product-card-container-tall" className="product-grid-tall">
                             {tallUngrouped.map(item => (
-                                <ProductCard key={item.id} item={item} isCarousel={false} />
+                                <Product key={item.id} item={item} isCarousel={false} />
                             ))}
                         </div>
                     </ProductSection>
@@ -74,7 +73,7 @@ export function ProductsContent() {
                     <ProductSection>
                         <div id="product-card-container-wide" className="product-grid-wide">
                             {wideGroups.map((group, idx) => (
-                                <ProductCarousel key={`wide-group-${idx}`} items={group} />
+                                <Carousel key={`wide-group-${idx}`} items={group} />
                             ))}
                         </div>
                     </ProductSection>
@@ -84,7 +83,7 @@ export function ProductsContent() {
                     <ProductSection>
                         <div id="product-card-container-tall-grouped" className="product-grid-tall">
                             {tallGroups.map((group, idx) => (
-                                <ProductCarousel key={`tall-group-${idx}`} items={group} />
+                                <Carousel key={`tall-group-${idx}`} items={group} />
                             ))}
                         </div>
                     </ProductSection>

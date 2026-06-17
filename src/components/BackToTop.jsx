@@ -12,7 +12,7 @@ const BackToTopIcon = () => (
     </svg>
 );
 
-export function BackToTopButton() {
+export function BackToTop() {
     const SCROLL_THRESHOLD = 400;
 
     const [isVisible, setIsVisible] = useState(false);

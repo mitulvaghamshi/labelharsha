@@ -6,7 +6,7 @@ const FooterDisclaimer = ({ children }) => (
     <p className="footer-disclaimer">{children}</p>
 );
 
-export function FooterContent() {
+export function Footer() {
     return (
         <footer className="site-footer">
             <div className="container" style={{ padding: '0 0 20px 0' }}>
