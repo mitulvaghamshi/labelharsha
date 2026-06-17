@@ -12,7 +12,7 @@ const InfoRow = ({ icon, title, children }) => (
     </div>
 );
 
-export function VisitUsContent() {
+export function VisitUs() {
     const icons = {
         clock: (
             <svg viewBox="0 0 24 24" fill="currentColor">

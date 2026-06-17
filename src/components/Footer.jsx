@@ -21,7 +21,7 @@ export function Footer() {
                 </FooterDisclaimer>
 
                 <FooterDisclaimer>
-                    👷️ Site WIP. 🚧️ Information maybe missing or inaccurate. 🚩️ For feedback & suggestions use WhatsApp link above.
+                    👷️ WIP: 🚧️ Some information maybe missing or inaccurate. 🚩️ For feedback/suggestions use WhatsApp link above.
                 </FooterDisclaimer>
             </div>
         </footer>
