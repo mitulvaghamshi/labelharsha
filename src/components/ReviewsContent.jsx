@@ -1,5 +1,5 @@
 import '../styles/Reviews.css';
-import '../utils/reviews';
+import { REVIEWS } from '../utils/reviews';
 
 const ReviewCard = ({ review }) => (
     <div className="review-card">
@@ -27,7 +27,7 @@ export function ReviewsContent() {
                 </div>
 
                 <div className="testimonials-grid">
-                    {reviews.map(review => (
+                    {REVIEWS.map(review => (
                         <ReviewCard key={review.id} review={review} />
                     ))}
                 </div>
