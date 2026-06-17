@@ -1,3 +1,5 @@
+import '../styles/ShowCase.css';
+
 const PromoCard = ({ icon, title, description }) => (
     <div className="promo-item">
         <span className="promo-icon">{icon}</span>

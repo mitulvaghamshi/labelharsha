@@ -1,3 +1,5 @@
+import '../styles/About.css';
+
 const FeatureItem = ({ icon, text }) => (
     <div className="feature-tag">
         {icon} <span>{text}</span>

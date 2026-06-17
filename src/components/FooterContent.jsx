@@ -1,3 +1,5 @@
+import '../styles/Footer.css';
+
 const CURRENT_YEAR = new Date().getFullYear();
 
 const FooterDisclaimer = ({ children }) => (

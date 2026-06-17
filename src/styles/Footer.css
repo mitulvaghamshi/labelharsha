@@ -1,0 +1,32 @@
+/* Footer Area styling */
+footer.site-footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+footer.site-footer .footer-logo {
+    font-family: var(--font-logo);
+    font-size: 2.2rem;
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-copyright {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-disclaimer {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}

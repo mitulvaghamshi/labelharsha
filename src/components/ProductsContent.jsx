@@ -7,6 +7,8 @@ import { CATEGORIES } from '../utils/categories';
 import { getProducts } from '../utils/getProducts';
 import ALL_PRODUCTS from '../utils/items.json';
 
+import '../styles/ProductGrid.css';
+
 function HeaderSection() {
     return (
         <div className="section-header">

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import '../styles/BackToTop.css';
+
 const BackToTopIcon = () => (
     <svg
         viewBox="0 0 24 24"

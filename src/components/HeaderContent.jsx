@@ -1,3 +1,5 @@
+import '../styles/Header.css';
+
 const Button = ({ href, children, variant = 'primary' }) => {
   const className = `btn-${variant}`;
   return (

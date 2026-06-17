@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import '../styles/NavBar.css';
 
 const BrandLogo = ({ on_click }) => (
     <a href="#" className="nav-logo" onClick={on_click}>

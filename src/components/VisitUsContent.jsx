@@ -1,3 +1,5 @@
+import '../styles/VisitUs.css';
+
 const InfoRow = ({ icon, title, children }) => (
     <div className="info-row">
         <div className="info-icon">
