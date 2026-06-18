@@ -7,7 +7,6 @@ nav.nav-bar {
     height: 60px;
     background-color: var(--bg-glass);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 5;
     border-bottom: 1px solid var(--border-color);
     display: flex;
@@ -59,7 +58,6 @@ nav.nav-bar {
     font-size: 1.8rem;
     background: var(--primary-gradient);
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     letter-spacing: 1px;

@@ -54,8 +54,8 @@ header.hero-section::before {
     padding: 10px 24px;
     border-radius: 30px;
     text-transform: uppercase;
-    /* animation: pulse 2s infinite 5s; */
     font-family: var(--font-alt);
+    /* animation: pulse 2s infinite 5s; */
 }
 
 /* @keyframes pulse {
@@ -79,7 +79,6 @@ header.hero-section::before {
     font-weight: 800;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }

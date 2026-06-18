@@ -1,3 +1,5 @@
+import { PROMOTIONS } from '../utils/promo-list';
+
 import '../styles/Showcase.css';
 
 const PromoCard = ({ icon, title, description }) => (
@@ -11,19 +13,6 @@ const PromoCard = ({ icon, title, description }) => (
 );
 
 export function Showcase() {
-    const promotions = [
-        {
-            icon: "🎉",
-            title: "Festive Group Bookings",
-            description: "Shopping for a family wedding or festive occasion? Enjoy special custom tailoring rates and discounts for groups of 5 or more."
-        },
-        {
-            icon: "💖",
-            title: "Complimentary Styling Consult",
-            description: "Speak directly with our chief designer for advice on matching accessories, fit suggestions, and personal styling."
-        }
-    ];
-
     return (
         <section className="showcase-section" id="showcase">
             <div className="container">
@@ -42,7 +31,7 @@ export function Showcase() {
                     </p>
 
                     <div className="showcase-promo-grid">
-                        {promotions.map((promo, index) => (
+                        {PROMOTIONS.map((promo, index) => (
                             <PromoCard
                                 key={index}
                                 icon={promo.icon}

@@ -1,4 +1,4 @@
-import ALL_PRODUCTS from './items.json';
+import ALL_PRODUCTS from './item-list.json';
 
 export function getProducts(category) {
     // Group 1: tall, non-carousel (LHxxx/T/NA)

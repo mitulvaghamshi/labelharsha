@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import { Product } from "./Product";
 
 export function Carousel({ items }) {

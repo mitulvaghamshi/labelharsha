@@ -1,5 +1,6 @@
+import { REVIEWS } from '../utils/review-list';
+
 import '../styles/Reviews.css';
-import { REVIEWS } from '../utils/reviews';
 
 const ReviewCard = ({ review }) => (
     <div className="review-card">

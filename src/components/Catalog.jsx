@@ -3,48 +3,42 @@ import { useState } from 'react';
 import { Carousel } from './Carousel';
 import { Product } from './Product';
 
-import { CATEGORIES } from '../utils/categories';
-import { getProducts } from '../utils/products';
+import { CATEGORIES } from '../utils/category-list';
+import { getProducts } from '../utils/get-product';
 
 import '../styles/Catalog.css';
 
-function HeaderSection() {
-    return (
-        <div className="section-header">
-            <h2 className="section-title">The Vibrant Collections</h2>
-            <p className="section-desc">
-                Explore our handpicked designer catalog of premium readymade wear,
-                categorized for ease of selection.
-            </p>
-        </div>
-    );
-};
+const HeaderSection = () => (
+    <div className="section-header">
+        <h2 className="section-title">The Vibrant Collections</h2>
+        <p className="section-desc">
+            Explore our handpicked designer catalog of premium readymade wear,
+            categorized for ease of selection.
+        </p>
+    </div>
+);
 
-function CategoryFilters({ activeCategory, onSelect }) {
-    return (
-        <div className="catalog-filters">
-            {CATEGORIES.map(cat => (
-                <button
-                    key={cat.id}
-                    className={`filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
-                    data-category={cat.id}
-                    onClick={() => onSelect(cat.id)}
-                >
-                    {cat.label}
-                </button>
-            ))}
-        </div>
-    );
-}
+const CategoryFilters = ({ activeCategory, onSelect }) => (
+    <div className="catalog-filters">
+        {CATEGORIES.map(cat => (
+            <button
+                key={cat.id}
+                className={`filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
+                data-category={cat.id}
+                onClick={() => onSelect(cat.id)}
+            >
+                {cat.label}
+            </button>
+        ))}
+    </div>
+)
 
-function ProductSection({ children }) {
-    return (
-        <>
-            {children}
-            <div style={{ height: '35px' }} />
-        </>
-    );
-};
+const ProductSection = ({ children }) => (
+    <>
+        {children}
+        <div style={{ height: '35px' }} />
+    </>
+);
 
 export function Catalog() {
     const [activeCategory, setActiveCategory] = useState("all");

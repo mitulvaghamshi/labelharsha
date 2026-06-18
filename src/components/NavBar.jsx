@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import '../styles/NavBar.css';
 
 const BrandLogo = ({ on_click }) => (
@@ -28,7 +29,6 @@ const NavLinks = ({ is_open, onClick }) => {
     );
 };
 
-// Sub-component for the Theme Toggle Button
 const ThemeToggle = ({ theme, toggleTheme }) => {
     return (
         <button onClick={toggleTheme} className="toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
@@ -49,10 +49,8 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
 };
 
 export function NavBar() {
-    // Mobile menu management
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Theme management
     const [theme, setTheme] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
         if (savedTheme) return savedTheme;
