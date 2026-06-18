@@ -1,9 +1,8 @@
 /* Category Filter Buttons */
 .catalog-filters {
     display: flex;
-    flex-wrap: nowrap;
-    overflow: auto;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     padding: 16px;
     margin-bottom: 60px;
