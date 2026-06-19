@@ -2,7 +2,9 @@ import { useRef } from "react";
 
 import { Product } from "./Product";
 
-export function Carousel({ items }) {
+import '../styles/Carousel.css';
+
+export function Carousel({ items, onOpen }) {
     const containerRef = useRef(null);
 
     const handleScroll = (direction) => {

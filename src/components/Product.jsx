@@ -1,3 +1,5 @@
+import '../styles/Product.css';
+
 const currencyFormatter = new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR'
