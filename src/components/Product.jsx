@@ -68,7 +68,7 @@ export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
     };
 
     return (
-        <div className="product-card" data-category={item.category}>
+        <div className="product-card" data-category={item.category} onClick={onOpen}>
             <div className="product-card-img">
                 <img src={`items/${item.image}`} alt={`${item.product} (${item.tag})`} loading="lazy" />
                 {isCarousel && (

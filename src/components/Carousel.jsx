@@ -31,6 +31,7 @@ export function Carousel({ items, onOpen }) {
                             isCarousel={true}
                             onPrev={scrollPrev}
                             onNext={scrollNext}
+                            onOpen={() => onOpen && onOpen(item)}
                         />
                     </div>
                 ))}
