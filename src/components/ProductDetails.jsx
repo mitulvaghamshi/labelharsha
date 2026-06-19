@@ -13,7 +13,7 @@ export function ProductDetails({ item, onClose }) {
                 </button>
                 <div className="product-details-image">
                     <img
-                        src={`items/${item.image}`}
+                        src={`items-large/${item.image}`}
                         alt={`${item.product} (${item.tag})`}
                         loading="lazy"
                     />

@@ -60,7 +60,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-tall" className="product-grid-tall">
                             {tallUngrouped.map(item => (
-                                    <Product key={item.id} item={item} isCarousel={false} onOpen={() => setSelectedItem(item)} />
+                                <Product key={item.id} item={item} isCarousel={false} onOpen={() => setSelectedItem(item)} />
                             ))}
                         </div>
                     </ProductSection>
