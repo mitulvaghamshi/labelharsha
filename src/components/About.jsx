@@ -9,7 +9,7 @@ const FeatureItem = ({ icon, text }) => (
 export function About() {
     const features = [
         { icon: '✨', text: 'Vibrant Designer Colors' },
-        { icon: '🤜️', text: 'Handpicked Premium Fabrics' },
+        { icon: '👌', text: 'Handpicked Premium Fabrics' },
         { icon: '✂️', text: 'Personalized Styling & Fit' },
     ];
 

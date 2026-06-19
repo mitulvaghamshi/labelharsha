@@ -43,7 +43,21 @@ const WhatsAppButton = ({ product, tag }) => {
     );
 };
 
-export function Product({ item, isCarousel, onPrev, onNext }) {
+export const ProductInfo = ({ item, onOpen }) => {
+    return (
+        <div className="product-card-details">
+            <ProductBadge badge={item.badge} />
+            <span className="product-card-id">{item.tag}</span>
+            <h3 className="product-card-title">{item.product}</h3>
+            <span className="product-card-material">{item.material}</span>
+            <p className="product-card-desc">{item.description}</p>
+            <PriceDisplay price={item.price} discount={item.discount} />
+            <WhatsAppButton product={item.product} tag={item.tag} />
+        </div>
+    );
+};
+
+export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
     const handleNav = (action) => {
         const handler = (e) => {
             e.preventDefault();
@@ -76,15 +90,7 @@ export function Product({ item, isCarousel, onPrev, onNext }) {
                     </div>
                 )}
             </div>
-            <div className="product-card-details">
-                <ProductBadge badge={item.badge} />
-                <span className="product-card-id">{item.tag}</span>
-                <h3 className="product-card-title">{item.product}</h3>
-                <span className="product-card-material">{item.material}</span>
-                <p className="product-card-desc">{item.description}</p>
-                <PriceDisplay price={item.price} discount={item.discount} />
-                <WhatsAppButton product={item.product} tag={item.tag} />
-            </div>
+            <ProductInfo item={item} onOpen={() => onOpen && onOpen()} />
         </div>
     );
 }
