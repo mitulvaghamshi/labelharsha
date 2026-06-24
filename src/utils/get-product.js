@@ -29,3 +29,7 @@ export function getProducts(category) {
 
     return { tallUngrouped, wideGroups, tallGroups };
 };
+
+export function getProduct(tag) {
+    return ALL_PRODUCTS.find(p => p.tag === tag);
+}

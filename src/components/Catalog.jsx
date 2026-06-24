@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import { Carousel } from './Carousel';
 import { Product } from './Product';
-import { ProductDetails } from './ProductDetails';
 
 import { CATEGORIES } from '../utils/category-list';
 import { getProducts } from '../utils/get-product';
@@ -43,7 +42,6 @@ const ProductSection = ({ children }) => (
 
 export function Catalog() {
     const [activeCategory, setActiveCategory] = useState("all");
-    const [selectedItem, setSelectedItem] = useState(null);
 
     const { tallUngrouped, wideGroups, tallGroups } = getProducts(activeCategory);
 
@@ -60,7 +58,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-tall" className="product-grid-tall">
                             {tallUngrouped.map(item => (
-                                <Product key={item.id} item={item} isCarousel={false} onOpen={() => setSelectedItem(item)} />
+                                <Product key={item.id} item={item} isCarousel={false} />
                             ))}
                         </div>
                     </ProductSection>
@@ -70,7 +68,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-wide" className="product-grid-wide">
                             {wideGroups.map((group, idx) => (
-                                <Carousel key={`wide-group-${idx}`} items={group} onOpen={setSelectedItem} />
+                                <Carousel key={`wide-group-${idx}`} items={group} />
                             ))}
                         </div>
                     </ProductSection>
@@ -80,7 +78,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-tall-grouped" className="product-grid-tall">
                             {tallGroups.map((group, idx) => (
-                                <Carousel key={`tall-group-${idx}`} items={group} onOpen={setSelectedItem} />
+                                <Carousel key={`tall-group-${idx}`} items={group} />
                             ))}
                         </div>
                     </ProductSection>
@@ -92,8 +90,6 @@ export function Catalog() {
                     </div>
                 )}
             </div>
-
-            <ProductDetails item={selectedItem} onClose={() => setSelectedItem(null)} />
         </section>
     );
 }

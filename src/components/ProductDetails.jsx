@@ -1,13 +1,25 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+import { getProduct } from '../utils/get-product';
 import { ProductInfo } from './Product';
 
 import '../styles/ProductDetails.css';
 
-export function ProductDetails({ item, onClose }) {
-    if (!item) return null;
-
+export function ProductDetails({ onClose }) {
     /* Track image loading state */
     const [isLoaded, setIsLoaded] = useState(false);
+
+    const { tag } = useParams();
+    const item = getProduct(decodeURIComponent(tag));
+
+    if (!item) {
+        return (
+            <div className="image-loader-overlay">
+                <h1>Requested product (id: {tag}) not found!</h1>
+            </div>
+        );
+    }
 
     return (
         <div className="product-details-overlay" onClick={onClose} role="dialog" aria-modal="true">
@@ -20,7 +32,7 @@ export function ProductDetails({ item, onClose }) {
                         <div className="spinner" />
                     </div>}
                     <img
-                        src={`items-large/${item.image}`}
+                        src={`/labelharsha/items-large/${item.image}`}
                         alt={`${item.product} (${item.tag})`}
                         onLoad={() => setIsLoaded(true)}
                         className={isLoaded ? 'loaded' : 'loading'}

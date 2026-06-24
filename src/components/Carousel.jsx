@@ -4,7 +4,7 @@ import { Product } from "./Product";
 
 import '../styles/Carousel.css';
 
-export function Carousel({ items, onOpen }) {
+export function Carousel({ items }) {
     const containerRef = useRef(null);
 
     const handleScroll = (direction) => {
@@ -31,7 +31,6 @@ export function Carousel({ items, onOpen }) {
                             isCarousel={true}
                             onPrev={scrollPrev}
                             onNext={scrollNext}
-                            onOpen={() => onOpen && onOpen(item)}
                         />
                     </div>
                 ))}

@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/Product.css';
 
 const currencyFormatter = new Intl.NumberFormat('en-IN', {
@@ -57,8 +60,14 @@ export const ProductInfo = ({ item, onOpen }) => {
     );
 };
 
-export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
-    const handleNav = (action) => {
+export function Product({ item, isCarousel, onPrev, onNext }) {
+    const navigate = useNavigate();
+
+    const handleNav = () => {
+        navigate(`/labelharsha/${encodeURIComponent(item.tag)}`);
+    };
+
+    const handleSlide = (action) => {
         const handler = (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -68,7 +77,7 @@ export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
     };
 
     return (
-        <div className="product-card" data-category={item.category} onClick={onOpen}>
+        <div className="product-card" data-category={item.category} onClick={handleNav}>
             <div className="product-card-img">
                 <img src={`items-thumb/${item.image}`} alt={`${item.product} (${item.tag})`} loading="lazy" />
                 {isCarousel && (
@@ -76,21 +85,21 @@ export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
                         <button
                             className="prev"
                             aria-label="Previous Slide"
-                            onClick={handleNav(onPrev)}
+                            onClick={handleSlide(onPrev)}
                         >
                             ❮
                         </button>
                         <button
                             className="next"
                             aria-label="Next Slide"
-                            onClick={handleNav(onNext)}
+                            onClick={handleSlide(onNext)}
                         >
                             ❯
                         </button>
                     </div>
                 )}
             </div>
-            <ProductInfo item={item} onOpen={() => onOpen && onOpen()} />
+            <ProductInfo item={item} />
         </div>
     );
 }
