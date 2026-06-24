@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import '../styles/VisitUs.css';
 
 const InfoRow = ({ icon, title, children }) => (
@@ -52,13 +54,13 @@ export function VisitUs() {
                         {/* Contact Info */}
                         <InfoRow icon={icons.phone} title="Reservations & Styling Phone">
                             <p style={{ marginBottom: '8px' }}>
-                                <a href="tel:+919033310101" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 700, fontSize: '1.2rem' }}>
+                                <NavLink key='/labelharsha/phone' to='tel:+919033310101' style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 700, fontSize: '1.2rem' }}>
                                     +91 90333 10101
-                                </a>
+                                </NavLink>
                             </p>
-                            <a href="https://wa.me/919033310101" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '8px 18px', fontSize: '0.85rem' }}>
+                            <NavLink key='/labelharsha/whatsapp' to='https://wa.me/919033310101' target='_blank' rel='noopener noreferrer' className="btn-primary" style={{ padding: '8px 18px', fontSize: '0.85rem' }}>
                                 <img src="icons/whatsapp.svg" alt="WhatsApp" style={{ height: '24px' }} />
-                            </a>
+                            </NavLink>
                         </InfoRow>
 
                         {/* Address Info */}

@@ -1,13 +1,5 @@
+import { NavLink } from 'react-router-dom';
 import '../styles/Header.css';
-
-const Button = ({ href, children, variant = 'primary' }) => {
-  const className = `btn-${variant}`;
-  return (
-    <a href={href} className={className}>
-      {children}
-    </a>
-  );
-};
 
 export function Header() {
   return (
@@ -26,7 +18,7 @@ export function Header() {
           designed with exquisite handcraft and handpicked vibrant fabrics.
         </p>
         <div className="hero-cta">
-          <Button href="#catalog" variant="primary">
+          <NavLink key='/labelharsha/catalog' to='/labelharsha/catalog' className={"btn-primary"}>
             <svg
               viewBox="0 0 24 24"
               width="20"
@@ -37,10 +29,10 @@ export function Header() {
               <path d="M17.21 9l-4.3-6.2c-.38-.55-1.09-.56-1.47-.02L7.08 9H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-3.79zM12 5.5L15.25 10H8.75L12 5.5zM12 18c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
             </svg>
             Explore Catalog
-          </Button>
-          <Button href="#contact" variant="secondary">
+          </NavLink>
+          <NavLink key='/labelharsha/contact' to='/labelharsha/contact' className={"btn-secondary"}>
             Visit Boutique
-          </Button>
+          </NavLink>
         </div>
       </div>
     </header>

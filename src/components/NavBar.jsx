@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
 
+import { NavLink } from "react-router-dom";
 import '../styles/NavBar.css';
 
-const BrandLogo = ({ on_click }) => (
-    <a href="#" className="nav-logo" onClick={on_click}>
+const BrandLogo = ({ onClick }) => (
+    <NavLink key='home' to='/labelharsha/' className={"nav-logo"} onClick={onClick}>
         <span>Label Harsha</span>
-    </a>
+    </NavLink>
 );
 
 const NavLinks = ({ isOpen, onClick }) => {
     const links = [
-        { label: "Home", href: "/" },
+        { label: "Home", href: "/labelharsha/" },
         { label: "Philosophy", href: "/labelharsha/about" },
         { label: "Showcase", href: "/labelharsha/showcase" },
         { label: "Collections", href: "/labelharsha/catalog" },
@@ -21,9 +22,7 @@ const NavLinks = ({ isOpen, onClick }) => {
     return (
         <div className={`nav-links-container ${isOpen ? "active" : ""}`} id="nav-links">
             {links.map((link) => (
-                <a key={link.label} href={link.href} className="nav-link" onClick={onClick}>
-                    {link.label}
-                </a>
+                <NavLink key={link.label} to={link.href} className={"nav-link"} onClick={onClick}>{link.label}</NavLink>
             ))}
         </div>
     );
