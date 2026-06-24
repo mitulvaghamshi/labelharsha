@@ -4,19 +4,19 @@ import { NavLink } from "react-router-dom";
 import '../styles/NavBar.css';
 
 const BrandLogo = ({ onClick }) => (
-    <NavLink key='home' to='/labelharsha/' className={"nav-logo"} onClick={onClick}>
+    <NavLink key='home' to='/' className={"nav-logo"} onClick={onClick}>
         <span>Label Harsha</span>
     </NavLink>
 );
 
 const NavLinks = ({ isOpen, onClick }) => {
     const links = [
-        { label: "Home", href: "/labelharsha/" },
-        { label: "Philosophy", href: "/labelharsha/about" },
-        { label: "Showcase", href: "/labelharsha/showcase" },
-        { label: "Collections", href: "/labelharsha/catalog" },
-        { label: "Reviews", href: "/labelharsha/reviews" },
-        { label: "Visit Us", href: "/labelharsha/contact" },
+        { label: "Home", href: "/" },
+        { label: "Philosophy", href: "/about" },
+        { label: "Showcase", href: "/showcase" },
+        { label: "Collections", href: "/catalog" },
+        { label: "Reviews", href: "/reviews" },
+        { label: "Visit Us", href: "/contact" },
     ];
 
     return (

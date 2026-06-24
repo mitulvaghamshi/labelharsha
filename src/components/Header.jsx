@@ -18,7 +18,7 @@ export function Header() {
           designed with exquisite handcraft and handpicked vibrant fabrics.
         </p>
         <div className="hero-cta">
-          <NavLink key='/labelharsha/catalog' to='/labelharsha/catalog' className={"btn-primary"}>
+          <NavLink key='/catalog' to='/catalog' className={"btn-primary"}>
             <svg
               viewBox="0 0 24 24"
               width="20"
@@ -30,7 +30,7 @@ export function Header() {
             </svg>
             Explore Catalog
           </NavLink>
-          <NavLink key='/labelharsha/contact' to='/labelharsha/contact' className={"btn-secondary"}>
+          <NavLink key='/contact' to='/contact' className={"btn-secondary"}>
             Visit Boutique
           </NavLink>
         </div>

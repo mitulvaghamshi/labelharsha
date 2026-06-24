@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes, useNavigate } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes, useNavigate } from 'react-router-dom';
 
 import { About } from './components/About';
 import { BackToTop } from './components/BackToTop';
@@ -36,14 +36,14 @@ export default function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/labelharsha/" element={<Home />} />
-        <Route path="/labelharsha/header" element={<Header />} />
-        <Route path="/labelharsha/about" element={<About />} />
-        <Route path="/labelharsha/showcase" element={<Showcase />} />
-        <Route path="/labelharsha/catalog" element={<Catalog />} />
-        <Route path="/labelharsha/reviews" element={<Reviews />} />
-        <Route path="/labelharsha/contact" element={<VisitUs />} />
-        <Route path="/labelharsha/:tag" element={<Product />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/header" element={<Header />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/showcase" element={<Showcase />} />
+        <Route path="/catalog" element={<Catalog />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/contact" element={<VisitUs />} />
+        <Route path="/:tag" element={<Product />} />
       </Routes>
       <Footer />
       <BackToTop />

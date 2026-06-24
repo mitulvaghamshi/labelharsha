@@ -84,7 +84,7 @@ export function Product({ item, isCarousel, onPrev, onNext }) {
     const navigate = useNavigate();
 
     const handleNav = () => {
-        navigate(`/labelharsha/${encodeURIComponent(item.tag)}`);
+        navigate(`/${encodeURIComponent(item.tag)}`);
     };
 
     const handleSlide = (action) => {
