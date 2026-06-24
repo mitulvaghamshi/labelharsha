@@ -46,11 +46,31 @@ const WhatsAppButton = ({ product, tag }) => {
     );
 };
 
-export const ProductInfo = ({ item, onOpen }) => {
+const ShareLinkButton = ({ tag }) => {
+    const shareUrl = `https://mitulvaghamshi.github.io/labelharsha/${encodeURIComponent(tag)}`;
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        navigator.clipboard.writeText(shareUrl).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        });
+    };
+
+    return (
+        <button className="btn-share" onClick={handleCopy}>
+            {copied ? 'Copied!' : 'Copy link'}
+        </button>
+    );
+};
+
+export const ProductInfo = ({ item }) => {
     return (
         <div className="product-card-details">
             <ProductBadge badge={item.badge} />
-            <span className="product-card-id">{item.tag}</span>
+            <span className="product-card-id">{item.tag} <ShareLinkButton tag={item.tag} /></span>
             <h3 className="product-card-title">{item.product}</h3>
             <span className="product-card-material">{item.material}</span>
             <p className="product-card-desc">{item.description}</p>

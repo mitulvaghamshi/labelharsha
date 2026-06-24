@@ -175,3 +175,17 @@
     height: 24px;
     width: 105px;
 }
+
+.btn-share {
+    color: var(--accent);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn-share::before {
+    content: "\1F517\00a0";
+}
+
+.btn-share:hover {
+    color: var(--primary);
+}
