@@ -22,7 +22,7 @@ export function ProductDetails({ onClose }) {
     }
 
     return (
-        <div className="product-details-overlay" onClick={onClose} role="dialog" aria-modal="true">
+        <div className="product-details-overlay" role="dialog" aria-modal="true">
             <div className="product-details-dialog" onClick={(e) => e.stopPropagation()}>
                 <button className="details-close" onClick={onClose} aria-label="Close details">
                     ✕

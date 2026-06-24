@@ -8,18 +8,18 @@ const BrandLogo = ({ on_click }) => (
     </a>
 );
 
-const NavLinks = ({ is_open, onClick }) => {
+const NavLinks = ({ isOpen, onClick }) => {
     const links = [
-        { label: "Home", href: "#" },
-        { label: "Philosophy", href: "#about" },
-        { label: "Showcase", href: "#showcase" },
-        { label: "Collections", href: "#catalog" },
-        { label: "Reviews", href: "#testimonials" },
-        { label: "Visit Us", href: "#contact" },
+        { label: "Home", href: "/" },
+        { label: "Philosophy", href: "/labelharsha/about" },
+        { label: "Showcase", href: "/labelharsha/showcase" },
+        { label: "Collections", href: "/labelharsha/catalog" },
+        { label: "Reviews", href: "/labelharsha/reviews" },
+        { label: "Visit Us", href: "/labelharsha/contact" },
     ];
 
     return (
-        <div className={`nav-links-container ${is_open ? "active" : ""}`} id="nav-links">
+        <div className={`nav-links-container ${isOpen ? "active" : ""}`} id="nav-links">
             {links.map((link) => (
                 <a key={link.label} href={link.href} className="nav-link" onClick={onClick}>
                     {link.label}
@@ -84,7 +84,7 @@ export function NavBar() {
                 <span />
             </div>
             <BrandLogo onClick={closeMenu} />
-            <NavLinks is_open={menuOpen} onClick={closeMenu} />
+            <NavLinks isOpen={menuOpen} onClick={closeMenu} />
             <div className="nav-controls">
                 <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>

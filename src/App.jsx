@@ -14,36 +14,39 @@ import { VisitUs } from './components/VisitUs';
 function Home() {
   return (
     <>
-      <NavBar />
       <Header />
       <About />
       <Showcase />
       <Catalog />
       <Reviews />
       <VisitUs />
-      <Footer />
-      <BackToTop />
     </>
   );
 }
 
 function Product() {
   const navigate = useNavigate();
-
   return (
-    <ProductDetails onClose={() => {
-      navigate('/labelharsha/');
-    }} />
+    <ProductDetails onClose={() => { navigate(-1); }} />
   );
 }
 
 export default function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
         <Route path="/labelharsha/" element={<Home />} />
+        <Route path="/labelharsha/header" element={<Header />} />
+        <Route path="/labelharsha/about" element={<About />} />
+        <Route path="/labelharsha/showcase" element={<Showcase />} />
+        <Route path="/labelharsha/catalog" element={<Catalog />} />
+        <Route path="/labelharsha/reviews" element={<Reviews />} />
+        <Route path="/labelharsha/contact" element={<VisitUs />} />
         <Route path="/labelharsha/:tag" element={<Product />} />
       </Routes>
+      <Footer />
+      <BackToTop />
     </Router>
   );
 }
