@@ -47,7 +47,7 @@ const WhatsAppButton = ({ product, tag }) => {
 };
 
 const ShareLinkButton = ({ tag }) => {
-    const shareUrl = `https://mitulvaghamshi.github.io/labelharsha/${encodeURIComponent(tag)}`;
+    const shareUrl = `https://mitulvaghamshi.github.io/labelharsha/#/${encodeURIComponent(tag)}`;
     const [copied, setCopied] = useState(false);
 
     const handleCopy = (e) => {
@@ -84,7 +84,7 @@ export function Product({ item, isCarousel, onPrev, onNext }) {
     const navigate = useNavigate();
 
     const handleNav = () => {
-        navigate(`/${encodeURIComponent(item.tag)}`);
+        navigate(`/#/${encodeURIComponent(item.tag)}`);
     };
 
     const handleSlide = (action) => {
