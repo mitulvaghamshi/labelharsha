@@ -1,5 +1,3 @@
-import { NavLink } from 'react-router-dom';
-
 import '../styles/VisitUs.css';
 
 const InfoRow = ({ icon, title, children }) => (
@@ -48,19 +46,23 @@ export function VisitUs() {
                     <div className="info-card">
                         {/* Timing Info */}
                         <InfoRow icon={icons.clock} title="Boutique Hours">
-                            <p>Mon - Sat: 10:00 AM to 8:30 PM (IST)<br />Sunday: By Appointment Only</p>
+                            <p>Mon - Sat: 09:00 AM to 09:00 PM (IST)<br />Sunday: By Appointment Only</p>
                         </InfoRow>
 
                         {/* Contact Info */}
                         <InfoRow icon={icons.phone} title="Reservations & Styling Phone">
                             <p style={{ marginBottom: '8px' }}>
-                                <NavLink key='/phone' to='tel:+919033310101' style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 700, fontSize: '1.2rem' }}>
+                                <a href='tel:+919033310101' style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: 700, fontSize: '1.2rem' }}>
                                     +91 90333 10101
-                                </NavLink>
+                                </a>
                             </p>
-                            <NavLink key='/whatsapp' to='https://wa.me/919033310101' target='_blank' rel='noopener noreferrer' className="btn-primary" style={{ padding: '8px 18px', fontSize: '0.85rem' }}>
+                            <a href='https://wa.me/919033310101' target='_blank' rel='noopener noreferrer' className="btn-primary" style={{ padding: '8px 18px' }}>
                                 <img src="icons/whatsapp.svg" alt="WhatsApp" style={{ height: '24px' }} />
-                            </NavLink>
+                            </a>
+                            &nbsp;&nbsp;
+                            <a href='https://www.instagram.com/labelharsha' target='_blank' rel='noopener noreferrer' className="btn-primary" style={{ padding: '8px 18px', textTransform: 'capitalize' }}>
+                                <img src="icons/instagram.webp" alt="Instagram" style={{ height: '24px' }} /> Instagram
+                            </a>
                         </InfoRow>
 
                         {/* Address Info */}
@@ -74,13 +76,13 @@ export function VisitUs() {
                 <div className="map-card">
                     <iframe
                         title="Label Harsha Boutique Location Map"
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d230.28488344452242!2d72.93825752087201!3d22.558219268283747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1781597081283!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14738.144369645855!2d72.93501439999999!3d22.559044399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4feadac425bd%3A0xc812bf4577bd8076!2sLabel%20Harsha%20Boutique!5e0!3m2!1sen!2sin!4v1782541588975!5m2!1sen!2sin"
                         width="500"
                         height="460"
                         style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
+                        referrerPolicy="strict-origin-when-cross-origin"
                         aria-label="Label Harsha Boutique Location Map"
                     >
                     </iframe>

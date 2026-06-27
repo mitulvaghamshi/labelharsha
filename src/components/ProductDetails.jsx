@@ -1,26 +1,24 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
 
-import { getProduct } from '../utils/get-product';
 import { ProductInfo } from './Product';
 
 import '../styles/ProductDetails.css';
 
-export function ProductDetails({ onClose }) {
+export function ProductDetails({ item, onClose }) {
+    if (!item) { return null; }
+
     /* Track image loading state */
     const [isLoaded, setIsLoaded] = useState(false);
+    // const { tag } = useParams();
+    // const item = getProduct(decodeURIComponent(tag));
 
-    const { tag } = useParams();
-    const item = getProduct(decodeURIComponent(tag));
-
-    if (!item) {
-        return (
-            <div className="image-loader-overlay">
-                <h1>Requested product (id: {tag}) not found!</h1>
-            </div>
-        );
-    }
-
+    // if (!item) {
+    //     return (
+    //         <div className="image-loader-overlay">
+    //             <h1>Requested product (id: {tag}) not found!</h1>
+    //         </div>
+    //     );
+    // }
     return (
         <div className="product-details-overlay" role="dialog" aria-modal="true">
             <div className="product-details-dialog" onClick={(e) => e.stopPropagation()}>

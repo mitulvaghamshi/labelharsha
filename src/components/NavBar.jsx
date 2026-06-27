@@ -1,28 +1,27 @@
 import { useEffect, useState } from "react";
 
-import { NavLink } from "react-router-dom";
 import '../styles/NavBar.css';
 
 const BrandLogo = ({ onClick }) => (
-    <NavLink key='home' to='/' className={"nav-logo"} onClick={onClick}>
+    <a href='#' className={"nav-logo"} onClick={onClick}>
         <span>Label Harsha</span>
-    </NavLink>
+    </a>
 );
 
 const NavLinks = ({ isOpen, onClick }) => {
     const links = [
-        { label: "Home", href: "/" },
-        { label: "Philosophy", href: "/about" },
-        { label: "Showcase", href: "/showcase" },
-        { label: "Collections", href: "/catalog" },
-        { label: "Reviews", href: "/reviews" },
-        { label: "Visit Us", href: "/contact" },
+        { label: "Home", href: "#" },
+        { label: "Philosophy", href: "#about" },
+        { label: "Showcase", href: "#showcase" },
+        { label: "Collections", href: "#catalog" },
+        // { label: "Reviews", href: "#testimonials" },
+        { label: "Visit Us", href: "#contact" },
     ];
 
     return (
-        <div className={`nav-links-container ${isOpen ? "active" : ""}`} id="nav-links">
+        <div id="nav-links" className={`nav-links-container ${isOpen ? "active" : ""}`}>
             {links.map((link) => (
-                <NavLink key={link.label} to={link.href} className={"nav-link"} onClick={onClick}>{link.label}</NavLink>
+                <a key={link.label} href={link.href} className={"nav-link"} onClick={onClick}>{link.label}</a>
             ))}
         </div>
     );

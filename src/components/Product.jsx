@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import '../styles/Product.css';
 
@@ -46,31 +44,31 @@ const WhatsAppButton = ({ product, tag }) => {
     );
 };
 
-const ShareLinkButton = ({ tag }) => {
-    const shareUrl = `https://mitulvaghamshi.github.io/labelharsha/#/${encodeURIComponent(tag)}`;
-    const [copied, setCopied] = useState(false);
+// const ShareLinkButton = ({ tag }) => {
+//     const shareUrl = `https://mitulvaghamshi.github.io/labelharsha/#/${encodeURIComponent(tag)}`;
+//     const [copied, setCopied] = useState(false);
 
-    const handleCopy = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        navigator.clipboard.writeText(shareUrl).then(() => {
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-        });
-    };
+//     const handleCopy = (e) => {
+//         e.preventDefault();
+//         e.stopPropagation();
+//         navigator.clipboard.writeText(shareUrl).then(() => {
+//             setCopied(true);
+//             setTimeout(() => setCopied(false), 2000);
+//         });
+//     };
 
-    return (
-        <button className="btn-share" onClick={handleCopy}>
-            {copied ? 'Copied!' : 'Copy link'}
-        </button>
-    );
-};
+//     return (
+//         <button className="btn-share" onClick={handleCopy}>
+//             {copied ? 'Copied!' : 'Copy link'}
+//         </button>
+//     );
+// };
 
 export const ProductInfo = ({ item }) => {
     return (
         <div className="product-card-details">
             <ProductBadge badge={item.badge} />
-            <span className="product-card-id">{item.tag} <ShareLinkButton tag={item.tag} /></span>
+            <span className="product-card-id">{item.tag}{/*  <ShareLinkButton tag={item.tag} /> */}</span>
             <h3 className="product-card-title">{item.product}</h3>
             <span className="product-card-material">{item.material}</span>
             <p className="product-card-desc">{item.description}</p>
@@ -80,12 +78,12 @@ export const ProductInfo = ({ item }) => {
     );
 };
 
-export function Product({ item, isCarousel, onPrev, onNext }) {
-    const navigate = useNavigate();
+export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
+    // const navigate = useNavigate();
 
-    const handleNav = () => {
-        navigate(`/#/${encodeURIComponent(item.tag)}`);
-    };
+    // const handleNav = () => {
+    //     navigate(`/#/${encodeURIComponent(item.tag)}`);
+    // };
 
     const handleSlide = (action) => {
         const handler = (e) => {
@@ -97,7 +95,7 @@ export function Product({ item, isCarousel, onPrev, onNext }) {
     };
 
     return (
-        <div className="product-card" data-category={item.category} onClick={handleNav}>
+        <div className="product-card" data-category={item.category} onClick={() => onOpen(item)}>
             <div className="product-card-img">
                 <img src={`items-thumb/${item.image}`} alt={`${item.product} (${item.tag})`} loading="lazy" />
                 {isCarousel && (

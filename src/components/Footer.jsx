@@ -19,10 +19,6 @@ export function Footer() {
                 <FooterDisclaimer>
                     *Alteration and custom sizing take 3 to 5 business days and are applicable only to purchased catalog items.
                 </FooterDisclaimer>
-
-                <FooterDisclaimer>
-                    👷️ WIP: 🚧️ Some information maybe missing or inaccurate. 🚩️ For feedback/suggestions use WhatsApp link above.
-                </FooterDisclaimer>
             </div>
         </footer>
     );

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { ProductDetails } from '../components/ProductDetails';
 import { Carousel } from './Carousel';
 import { Product } from './Product';
 
@@ -42,6 +43,7 @@ const ProductSection = ({ children }) => (
 
 export function Catalog() {
     const [activeCategory, setActiveCategory] = useState("all");
+    const [selectedItem, onItemSelected] = useState(null);
 
     const { tallUngrouped, wideGroups, tallGroups } = getProducts(activeCategory);
 
@@ -58,7 +60,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-tall" className="product-grid-tall">
                             {tallUngrouped.map(item => (
-                                <Product key={item.id} item={item} isCarousel={false} />
+                                <Product key={item.id} item={item} isCarousel={false} onOpen={onItemSelected} />
                             ))}
                         </div>
                     </ProductSection>
@@ -68,7 +70,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-wide" className="product-grid-wide">
                             {wideGroups.map((group, idx) => (
-                                <Carousel key={`wide-group-${idx}`} items={group} />
+                                <Carousel key={`wide-group-${idx}`} items={group} onOpen={onItemSelected} />
                             ))}
                         </div>
                     </ProductSection>
@@ -78,7 +80,7 @@ export function Catalog() {
                     <ProductSection>
                         <div id="product-card-container-tall-grouped" className="product-grid-tall">
                             {tallGroups.map((group, idx) => (
-                                <Carousel key={`tall-group-${idx}`} items={group} />
+                                <Carousel key={`tall-group-${idx}`} items={group} onOpen={onItemSelected} />
                             ))}
                         </div>
                     </ProductSection>
@@ -90,6 +92,8 @@ export function Catalog() {
                     </div>
                 )}
             </div>
+
+            <ProductDetails key="item-popup" item={selectedItem} onClose={() => onItemSelected(null)} />
         </section>
     );
 }
