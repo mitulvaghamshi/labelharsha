@@ -35,32 +35,6 @@
   transition: transform 1s;
 }
 
-/* Container for buttons to position them absolutely relative to the card */
-.product-card_nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.product-card_nav button {
-  color: var(--white);
-  background: var(--primary-gradient);
-  pointer-events: auto;
-  border: none;
-  padding: 4px 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
 .product-card-badge {
   background: var(--primary-gradient);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -158,24 +132,23 @@
   border: none;
   border-radius: 30px;
   padding: 12px 24px;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
   transition: all 0.25s ease;
 }
 
 .btn-whatsapp:hover {
-  background-color: #25d3657e;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 }
 
 .btn-whatsapp img {
   height: 24px;
-  width: 105px;
 }
 
+/*
 .btn-share {
   color: var(--accent);
   padding: 12px;
@@ -189,3 +162,4 @@
 .btn-share:hover {
   color: var(--primary);
 }
+*/

@@ -115,7 +115,6 @@ header.hero-section::before {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   box-shadow: 0 8px 25px rgba(255, 20, 147, 0.35);
   font-family: var(--font-alt);
   text-transform: uppercase;

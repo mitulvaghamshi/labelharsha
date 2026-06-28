@@ -19,8 +19,7 @@ const ProductBadge = ({ badge }) => {
 };
 
 const PriceDisplay = ({ price, discount }) => {
-  const originalPrice = price *
-    (1 + (Number(discount) > 0 ? discount / 100 : 0));
+  const originalPrice = price * (1 + (Number(discount) > 0 ? discount / 100 : 0));
   return (
     <div className="price-container">
       <span className="price-current">{currencyFormatter.format(price)}/-</span>
@@ -49,10 +48,10 @@ const WhatsAppButton = ({ product, tag }) => {
     >
       <img
         src="icons/whatsapp.svg"
-        width={"103px"}
+        width={"24px"}
         height={"24px"}
         alt="WhatsApp"
-      />
+      />&nbsp;WhatsApp
     </a>
   );
 };
@@ -117,21 +116,26 @@ export function Product({ item, isCarousel, onPrev, onNext, onOpen }) {
           loading="lazy"
         />
         {isCarousel && (
-          <div className="product-card_nav">
-            <button
-              className="prev"
-              aria-label="Previous Slide"
-              onClick={handleSlide(onPrev)}
-            >
-              ❮
-            </button>
-            <button
-              className="next"
-              aria-label="Next Slide"
-              onClick={handleSlide(onNext)}
-            >
-              ❯
-            </button>
+          <div className="slides-nav">
+            {onPrev && (
+              <button
+                className="prev"
+                aria-label="Previous Slide"
+                onClick={handleSlide(onPrev)}
+              >
+                ❮
+              </button>
+            )}
+
+            {onNext && (
+              <button
+                className="next"
+                aria-label="Next Slide"
+                onClick={handleSlide(onNext)}
+              >
+                ❯
+              </button>
+            )}
           </div>
         )}
       </div>

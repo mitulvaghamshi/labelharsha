@@ -72,13 +72,14 @@ export function VisitUs() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
-                style={{ padding: "8px 18px" }}
+                style={{ padding: "8px 18px", textTransform: "capitalize" }}
               >
                 <img
                   src="icons/whatsapp.svg"
+                  width={"24px"}
+                  height={"24px"}
                   alt="WhatsApp"
-                  style={{ height: "24px" }}
-                />
+                />&nbsp;WhatsApp
               </a>
               &nbsp;&nbsp;
               <a
@@ -89,11 +90,11 @@ export function VisitUs() {
                 style={{ padding: "8px 18px", textTransform: "capitalize" }}
               >
                 <img
-                  src="icons/instagram.webp"
+                  src="icons/instagram.svg"
+                  width={"24px"}
+                  height={"24px"}
                   alt="Instagram"
-                  style={{ height: "24px" }}
-                />{" "}
-                Instagram
+                />&nbsp;Instagram
               </a>
             </InfoRow>
 

@@ -19,3 +19,29 @@
   flex-shrink: 0;
   scroll-snap-align: start;
 }
+
+/* Container for buttons to position them absolutely relative to the card */
+.slides-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slides-nav button {
+  color: var(--white);
+  background: var(--primary-gradient);
+  pointer-events: auto;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
