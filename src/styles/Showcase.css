@@ -1,130 +1,139 @@
 /* Unlimited Showcase Feature Card styling */
 .showcase-section {
-    background-color: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    position: relative;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
 }
 
 .showcase-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 20, 147, 0.04) 100%);
-    border: 2px solid var(--accent);
-    border-radius: 30px;
-    padding: 60px 50px;
-    text-align: center;
-    box-shadow: var(--shadow-hard);
-    position: relative;
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    var(--bg-card) 0%,
+    rgba(255, 20, 147, 0.04) 100%
+  );
+  border: 2px solid var(--accent);
+  border-radius: 30px;
+  padding: 60px 50px;
+  text-align: center;
+  box-shadow: var(--shadow-hard);
+  position: relative;
+  overflow: hidden;
 }
 
 .showcase-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    var(--primary),
+    var(--secondary),
+    var(--accent)
+  );
 }
 
 .showcase-badge {
-    background-color: var(--accent);
-    color: var(--black-bg);
-    font-weight: 800;
-    font-size: 1rem;
-    padding: 12px 28px;
-    border-radius: 30px;
-    display: inline-block;
-    margin-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(255, 184, 28, 0.35);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-family: var(--font-alt);
+  background-color: var(--accent);
+  color: var(--black-bg);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(255, 184, 28, 0.35);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-alt);
 }
 
 .showcase-title {
-    font-family: var(--font-display);
-    font-size: 3.2rem;
-    color: var(--primary);
-    font-weight: 800;
-    margin-bottom: 20px;
-    line-height: 1.2;
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .showcase-discount {
-    font-family: var(--font-display);
-    font-size: 4rem;
-    color: var(--accent);
-    font-weight: 800;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    gap: 8px;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--accent);
+  font-weight: 800;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px;
 }
 
 .showcase-discount span.small {
-    font-size: 1.6rem;
-    color: var(--text-muted);
-    font-weight: 600;
-    font-family: var(--font-body);
+  font-size: 1.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-family: var(--font-body);
 }
 
 .showcase-desc {
-    font-size: 1.15rem;
-    color: var(--text-secondary);
-    max-width: 750px;
-    margin: 0 auto 40px auto;
-    line-height: 1.8;
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  line-height: 1.8;
 }
 
 .showcase-promo-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 40px;
 }
 
 .promo-item {
-    background-color: var(--bg-secondary);
-    border: 1px dashed var(--primary);
-    border-radius: var(--border-radius);
-    padding: 25px;
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+  background-color: var(--bg-secondary);
+  border: 1px dashed var(--primary);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .promo-icon {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .promo-text h4 {
-    font-family: var(--font-display);
-    color: var(--primary);
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 8px;
+  font-family: var(--font-display);
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .promo-text p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.6;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .showcase-notice {
-    background-color: rgba(255, 184, 28, 0.08);
-    border: 1px solid var(--gold-glow);
-    padding: 14px 28px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--accent);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+  background-color: rgba(255, 184, 28, 0.08);
+  border: 1px solid var(--gold-glow);
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }

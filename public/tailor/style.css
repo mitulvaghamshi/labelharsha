@@ -1,100 +1,100 @@
 @import url(https://themes.googleusercontent.com/fonts/css?kit=AqgWgZyVC5DgXLgSRaaJRorNNwalQhNp4h-F6hB2VlWxYEfnvBBHnCj0pjiiBnw6);
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    color-scheme: dark light;
+  color-scheme: dark light;
 }
 
 /* Ensure the container is relative so absolute positioning works */
 .doc-content {
-    position: relative;
-    margin: auto;
-    padding: 16pt;
-    border: 1px solid;
-    font-size: x-large;
-    width: 7in !important;
+  position: relative;
+  margin: auto;
+  padding: 16pt;
+  border: 1px solid;
+  font-size: x-large;
+  width: 7in !important;
 }
 
 /* Typography */
 .main-title {
-    padding: 0;
-    margin-top: 0;
-    font-size: 51pt;
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Algerian", serif;
+  padding: 0;
+  margin-top: 0;
+  font-size: 51pt;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Algerian", serif;
 }
 
 h1,
 h2,
 .price-table th {
-    padding: 20pt 0 6pt 0;
-    font-family: "Arial";
+  padding: 20pt 0 6pt 0;
+  font-family: "Arial";
 }
 
 .footer-notes {
-    opacity: 0.5;
-    font-size: large;
-    text-align: center;
-    margin-top: 20px;
+  opacity: 0.5;
+  font-size: large;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .warning {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* Table Styling */
 .price-table {
-    border-collapse: collapse;
-    margin: auto;
-    width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
 }
 
 .price-table td,
 .price-table th {
-    border: 1px solid currentColor;
-    padding: 8pt;
-    text-align: center;
-    vertical-align: middle;
+  border: 1px solid currentColor;
+  padding: 8pt;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* Specific column widths to mimic the original layout */
 .col-no {
-    width: 42.8pt;
+  width: 42.8pt;
 }
 
 .col-item {
-    width: 218.2pt;
+  width: 218.2pt;
 }
 
 .col-price {
-    width: 118.5pt;
+  width: 118.5pt;
 }
 
 .col-custom {
-    width: 126pt;
+  width: 126pt;
 }
 
 .spacer-row td {
-    height: 20pt;
+  height: 20pt;
 }
 
 /* Dynamic adjustment for shared cells */
 .price-table tr td[colspan="2"] {
-    border-bottom: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 button {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
-    border: none;
-    cursor: pointer;
-    width: 60px;
-    height: 40px;
-    border-radius: 50%;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
 }

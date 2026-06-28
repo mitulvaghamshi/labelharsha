@@ -1,46 +1,46 @@
 /* Category Filter Buttons */
 .catalog-filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 16px;
-    margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 16px;
+  margin-bottom: 60px;
 }
 
 .filter-btn {
-    text-wrap-mode: nowrap;
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    cursor: pointer;
-    max-lines: 1;
-    font-family: var(--font-alt);
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-wrap-mode: nowrap;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  max-lines: 1;
+  font-family: var(--font-alt);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn.active,
 .filter-btn:hover {
-    color: var(--white);
-    background: var(--primary-gradient);
-    border-color: transparent;
-    box-shadow: 0 8px 20px rgba(255, 20, 147, 0.35);
-    transform: translateY(-3px);
+  color: var(--white);
+  background: var(--primary-gradient);
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.35);
+  transform: translateY(-3px);
 }
 
 /* Product Cards Grid layout */
 .product-grid-tall {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 35px;
 }
 
 .product-grid-wide {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
-    gap: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  gap: 35px;
 }

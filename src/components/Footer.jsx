@@ -1,25 +1,26 @@
-import '../styles/Footer.css';
+import "../styles/Footer.css";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
 const FooterDisclaimer = ({ children }) => (
-    <p className="footer-disclaimer">{children}</p>
+  <p className="footer-disclaimer">{children}</p>
 );
 
 export function Footer() {
-    return (
-        <footer className="site-footer">
-            <div className="container" style={{ padding: '0 0 20px 0' }}>
-                <span className="footer-logo">Label Harsha</span>
+  return (
+    <footer className="site-footer">
+      <div className="container" style={{ padding: "0 0 20px 0" }}>
+        <span className="footer-logo">Label Harsha</span>
 
-                <p className="footer-copyright">
-                    &copy; {CURRENT_YEAR}, Label Harsha Boutique. All Rights Reserved.
-                </p>
+        <p className="footer-copyright">
+          &copy; {CURRENT_YEAR}, Label Harsha Boutique. All Rights Reserved.
+        </p>
 
-                <FooterDisclaimer>
-                    *Alteration and custom sizing take 3 to 5 business days and are applicable only to purchased catalog items.
-                </FooterDisclaimer>
-            </div>
-        </footer>
-    );
+        <FooterDisclaimer>
+          *Alteration and custom sizing take 3 to 5 business days and are
+          applicable only to purchased catalog items.
+        </FooterDisclaimer>
+      </div>
+    </footer>
+  );
 }

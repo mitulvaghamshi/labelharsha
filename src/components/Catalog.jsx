@@ -1,99 +1,124 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import { ProductDetails } from '../components/ProductDetails';
-import { Carousel } from './Carousel';
-import { Product } from './Product';
+import { ProductDetails } from "../components/ProductDetails";
+import { Carousel } from "./Carousel";
+import { Product } from "./Product";
 
-import { CATEGORIES } from '../utils/category-list';
-import { getProducts } from '../utils/get-product';
+import { CATEGORIES } from "../utils/category-list";
+import { getProducts } from "../utils/get-product";
 
-import '../styles/Catalog.css';
+import "../styles/Catalog.css";
 
 const HeaderSection = () => (
-    <div className="section-header">
-        <h2 className="section-title">The Vibrant Collections</h2>
-        <p className="section-desc">
-            Explore our handpicked designer catalog of premium readymade wear,
-            categorized for ease of selection.
-        </p>
-    </div>
+  <div className="section-header">
+    <h2 className="section-title">The Vibrant Collections</h2>
+    <p className="section-desc">
+      Explore our handpicked designer catalog of premium readymade wear,
+      categorized for ease of selection.
+    </p>
+  </div>
 );
 
 const CategoryFilters = ({ activeCategory, onSelect }) => (
-    <div className="catalog-filters">
-        {CATEGORIES.map(cat => (
-            <button
-                key={cat.id}
-                className={`filter-btn ${activeCategory === cat.id ? 'active' : ''}`}
-                data-category={cat.id}
-                onClick={() => onSelect(cat.id)}
-            >
-                {cat.label}
-            </button>
-        ))}
-    </div>
-)
+  <div className="catalog-filters">
+    {CATEGORIES.map((cat) => (
+      <button
+        key={cat.id}
+        className={`filter-btn ${activeCategory === cat.id ? "active" : ""}`}
+        data-category={cat.id}
+        onClick={() => onSelect(cat.id)}
+      >
+        {cat.label}
+      </button>
+    ))}
+  </div>
+);
 
 const ProductSection = ({ children }) => (
-    <>
-        {children}
-        <div style={{ height: '35px' }} />
-    </>
+  <>
+    {children}
+    <div style={{ height: "35px" }} />
+  </>
 );
 
 export function Catalog() {
-    const [activeCategory, setActiveCategory] = useState("all");
-    const [selectedItem, onItemSelected] = useState(null);
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [selectedItem, onItemSelected] = useState(null);
 
-    const { tallUngrouped, wideGroups, tallGroups } = getProducts(activeCategory);
+  const { tallUngrouped, wideGroups, tallGroups } = getProducts(activeCategory);
 
-    const hasAnyProducts = tallUngrouped.length > 0 || wideGroups.length > 0 || tallGroups.length > 0;
+  const hasAnyProducts = tallUngrouped.length > 0 || wideGroups.length > 0 ||
+    tallGroups.length > 0;
 
-    return (
-        <section className="container" id="catalog">
-            <HeaderSection />
+  return (
+    <section className="container" id="catalog">
+      <HeaderSection />
 
-            <CategoryFilters activeCategory={activeCategory} onSelect={setActiveCategory} />
+      <CategoryFilters
+        activeCategory={activeCategory}
+        onSelect={setActiveCategory}
+      />
 
-            <div id="product-container">
-                {tallUngrouped.length > 0 && (
-                    <ProductSection>
-                        <div id="product-card-container-tall" className="product-grid-tall">
-                            {tallUngrouped.map(item => (
-                                <Product key={item.id} item={item} isCarousel={false} onOpen={onItemSelected} />
-                            ))}
-                        </div>
-                    </ProductSection>
-                )}
-
-                {wideGroups.length > 0 && (
-                    <ProductSection>
-                        <div id="product-card-container-wide" className="product-grid-wide">
-                            {wideGroups.map((group, idx) => (
-                                <Carousel key={`wide-group-${idx}`} items={group} onOpen={onItemSelected} />
-                            ))}
-                        </div>
-                    </ProductSection>
-                )}
-
-                {tallGroups.length > 0 && (
-                    <ProductSection>
-                        <div id="product-card-container-tall-grouped" className="product-grid-tall">
-                            {tallGroups.map((group, idx) => (
-                                <Carousel key={`tall-group-${idx}`} items={group} onOpen={onItemSelected} />
-                            ))}
-                        </div>
-                    </ProductSection>
-                )}
-
-                {!hasAnyProducts && (
-                    <div className="text-center py-12 text-lg text-slate-400">
-                        No styles currently available in this category. Please check back later!
-                    </div>
-                )}
+      <div id="product-container">
+        {tallUngrouped.length > 0 && (
+          <ProductSection>
+            <div id="product-card-container-tall" className="product-grid-tall">
+              {tallUngrouped.map((item) => (
+                <Product
+                  key={item.id}
+                  item={item}
+                  isCarousel={false}
+                  onOpen={onItemSelected}
+                />
+              ))}
             </div>
+          </ProductSection>
+        )}
 
-            <ProductDetails key="item-popup" item={selectedItem} onClose={() => onItemSelected(null)} />
-        </section>
-    );
+        {wideGroups.length > 0 && (
+          <ProductSection>
+            <div id="product-card-container-wide" className="product-grid-wide">
+              {wideGroups.map((group, idx) => (
+                <Carousel
+                  key={`wide-group-${idx}`}
+                  items={group}
+                  onOpen={onItemSelected}
+                />
+              ))}
+            </div>
+          </ProductSection>
+        )}
+
+        {tallGroups.length > 0 && (
+          <ProductSection>
+            <div
+              id="product-card-container-tall-grouped"
+              className="product-grid-tall"
+            >
+              {tallGroups.map((group, idx) => (
+                <Carousel
+                  key={`tall-group-${idx}`}
+                  items={group}
+                  onOpen={onItemSelected}
+                />
+              ))}
+            </div>
+          </ProductSection>
+        )}
+
+        {!hasAnyProducts && (
+          <div className="text-center py-12 text-lg text-slate-400">
+            No styles currently available in this category. Please check back
+            later!
+          </div>
+        )}
+      </div>
+
+      <ProductDetails
+        key="item-popup"
+        item={selectedItem}
+        onClose={() => onItemSelected(null)}
+      />
+    </section>
+  );
 }

@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: ['class', '.theme-dark'],
+  darkMode: ["class", ".theme-dark"],
   theme: {
     extend: {
       colors: {
@@ -13,12 +13,12 @@ export default {
         accent: "#FFB81C",
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        logo: ['Cinzel Decorative', 'serif'],
-        body: ['Plus Jakarta Sans', 'sans-serif'],
-        alt: ['Outfit', 'sans-serif'],
+        display: ["Playfair Display", "serif"],
+        logo: ["Cinzel Decorative", "serif"],
+        body: ["Plus Jakarta Sans", "sans-serif"],
+        alt: ["Outfit", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
